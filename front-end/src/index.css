@@ -34,7 +34,9 @@ main {
   max-width: 1400px;
   margin: auto;
 }
-
+section {
+  padding-bottom: 3rem;
+}
 h1 {
   font-family: 'Alegreya Sans SC', sans-serif, Arial;
   font-size: 6em;

@@ -1,5 +1,5 @@
 import { Anchor, ConfigProvider } from 'antd';
-import logo from '../../assets/icons/logo-MN.png';
+import logo from '../../assets/icons/logo/logo-MN.png';
 import './Header.css';
 
 function Header() {

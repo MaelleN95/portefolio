@@ -3,7 +3,7 @@
 .banner {
   display: flex;
   align-items: center;
-  margin: 4rem 0;
+  padding: 4rem 0;
 }
 
 .banner::before {
@@ -31,7 +31,8 @@
 }
 
 .img-maelle {
-  object-fit: cover;
+  background-image: url(../../../../assets/images/16990274875310.jpg);
+  background-size: cover;
   border-radius: 50%;
   height: 450px;
   border: 20px solid #161412;

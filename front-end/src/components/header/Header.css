@@ -1,7 +1,8 @@
 header {
   display: flex;
   align-items: center;
-  background-color: #efe8e6ec;
+  background-color: rgba(239, 232, 230, 0.85);
+  backdrop-filter: blur(6px);
   position: sticky;
   top: 0;
   z-index: 5;
