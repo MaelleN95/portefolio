@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 :root {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif, Arial;
   font-weight: 400;
+  font-size: 1.2rem;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -23,15 +26,29 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
+main {
+  max-width: 1400px;
+  margin: auto;
+}
+
 h1 {
-  font-size: 3.2em;
+  font-family: 'Alegreya Sans SC', sans-serif, Arial;
+  font-size: 6em;
   line-height: 1.1;
+  font-weight: bold;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Alegreya Sans SC', sans-serif, Arial;
+  font-size: 2rem;
+  text-align: center;
+  padding: 3rem;
+  margin: 0;
 }
 
 button {
@@ -56,7 +73,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #000000;
-    background-color: #ffffff;
+    background-color: #efe8e6;
   }
   a:hover {
     color: #747bff;

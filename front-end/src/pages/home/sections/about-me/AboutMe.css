@@ -1,0 +1,14 @@
+#about-me {
+  color: #efe8e6;
+}
+
+#about-me::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #161412;
+  z-index: -1;
+  max-height: 646px;
+}

@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  align-items: center;
+  background-color: #efe8e6ec;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+header img {
+  margin: 1rem 1.5rem;
+}
+
+.ant-anchor-link {
+  margin: 0.5rem 0;
+  text-align: center;
+}
