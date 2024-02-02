@@ -1,0 +1,31 @@
+.hard-skill {
+  display: flex;
+  align-items: center;
+  width: $width-skill;
+  & img {
+    width: $logo-skill-size;
+    max-height: $logo-skill-size;
+  }
+  & p {
+    padding: 1.6rem;
+    margin: 0;
+  }
+}
+
+.horizontal {
+  flex-direction: row;
+  text-align: start;
+}
+.vertical {
+  flex-direction: column;
+  text-align: center;
+}
+.horizontal-reverse {
+  flex-direction: row-reverse;
+  text-align: end;
+}
+
+.light {
+  border-radius: 5px;
+  background-color: $bg-color-light;
+}

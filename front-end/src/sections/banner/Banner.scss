@@ -1,0 +1,92 @@
+.banner {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    background-color: $bg-color-dark;
+    z-index: -1;
+    max-height: 646px;
+  }
+
+  & strong {
+    font-family: 'Alegreya Sans SC';
+    font-weight: 400;
+    font-size: 4rem;
+  }
+
+  & .image {
+    position: relative;
+    height: 490px;
+    width: 490px;
+    margin-right: 5vw;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 23%;
+      top: 23%;
+      border-radius: 50%;
+      height: 50%;
+      width: 50%;
+      background-color: $bg-color-light;
+      z-index: -1;
+      max-height: 645.2px;
+      border: 10px solid $bg-color-dark;
+      animation: move-circle 8s ease-in-out infinite;
+    }
+  }
+}
+
+.img-maelle {
+  background-image: url(../assets/images/my-photo.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  height: 450px;
+  border: 20px solid $bg-color-dark;
+  animation: move-img 11s ease-in-out infinite;
+}
+
+@keyframes move-img {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.07);
+  }
+  35% {
+    transform: scale(0.97);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes move-circle {
+  0% {
+    transform: scale(1.7);
+  }
+  25% {
+    transform: scale(1.9);
+  }
+  50% {
+    transform: scale(2.2);
+  }
+  63% {
+    transform: scale(2.15);
+  }
+  75% {
+    transform: scale(2.25);
+  }
+  100% {
+    transform: scale(1.7);
+  }
+}

@@ -1,0 +1,28 @@
+#hard-skills {
+  color: #efe8e6;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $bg-color-dark;
+    z-index: -1;
+    max-height: 737.8px;
+  }
+
+  & .skills-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & .skills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: $width-skill;
+      overflow: hidden;
+    }
+  }
+}

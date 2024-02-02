@@ -1,6 +1,5 @@
 import { Anchor, ConfigProvider } from 'antd';
 import logo from '../../assets/icons/logo/logo-MN.png';
-import './Header.css';
 
 function Header() {
   return (
@@ -9,7 +8,7 @@ function Header() {
       <ConfigProvider
         theme={{
           token: {
-            colorPrimary: '#A42CD6',
+            colorPrimary: '#6C63FF',
             colorText: 'black',
             fontFamily: 'Roboto, sans-serif, Arial',
             fontSize: '1rem',

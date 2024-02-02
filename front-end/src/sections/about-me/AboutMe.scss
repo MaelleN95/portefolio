@@ -1,0 +1,24 @@
+#about-me {
+  color: #efe8e6;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #161412;
+    z-index: -1;
+    max-height: 507.9px;
+  }
+
+  & img {
+    height: 15rem;
+    padding-left: 5rem;
+  }
+
+  & .presentation {
+    display: flex;
+    text-align: justify;
+  }
+}
