@@ -34,13 +34,13 @@ function HardSkills() {
               logoTextDirection="horizontal"
             />
           ) : (
-            frontEndSkills.map((skill) => (
+            frontEndSkills.map((skill, index) => (
               <LogoText
                 direction="horizontal"
                 logo={skill.logo}
                 title={skill.title}
                 light={skill.light}
-                key={skill.title}
+                key={`${skill.title}-${index}`}
                 noAutoscroll={true}
                 rounded={skill.rounded}
               >
@@ -79,13 +79,13 @@ function HardSkills() {
               logoTextDirection="horizontal-reverse"
             />
           ) : (
-            backEndSkills.map((skill) => (
+            backEndSkills.map((skill, index) => (
               <LogoText
                 direction="horizontal-reverse"
                 logo={skill.logo}
                 title={skill.title}
                 light={skill.light}
-                key={skill.title}
+                key={`${skill.title}-${index}`}
                 noAutoscroll={true}
                 rounded={skill.rounded}
               >

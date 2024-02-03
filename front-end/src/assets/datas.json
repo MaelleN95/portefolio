@@ -62,22 +62,22 @@
   ],
   "goodPractices": [
     {
-      "logo": "http://localhost:5173/src/assets/icons/illustration/accessibility.svg",
+      "logo": "http://localhost:5173/src/assets/icons/illustrations/accessibility.svg",
       "title": "L'accessibilité",
       "content": "Assurer l'accessibilité de votre site web permet à tous les utilisateurs d’accéder au contenu de manière équitable et efficace !"
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/illustration/responsive.svg",
+      "logo": "http://localhost:5173/src/assets/icons/illustrations/responsive.svg",
       "title": "Le responsive design",
       "content": "Avec la diversification des appareils utilisés pour accéder au web, le responsive design garantit une expérience utilisateur optimale sur tous les appareils."
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/illustration/work-chat.svg",
+      "logo": "http://localhost:5173/src/assets/icons/illustrations/work_chat.svg",
       "title": "Le SEO (Optimisation pour les moteurs de recherches)",
       "content": "L'optimisation SEO améliore la visibilité de votre site sur les moteurs de recherche, attirant ainsi un trafic organique accru et ciblé."
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/illustration/nature.svg",
+      "logo": "http://localhost:5173/src/assets/icons/illustrations/nature.svg",
       "title": "Le Green code",
       "content": "Adopter des pratiques de développement durable réduit l'empreinte écologique du site en optimisant l'utilisation des ressources et en minimisant la consommation d'énergie."
     }
