@@ -28,4 +28,15 @@
 .light {
   border-radius: 5px;
   background-color: $bg-color-light;
+  max-width: $logo-skill-size;
+  padding: 10px 4px;
+}
+.rounded {
+  border-radius: 50%;
+  background-color: $bg-color-light;
+  max-width: calc($logo-skill-size - 0.6rem);
+  padding: 0.3rem;
+}
+.no-autoscroll {
+  padding-bottom: 2.5rem;
 }

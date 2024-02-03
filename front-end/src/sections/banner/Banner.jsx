@@ -1,13 +1,15 @@
+import datas from '../../assets/datas.json';
+
 function Banner() {
   return (
-    <section className="banner">
+    <section id="banner">
       <div className="image">
         <div className="img-maelle"></div>
       </div>
 
       <div>
         <h1>Maëlle Nioche</h1>
-        <strong>Développeuse web</strong>
+        <strong>{datas.job}</strong>
       </div>
     </section>
   );

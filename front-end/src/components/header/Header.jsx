@@ -1,10 +1,12 @@
 import { Anchor, ConfigProvider } from 'antd';
-import logo from '../../assets/icons/logo/logo-MN.png';
+// import logo from '../../assets/icons/logo/logo-MN.png';
+
+import datas from '../../assets/datas.json';
 
 function Header() {
   return (
     <header>
-      <img src={logo} alt="icône Maelle Nioche" width="40" height="40" />
+      <img src={datas.logo} alt="icône Maelle Nioche" width="40" height="40" />
       <ConfigProvider
         theme={{
           token: {

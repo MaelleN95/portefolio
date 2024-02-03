@@ -1,0 +1,19 @@
+#tools {
+  color: #efe8e6;
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $bg-color-dark;
+    z-index: -1;
+    max-height: 422.19px;
+  }
+  & .tools-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "logo": "http://localhost:5173/src/assets/icons/logo/logo-MN.png",
+  "picture": "http://localhost:5173/src/assets/icons/images/my-photo.jpg",
+  "job": "Développeuse web",
+  "description": [
+    "Bonjour et bienvenue sur mon site ! Je suis développeuse web polyvalente et passionnée.",
+    "Spécialisée dans le front-end, je favorise la création, l’accessibilité et l'optimisation d'une application web en plaçant les besoins et les préférences des utilisateurs au centre de la conception et du développement.",
+    "De plus, mes compétences en développement back-end me permettent une vision globale des projets et facilite la cohésion en équipe !"
+  ],
+  "frontEndSkills": [
+    {
+      "logo": "http://localhost:5173/src/assets/icons/skills/html-icon.svg",
+      "title": "HTML"
+    },
+    {
+      "logo": "http://localhost:5173/src/assets/icons/skills/css-icon.svg",
+      "title": "CSS"
+    },
+    {
+      "logo": "http://localhost:5173/src/assets/icons/skills/javascript-icon.svg",
+      "title": "JavaScript"
+    },
+    {
+      "logo": "http://localhost:5173/src/assets/icons/skills/react-icon.svg",
+      "title": "React"
+    },
+    {
+      "logo": "http://localhost:5173/src/assets/icons/skills/sass-icon.svg",
+      "title": "Sass"
+    }
+  ],
+  "backEndSkills": [
+    {
+      "logo": "http://localhost:5173/src/assets/icons/skills/nodejs-icon.svg",
+      "title": "Node.js"
+    },
+    {
+      "logo": "http://localhost:5173/src/assets/icons/skills/express-icon.svg",
+      "title": "Express",
+      "light": true
+    },
+    {
+      "logo": "http://localhost:5173/src/assets/icons/skills/mongodb-icon.svg",
+      "title": "MongoDB"
+    }
+  ],
+  "tools": [
+    {
+      "logo": "http://localhost:5173/src/assets/icons/tools/visual-studio-code-icon.svg",
+      "title": "Visual Studio Code"
+    },
+    {
+      "logo": "http://localhost:5173/src/assets/icons/tools/git-icon.svg",
+      "title": "Git"
+    },
+    {
+      "logo": "http://localhost:5173/src/assets/icons/tools/github-icon.svg",
+      "title": "Git Hub",
+      "light": true,
+      "rounded": true
+    }
+  ],
+  "goodPractices": [
+    {
+      "logo": "http://localhost:5173/src/assets/icons/illustration/accessibility.svg",
+      "title": "L'accessibilité",
+      "content": "Assurer l'accessibilité de votre site web permet à tous les utilisateurs d’accéder au contenu de manière équitable et efficace !"
+    },
+    {
+      "logo": "http://localhost:5173/src/assets/icons/illustration/responsive.svg",
+      "title": "Le responsive design",
+      "content": "Avec la diversification des appareils utilisés pour accéder au web, le responsive design garantit une expérience utilisateur optimale sur tous les appareils."
+    },
+    {
+      "logo": "http://localhost:5173/src/assets/icons/illustration/work-chat.svg",
+      "title": "Le SEO (Optimisation pour les moteurs de recherches)",
+      "content": "L'optimisation SEO améliore la visibilité de votre site sur les moteurs de recherche, attirant ainsi un trafic organique accru et ciblé."
+    },
+    {
+      "logo": "http://localhost:5173/src/assets/icons/illustration/nature.svg",
+      "title": "Le Green code",
+      "content": "Adopter des pratiques de développement durable réduit l'empreinte écologique du site en optimisant l'utilisation des ressources et en minimisant la consommation d'énergie."
+    }
+  ],
+  "softSkills": [
+    "Créativité",
+    "Adaptabilité",
+    "Esprit d'équipe",
+    "Persévérance",
+    "Curiosité",
+    "Rigueur"
+  ],
+  "formation": [
+    {
+      "title": "Licence Mathématiques et informatique appliquées aux Sciences Humaines et Sociales",
+      "description": "",
+      "date": "2022 - actuel",
+      "icon": ""
+    },
+    {
+      "title": "Développeur Web",
+      "description": "",
+      "level": "Bac +2",
+      "date": "2024",
+      "icon": ""
+    },
+    {
+      "title": "Baccalauréat série Scientifique",
+      "description": "",
+      "level": "Avec mention",
+      "date": "2020",
+      "icon": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": "",
+      "title": "Booki, site d’agence immobilière",
+      "description": "",
+      "hardSkills": ["HTML", "CSS"],
+      "deployed": true,
+      "cover": "",
+      "pictures": ["", ""],
+      "date": "2023",
+      "skills": "",
+      "problems": ""
+    },
+    {
+      "id": "",
+      "title": "Sophie Bluel, portefolio d’une architecte",
+      "description": "",
+      "hardSkills": ["HTML", "CSS", "JavaScript"],
+      "deployed": true,
+      "cover": "",
+      "pictures": ["", ""],
+      "date": "2023",
+      "skills": "",
+      "problems": ""
+    },
+    {
+      "id": "",
+      "title": "Nina Carducci, site de photographe",
+      "description": "",
+      "hardSkills": ["SEO", "Accessibilité", "Débug"],
+      "deployed": true,
+      "cover": "",
+      "pictures": ["", ""],
+      "date": "2023",
+      "skills": "",
+      "problems": ""
+    },
+    {
+      "id": "",
+      "title": "Kasa, site de location immobilière",
+      "description": "",
+      "hardSkills": ["React", "Sass"],
+      "deployed": true,
+      "cover": "",
+      "pictures": ["", ""],
+      "date": "2024",
+      "skills": "",
+      "problems": ""
+    },
+    {
+      "id": "",
+      "title": "Mon vieux grimoire, site de notation de livres",
+      "description": "",
+      "hardSkills": ["Node.js", "Express", "MongoDB"],
+      "deployed": false,
+      "cover": "",
+      "pictures": ["", ""],
+      "date": "2024",
+      "skills": "",
+      "problems": ""
+    }
+  ],
+  "socialMedia": [
+    {
+      "logo": "",
+      "title": "LinkedIn",
+      "link": ""
+    },
+    {
+      "logo": "",
+      "title": "Git Hub",
+      "link": ""
+    },
+    {
+      "logo": "",
+      "title": "Instagram",
+      "link": ""
+    },
+    {
+      "logo": "",
+      "title": "Discord",
+      "link": ""
+    }
+  ]
+}
