@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/x-charts": "^6.19.3",
     "antd": "^5.13.3",
     "embla-carousel-auto-scroll": "^8.0.0-rc22",
     "embla-carousel-autoplay": "^8.0.0-rc22",

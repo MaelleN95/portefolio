@@ -9,7 +9,7 @@
     width: 100%;
     background-color: $bg-color-dark;
     z-index: -1;
-    max-height: 779.78px;
+    height: 800.78px;
   }
 
   & .skills-details {
@@ -24,5 +24,20 @@
       max-width: $width-skill;
       overflow: hidden;
     }
+  }
+
+  .MuiPieArc-root {
+    stroke-width: 3px;
+    stroke-dasharray: 1800px;
+    stroke-dashoffset: 1800px;
+    &:hover {
+      animation: animateSVG 2s ease-in forwards;
+    }
+  }
+}
+
+@keyframes animateSVG {
+  to {
+    stroke-dashoffset: 0;
   }
 }

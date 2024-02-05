@@ -1,4 +1,4 @@
-import { PieChart } from 'react-minimal-pie-chart';
+import { PieChart, pieArcLabelClasses } from '@mui/x-charts';
 
 import SkillsCarousel from '../../components/skills-carousel/skills-carousel';
 import LogoText from '../../components/LogoText/LogoText';
@@ -6,11 +6,6 @@ import LogoText from '../../components/LogoText/LogoText';
 import datas from '../../assets/datas.json';
 
 function HardSkills() {
-  const defaultLabelStyle = {
-    fontSize: '0.3rem',
-    fontFamily: 'Roboto',
-  };
-
   const OPTIONS = {
     direction: 'backward',
     axis: 'y',
@@ -49,27 +44,44 @@ function HardSkills() {
             ))
           )}
         </div>
+
         <PieChart
-          style={{ width: ' 40%' }}
-          startAngle={65}
-          segmentsShift={0.5}
-          radius={43}
-          label={({ dataEntry }) => dataEntry.title}
-          labelStyle={{ ...defaultLabelStyle }}
-          className="piechart"
-          data={[
+          series={[
             {
-              title: 'Front-end',
-              value: frontEndSkills.length,
-              color: 'rgba(72,190,255,0.9)',
-            },
-            {
-              title: 'Back-end',
-              value: backEndSkills.length,
-              color: 'rgba(225,91,97,0.9)',
+              data: [
+                {
+                  value: frontEndSkills.length,
+                  label: 'Front-end',
+                  color: '#48beff',
+                },
+                {
+                  value: backEndSkills.length,
+                  label: 'Back-end',
+                  color: '#ff5b61',
+                },
+              ],
+              arcLabel: (item) => `${item.label}`,
+              innerRadius: 9,
+              outerRadius: 225,
+              paddingAngle: 5,
+              cornerRadius: 10,
+              startAngle: -200,
+              endAngle: 200,
+              highlightScope: { faded: 'global', highlighted: 'item' },
+              faded: { innerRadius: 40, additionalRadius: -20, color: 'grey' },
             },
           ]}
+          slotProps={{ legend: { hidden: true } }}
+          width={1}
+          tooltip={null}
+          height={500}
+          sx={{
+            [`& .${pieArcLabelClasses.root}`]: {
+              fill: 'white',
+            },
+          }}
         />
+
         <div className="skills back-end-skills">
           {backEndSkills.length >= 5 ? (
             <SkillsCarousel

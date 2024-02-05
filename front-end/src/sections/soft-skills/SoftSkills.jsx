@@ -18,13 +18,8 @@ function SoftSkills() {
     setSelectedSkill2(selectedSet2);
   };
 
-  // Utilisation de useEffect pour déclencher la fonction toutes les 5 secondes
   useEffect(() => {
-    const interval = setInterval(() => {
-      selectRandomSkills();
-    }, 5000); // Déclenchement toutes les 5 secondes
-
-    return () => clearInterval(interval); // Nettoyage de l'intervalle lors du démontage du composant
+    selectRandomSkills();
   }, []);
 
   return (
