@@ -72,7 +72,7 @@ function HardSkills() {
             },
           ]}
           slotProps={{ legend: { hidden: true } }}
-          width={1}
+          width={0.1}
           tooltip={null}
           height={500}
           sx={{
