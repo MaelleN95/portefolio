@@ -82,14 +82,17 @@
       "content": "Adopter des pratiques de développement durable réduit l'empreinte écologique du site en optimisant l'utilisation des ressources et en minimisant la consommation d'énergie."
     }
   ],
-  "softSkills": [
-    "Créativité",
-    "Adaptabilité",
-    "Esprit d'équipe",
-    "Persévérance",
-    "Curiosité",
-    "Rigueur"
-  ],
+  "softSkills": {
+    "skills": [
+      "Créativité",
+      "Adaptabilité",
+      "Esprit d'équipe",
+      "Persévérance",
+      "Curiosité",
+      "Rigueur"
+    ],
+    "logo": "http://localhost:5173/src/assets/icons/illustrations/engineering_team.svg"
+  },
   "formation": [
     {
       "title": "Licence Mathématiques et informatique appliquées aux Sciences Humaines et Sociales",

@@ -1,0 +1,18 @@
+#soft-skills {
+  & .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    & .bubble-column {
+      min-height: 350px;
+      max-height: 500px;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+    }
+    & .left {
+      flex-direction: column;
+    }
+  }
+}

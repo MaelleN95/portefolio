@@ -1,0 +1,18 @@
+#soft-skills {
+  & .bubble {
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-align: center;
+    width: 140px;
+  }
+
+  & .blue {
+    background: $blue-color;
+  }
+
+  & .red {
+    background: $red-color;
+  }
+}
