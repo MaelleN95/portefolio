@@ -1,6 +1,6 @@
 {
   "logo": "http://localhost:5173/src/assets/icons/logo/logo-MN.png",
-  "picture": "http://localhost:5173/src/assets/icons/images/my-photo.jpg",
+  "cover": "http://localhost:5173/src/assets/icons/images/my-photo.jpg",
   "job": "Développeuse web",
   "description": [
     "Bonjour et bienvenue sur mon site ! Je suis développeuse web polyvalente et passionnée.",
