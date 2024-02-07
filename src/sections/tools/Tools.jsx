@@ -9,17 +9,18 @@ function Tools() {
       <h2>Mes outils</h2>
       <div className="tools-list">
         {tools.map((tool, index) => (
-          <LogoText
-            direction="vertical"
-            logo={tool.logo}
-            title={tool.title}
-            light={tool.light}
-            key={index}
-            noAutoscroll={true}
-            rounded={tool.rounded}
-          >
-            {tool.title}
-          </LogoText>
+          <a href={tool.link} key={index} title={`Lien vers ${tool.title}`}>
+            <LogoText
+              direction="vertical"
+              logo={tool.logo}
+              title={tool.title}
+              light={tool.light}
+              noAutoscroll={true}
+              rounded={tool.rounded}
+            >
+              {tool.title}
+            </LogoText>
+          </a>
         ))}
       </div>
     </section>

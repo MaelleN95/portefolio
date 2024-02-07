@@ -1,5 +1,4 @@
 import { Anchor, ConfigProvider } from 'antd';
-// import logo from '../../assets/icons/logo/logo-MN.png';
 
 import datas from '../../assets/datas.json';
 

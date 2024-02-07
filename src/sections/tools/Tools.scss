@@ -9,11 +9,24 @@
     width: 100%;
     background-color: $bg-color-dark;
     z-index: -1;
-    max-height: 422.19px;
+    max-height: 374.19px;
   }
   & .tools-list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    & div {
+      padding-bottom: 0;
+    }
+    &:hover a {
+      opacity: 0.5;
+    }
+    & a {
+      color: $bg-color-light;
+      text-decoration: none;
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 }

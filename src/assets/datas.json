@@ -47,15 +47,18 @@
   "tools": [
     {
       "logo": "http://localhost:5173/src/assets/icons/tools/visual-studio-code-icon.svg",
-      "title": "Visual Studio Code"
+      "title": "Visual Studio Code",
+      "link": "https://code.visualstudio.com/"
     },
     {
       "logo": "http://localhost:5173/src/assets/icons/tools/git-icon.svg",
-      "title": "Git"
+      "title": "Git",
+      "link": "https://git-scm.com/"
     },
     {
       "logo": "http://localhost:5173/src/assets/icons/tools/github-icon.svg",
       "title": "Git Hub",
+      "link": "https://github.com/",
       "light": true,
       "rounded": true
     }
@@ -64,7 +67,7 @@
     {
       "logo": "http://localhost:5173/src/assets/icons/illustrations/accessibility.svg",
       "title": "L'accessibilité",
-      "content": "Assurer l'accessibilité de votre site web permet à tous les utilisateurs d’accéder au contenu de manière équitable et efficace !"
+      "content": "Assurer l'accessibilité d'un site web permet à tous les utilisateurs d’accéder au contenu de manière équitable et efficace !"
     },
     {
       "logo": "http://localhost:5173/src/assets/icons/illustrations/responsive.svg",
@@ -74,7 +77,7 @@
     {
       "logo": "http://localhost:5173/src/assets/icons/illustrations/work_chat.svg",
       "title": "Le SEO (Optimisation pour les moteurs de recherches)",
-      "content": "L'optimisation SEO améliore la visibilité de votre site sur les moteurs de recherche, attirant ainsi un trafic organique accru et ciblé."
+      "content": "L'optimisation SEO améliore la visibilité d'un site sur les moteurs de recherche, attirant ainsi un trafic davantage ciblé."
     },
     {
       "logo": "http://localhost:5173/src/assets/icons/illustrations/nature.svg",
@@ -116,88 +119,26 @@
       "icon": ""
     }
   ],
-  "projects": [
-    {
-      "id": "",
-      "title": "Booki, site d’agence immobilière",
-      "description": "",
-      "hardSkills": ["HTML", "CSS"],
-      "deployed": true,
-      "cover": "",
-      "pictures": ["", ""],
-      "date": "2023",
-      "skills": "",
-      "problems": ""
-    },
-    {
-      "id": "",
-      "title": "Sophie Bluel, portefolio d’une architecte",
-      "description": "",
-      "hardSkills": ["HTML", "CSS", "JavaScript"],
-      "deployed": true,
-      "cover": "",
-      "pictures": ["", ""],
-      "date": "2023",
-      "skills": "",
-      "problems": ""
-    },
-    {
-      "id": "",
-      "title": "Nina Carducci, site de photographe",
-      "description": "",
-      "hardSkills": ["SEO", "Accessibilité", "Débug"],
-      "deployed": true,
-      "cover": "",
-      "pictures": ["", ""],
-      "date": "2023",
-      "skills": "",
-      "problems": ""
-    },
-    {
-      "id": "",
-      "title": "Kasa, site de location immobilière",
-      "description": "",
-      "hardSkills": ["React", "Sass"],
-      "deployed": true,
-      "cover": "",
-      "pictures": ["", ""],
-      "date": "2024",
-      "skills": "",
-      "problems": ""
-    },
-    {
-      "id": "",
-      "title": "Mon vieux grimoire, site de notation de livres",
-      "description": "",
-      "hardSkills": ["Node.js", "Express", "MongoDB"],
-      "deployed": false,
-      "cover": "",
-      "pictures": ["", ""],
-      "date": "2024",
-      "skills": "",
-      "problems": ""
-    }
-  ],
   "socialMedia": [
     {
       "logo": "",
       "title": "LinkedIn",
-      "link": ""
+      "link": "https://www.linkedin.com/"
     },
     {
       "logo": "",
       "title": "Git Hub",
-      "link": ""
+      "link": "https://github.com/"
     },
     {
       "logo": "",
       "title": "Instagram",
-      "link": ""
+      "link": "https://www.instagram.com/"
     },
     {
       "logo": "",
       "title": "Discord",
-      "link": ""
+      "link": "https://discord.com/"
     }
   ]
 }

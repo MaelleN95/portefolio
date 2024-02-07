@@ -6,12 +6,19 @@ header {
   position: sticky;
   top: 0;
   z-index: 5;
-}
-header img {
-  margin: 1rem 1.5rem;
+  & img {
+    margin: 1rem 1.5rem;
+  }
 }
 
 .ant-anchor-link {
   margin: 0.5rem 0;
+  min-width: 102px;
   text-align: center;
+  & .ant-anchor-link-title {
+    min-width: 102px;
+  }
+  &:hover {
+    font-weight: bold;
+  }
 }
