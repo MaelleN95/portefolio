@@ -18,15 +18,5 @@
     & div {
       padding-bottom: 0;
     }
-    &:hover a {
-      opacity: 0.5;
-    }
-    & a {
-      color: $bg-color-light;
-      text-decoration: none;
-      &:hover {
-        opacity: 1;
-      }
-    }
   }
 }

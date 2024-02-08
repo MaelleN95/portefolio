@@ -5,38 +5,46 @@
   "frontEndSkills": [
     {
       "logo": "http://localhost:5173/src/assets/icons/skills/html-icon.svg",
-      "title": "HTML"
+      "title": "HTML",
+      "link": "https://developer.mozilla.org/fr/docs/Web/HTML"
     },
     {
       "logo": "http://localhost:5173/src/assets/icons/skills/css-icon.svg",
-      "title": "CSS"
+      "title": "CSS",
+      "link": "https://developer.mozilla.org/fr/docs/Web/CSS"
     },
     {
       "logo": "http://localhost:5173/src/assets/icons/skills/javascript-icon.svg",
-      "title": "JavaScript"
+      "title": "JavaScript",
+      "link": "https://developer.mozilla.org/fr/docs/Web/JavaScript"
     },
     {
       "logo": "http://localhost:5173/src/assets/icons/skills/react-icon.svg",
-      "title": "React"
+      "title": "React",
+      "link": "https://fr.legacy.reactjs.org/"
     },
     {
       "logo": "http://localhost:5173/src/assets/icons/skills/sass-icon.svg",
-      "title": "Sass"
+      "title": "Sass",
+      "link": "https://sass-lang.com/"
     }
   ],
   "backEndSkills": [
     {
       "logo": "http://localhost:5173/src/assets/icons/skills/nodejs-icon.svg",
-      "title": "Node.js"
+      "title": "Node.js",
+      "link": "https://nodejs.org/en"
     },
     {
       "logo": "http://localhost:5173/src/assets/icons/skills/express-icon.svg",
       "title": "Express",
+      "link": "https://expressjs.com/",
       "light": true
     },
     {
       "logo": "http://localhost:5173/src/assets/icons/skills/mongodb-icon.svg",
-      "title": "MongoDB"
+      "title": "MongoDB",
+      "link": "https://www.mongodb.com/fr-fr"
     }
   ],
   "tools": [
@@ -123,7 +131,7 @@
     {
       "logo": "",
       "title": "Git Hub",
-      "link": "https://github.com/"
+      "link": "https://github.com/MaelleN95/"
     },
     {
       "logo": "",

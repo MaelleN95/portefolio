@@ -6,7 +6,8 @@
     width: $logo-skill-size;
     max-height: $logo-skill-size;
   }
-  & p {
+  & a,
+  p {
     padding: 1.6rem;
     margin: 0;
   }

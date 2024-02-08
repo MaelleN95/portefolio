@@ -7,22 +7,22 @@ function Tools() {
   return (
     <section id="tools">
       <h2>Mes outils</h2>
-      <div className="tools-list">
+      <ul className="tools-list">
         {tools.map((tool, index) => (
-          <a href={tool.link} key={index} title={`Lien vers ${tool.title}`}>
-            <LogoText
-              direction="vertical"
-              logo={tool.logo}
-              title={tool.title}
-              light={tool.light}
-              noAutoscroll={true}
-              rounded={tool.rounded}
-            >
-              {tool.title}
-            </LogoText>
-          </a>
+          <LogoText
+            direction="vertical"
+            logo={tool.logo}
+            title={tool.title}
+            light={tool.light}
+            noAutoscroll={true}
+            rounded={tool.rounded}
+            link={tool.link}
+            key={index}
+          >
+            {tool.title}
+          </LogoText>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

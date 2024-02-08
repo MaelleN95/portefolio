@@ -43,9 +43,9 @@
   position: relative;
   &:hover {
     &::after {
-      content: 'Compétences front-end';
-      position: relative;
-      top: 12px;
+      content: 'Mes compétences front-end';
+      position: absolute;
+      bottom: 0px;
       left: 0;
       z-index: 1;
 
@@ -60,9 +60,9 @@
   position: relative;
   &:hover {
     &::after {
-      content: 'Compétences back-end';
-      position: relative;
-      top: 12px;
+      content: 'Mes compétences back-end';
+      position: absolute;
+      bottom: 0px;
       left: 0;
       z-index: 1;
       text-align: center;
