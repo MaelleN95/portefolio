@@ -2,11 +2,6 @@
   "logo": "http://localhost:5173/src/assets/icons/logo/logo-MN.png",
   "cover": "http://localhost:5173/src/assets/icons/images/my-photo.jpg",
   "job": "Développeuse web",
-  "description": [
-    "Bonjour et bienvenue sur mon site ! Je suis développeuse web polyvalente et passionnée.",
-    "Spécialisée dans le front-end, je favorise la création, l’accessibilité et l'optimisation d'une application web en plaçant les besoins et les préférences des utilisateurs au centre de la conception et du développement.",
-    "De plus, mes compétences en développement back-end me permettent une vision globale des projets et facilite la cohésion en équipe !"
-  ],
   "frontEndSkills": [
     {
       "logo": "http://localhost:5173/src/assets/icons/skills/html-icon.svg",

@@ -38,3 +38,38 @@
     }
   }
 }
+
+.front-end-skills {
+  position: relative;
+  &:hover {
+    &::after {
+      content: 'Compétences front-end';
+      position: relative;
+      top: 12px;
+      left: 0;
+      z-index: 1;
+
+      color: $blue-color;
+      font-weight: bold;
+      font-family: 'alegreya sans SC';
+    }
+  }
+}
+
+.back-end-skills {
+  position: relative;
+  &:hover {
+    &::after {
+      content: 'Compétences back-end';
+      position: relative;
+      top: 12px;
+      left: 0;
+      z-index: 1;
+      text-align: center;
+
+      color: $red-color;
+      font-weight: bold;
+      font-family: 'alegreya sans SC';
+    }
+  }
+}
