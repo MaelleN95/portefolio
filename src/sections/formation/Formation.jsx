@@ -9,6 +9,7 @@ import {
   FaGraduationCap,
   FaFileExport,
 } from 'react-icons/fa';
+import { Glow, GlowCapture } from '@codaworks/react-glow';
 
 import datas from '../../assets/datas.json';
 
@@ -21,36 +22,45 @@ function Formation() {
   return (
     <section id="my-formation">
       <h2>Mon parcours</h2>
-      <VerticalTimeline lineColor="#efe8e6">
-        {datas.formation.map((exp, index) => {
-          let numberStatus = '#ff5b61';
-          index % 2 ? (numberStatus = '#48beff') : null;
+      <GlowCapture>
+        <VerticalTimeline lineColor="#efe8e6">
+          {datas.formation.map((exp, index) => {
+            let numberStatus = '#48beff';
+            index % 2 ? (numberStatus = '#ff5b61') : null;
 
-          const icon = iconsTab[index];
+            const icon = iconsTab[index];
 
-          return (
-            <VerticalTimelineElement
-              className={`vertical-timeline-element--work`}
-              contentStyle={{ background: numberStatus, color: '#161412' }}
-              contentArrowStyle={{ borderRight: `7px solid  ${numberStatus}` }}
-              date={exp.date}
-              iconStyle={{ background: numberStatus, color: '#fff' }}
-              icon={icon}
-              key={`${exp} ${index}`}
-            >
-              <h3 className="vertical-timeline-element-title">{exp.title}</h3>
-              <h4 className="vertical-timeline-element-subtitle">
-                {exp.level}
-              </h4>
-              <p>{exp.description}</p>
-            </VerticalTimelineElement>
-          );
-        })}
-      </VerticalTimeline>
+            return (
+              <VerticalTimelineElement
+                className={`vertical-timeline-element--work`}
+                contentStyle={{ background: numberStatus, color: '#161412' }}
+                contentArrowStyle={{
+                  borderRight: `7px solid  ${numberStatus}`,
+                }}
+                date={exp.date}
+                iconStyle={{ background: numberStatus, color: '#fff' }}
+                icon={icon}
+                key={`${exp} ${index}`}
+              >
+                <h3 className="vertical-timeline-element-title">{exp.title}</h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                  {exp.level}
+                </h4>
+                <p>{exp.description}</p>
+              </VerticalTimelineElement>
+            );
+          })}
+        </VerticalTimeline>
 
-      <button id="cv">
-        Téléchargez mon CV ! <FaFileExport />
-      </button>
+        <Glow>
+          <a
+            href="/src/assets/CV_Maelle_Nioche.pdf"
+            className="glowable-button"
+          >
+            Téléchargez mon CV ! <FaFileExport className="download-icon" />
+          </a>
+        </Glow>
+      </GlowCapture>
     </section>
   );
 }

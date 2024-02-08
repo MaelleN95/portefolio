@@ -9,27 +9,20 @@
     width: 100%;
     background-color: $bg-color-dark;
     z-index: -1;
-    height: 1043px;
+    height: 1075.48px;
   }
-  h3 {
+  & h3 {
     font-family: 'Alegreya sans sc';
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
-
-  #cv {
-    text-align: center;
-    position: absolute;
-    right: 15%;
-    padding: 15px 40px;
-    border-radius: 50px;
-    font-family: 'Roboto';
-    font-size: 1rem;
-    border: 0;
-    box-shadow: inset -2px -2px 7px red;
-    &:active {
-      box-shadow: inset 2px 2px 7px red;
+  & a {
+    display: block;
+    width: 317px;
+    padding: 15px 0;
+    &:hover {
+      text-decoration: none;
     }
   }
 }
@@ -37,4 +30,28 @@
 .vertical-timeline-element-date {
   color: white;
   opacity: 1 !important;
+}
+
+.glowable-button {
+  text-align: center;
+  position: relative;
+  left: 60%;
+  border-radius: 50px;
+  font-family: 'Roboto';
+  font-size: 1rem;
+  border: 4px white solid;
+  background-color: $bg-color-dark;
+  color: white;
+  margin-bottom: 50px;
+}
+.glowable-button:active {
+  border: $purple-color 4px solid;
+  color: $purple-color;
+}
+[glow] .glowable-button {
+  border: rgb(0, 255, 21) 4px solid;
+  background-color: darken($color: rgb(0, 255, 21), $amount: 40);
+}
+[glow] .download-icon {
+  color: rgb(0, 255, 21);
 }
