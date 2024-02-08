@@ -105,41 +105,41 @@
       "description": "",
       "level": "option Psychologie",
       "date": "2022 - actuel",
-      "icon": ""
+      "logo": "http://localhost:5173/src/assets/icons/font-awesome/hourglass-half-solid.svg"
     },
     {
       "title": "Développeur Web",
       "description": "",
       "level": "Bac +2",
       "date": "2024",
-      "icon": ""
+      "logo": "http://localhost:5173/src/assets/icons/font-awesome/medal-solid.svg"
     },
     {
       "title": "Baccalauréat série Scientifique",
       "description": "",
       "level": "Avec mention",
       "date": "2020",
-      "icon": ""
+      "logo": "http://localhost:5173/src/assets/icons/font-awesome/graduation-cap-solid.svg"
     }
   ],
   "socialMedia": [
     {
-      "logo": "",
+      "logo": "http://localhost:5173/src/assets/icons/social-media/linkedin-icon.svg",
       "title": "LinkedIn",
       "link": "https://www.linkedin.com/"
     },
     {
-      "logo": "",
+      "logo": "http://localhost:5173/src/assets/icons/tools/github-icon.svg",
       "title": "Git Hub",
       "link": "https://github.com/MaelleN95/"
     },
     {
-      "logo": "",
+      "logo": "http://localhost:5173/src/assets/icons/social-media/instagram.svg",
       "title": "Instagram",
       "link": "https://www.instagram.com/"
     },
     {
-      "logo": "",
+      "logo": "http://localhost:5173/src/assets/icons/social-media/discord.svg",
       "title": "Discord",
       "link": "https://discord.com/"
     }
