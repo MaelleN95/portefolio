@@ -9,9 +9,9 @@ function GoodPractices() {
       <h2>Les bonnes pratiques que j'emploie</h2>
       <div className="cards">
         {datas.goodPractices.map((goodPractice, index) => {
-          let state = 'odd';
+          let state = 'card-odd';
           if (index === 1 || index === 2) {
-            state = 'even';
+            state = 'card-even';
           }
 
           return (

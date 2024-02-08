@@ -105,21 +105,24 @@
       "description": "",
       "level": "option Psychologie",
       "date": "2022 - actuel",
-      "logo": "http://localhost:5173/src/assets/icons/font-awesome/hourglass-half-solid.svg"
+      "logo": "http://localhost:5173/src/assets/icons/font-awesome/hourglass-half-solid.svg",
+      "altLogo": "sablier"
     },
     {
       "title": "Développeur Web",
       "description": "",
       "level": "Bac +2",
       "date": "2024",
-      "logo": "http://localhost:5173/src/assets/icons/font-awesome/medal-solid.svg"
+      "logo": "http://localhost:5173/src/assets/icons/font-awesome/medal-solid.svg",
+      "altLogo": "médaille"
     },
     {
       "title": "Baccalauréat série Scientifique",
       "description": "",
       "level": "Avec mention",
       "date": "2020",
-      "logo": "http://localhost:5173/src/assets/icons/font-awesome/graduation-cap-solid.svg"
+      "logo": "http://localhost:5173/src/assets/icons/font-awesome/graduation-cap-solid.svg",
+      "altLogo": "chapeau de fin d'études"
     }
   ],
   "socialMedia": [

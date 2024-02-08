@@ -9,6 +9,9 @@ header {
   & img {
     margin: 1rem 1.5rem;
   }
+  & a:hover {
+    text-decoration: none;
+  }
 }
 
 .ant-anchor-link {

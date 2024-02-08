@@ -38,7 +38,7 @@
   font-size: $desktop-font-size;
 
   color-scheme: light dark;
-  color: $bg-color-light;
+  color: white;
   background-color: $bg-color-dark;
 
   font-synthesis: none;
@@ -50,7 +50,6 @@
 body {
   margin: 0;
   min-width: 320px;
-  min-height: 100vh;
 }
 
 main {
