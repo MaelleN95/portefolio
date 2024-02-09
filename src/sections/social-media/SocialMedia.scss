@@ -1,0 +1,12 @@
+#social-media {
+  color: black;
+  margin-bottom: 20px;
+  --page-background-color: #b3ab9f;
+  & a {
+    color: black;
+  }
+  & .social-media-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

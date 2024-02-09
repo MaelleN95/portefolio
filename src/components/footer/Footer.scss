@@ -1,11 +1,11 @@
 footer {
   background-color: $red-color;
-  & h3 {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  & span {
     font-family: 'Roboto', sans-serif, Arial;
     font-weight: 400;
     font-size: $desktop-font-size;
-    margin: 0 auto;
-    text-align: center;
-    padding: 1.5rem 0;
   }
 }

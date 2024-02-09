@@ -43,9 +43,9 @@ function Formation() {
                 key={`${exp} ${index}`}
               >
                 <h3 className="vertical-timeline-element-title">{exp.title}</h3>
-                <h4 className="vertical-timeline-element-subtitle">
+                <span className="vertical-timeline-element-subtitle">
                   {exp.level}
-                </h4>
+                </span>
                 <p>{exp.description}</p>
               </VerticalTimelineElement>
             );

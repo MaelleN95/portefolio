@@ -1,5 +1,6 @@
 #my-formation {
   color: #efe8e6;
+  background-color: $bg-color-dark;
 
   &::before {
     content: '';
@@ -13,9 +14,12 @@
   }
   & h3 {
     font-family: 'Alegreya sans sc';
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+  }
+  & span {
+    font-weight: bold;
   }
   & a {
     display: block;

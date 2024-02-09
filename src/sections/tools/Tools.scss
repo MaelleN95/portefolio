@@ -1,6 +1,6 @@
 #tools {
   color: #efe8e6;
-
+  background-color: $bg-color-dark;
   &::before {
     content: '';
     position: absolute;
@@ -9,7 +9,7 @@
     width: 100%;
     background-color: $bg-color-dark;
     z-index: -1;
-    max-height: 374.19px;
+    max-height: 422.3px;
   }
   & .tools-list {
     display: flex;
