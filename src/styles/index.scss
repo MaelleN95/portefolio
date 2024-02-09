@@ -102,6 +102,11 @@ a {
   }
 }
 
+button {
+  font-family: 'Roboto', sans-serif, Arial;
+  font-size: 1rem;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: $bg-color-dark;
