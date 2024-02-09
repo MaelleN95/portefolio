@@ -1,0 +1,70 @@
+[
+  {
+    "id": "project-booki",
+    "title": "Booki, site d’agence immobilière",
+    "description": "Une description bidon pour le projet 1",
+    "hardSkills": ["HTML", "CSS"],
+    "cover": "https://www.powertrafic.fr/wp-content/uploads/2023/04/image-ia-exemple.png",
+    "pictures": [
+      "https://m.media-amazon.com/images/I/81Xr3pmWJ9L._AC_SL1500_.jpg",
+      "https://cdn-img.prettylittlething.com/2/4/a/7/24a79bbe01f3baffc060c855c8d4285db4f329ac_cnh9061_3.jpg?imwidth=600",
+      "https://www.biscuits-mistral.fr/wp-content/uploads/2023/07/Madeleine-longue-002-450x450.jpg"
+    ],
+    "date": "2023",
+    "mission": "Vous travaillez comme développeur front-end pour l’agence ArchiWebos qui comprend 50 salariés. Ayant terminé votre dernier projet avec un peu d'avance, vous êtes envoyé en renfort comme développeur front-end d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur. Vous devez donc développer :",
+    "skills": [
+      "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
+      "Manipuler les éléments du DOM avec JavaScript",
+      "Développer du front-end sur un back-end déjà existant"
+    ],
+    "link-github": "https://github.com/MaelleN95/OC-Projet5",
+    "deployed-link": "https://maellen95.github.io/OC-Projet6/"
+  },
+  {
+    "id": "project-sophie-bluel",
+    "title": "Sophie Bluel, portefolio d’une architecte",
+    "description": "",
+    "hardSkills": ["HTML", "CSS", "JavaScript"],
+    "cover": "",
+    "pictures": ["", ""],
+    "date": "2023",
+    "skills": "",
+    "link-github": "https://github.com/MaelleN95/OC-Projet5",
+    "deployed-link": "https://maellen95.github.io/OC-Projet6/"
+  },
+  {
+    "id": "project-nina-carducci",
+    "title": "Nina Carducci, site de photographe",
+    "description": "",
+    "hardSkills": ["SEO", "Accessibilité", "Débug"],
+    "cover": "",
+    "pictures": ["", ""],
+    "date": "2023",
+    "skills": "",
+    "link-github": "https://github.com/MaelleN95/OC-Projet5",
+    "deployed-link": "https://maellen95.github.io/OC-Projet6/"
+  },
+  {
+    "id": "project-kasa",
+    "title": "Kasa, site de location immobilière",
+    "description": "",
+    "hardSkills": ["React", "Sass"],
+    "cover": "",
+    "pictures": ["", ""],
+    "date": "2024",
+    "skills": "",
+    "link-github": "https://github.com/MaelleN95/OC-Projet5",
+    "deployed-link": "https://maellen95.github.io/OC-Projet6/"
+  },
+  {
+    "id": "project-mon-vieux-grimoire",
+    "title": "Mon vieux grimoire, site de notation de livres",
+    "description": "",
+    "hardSkills": ["Node.js", "Express", "MongoDB"],
+    "cover": "",
+    "pictures": ["", ""],
+    "date": "2024",
+    "skills": "",
+    "link-github": ""
+  }
+]
