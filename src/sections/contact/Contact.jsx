@@ -1,4 +1,15 @@
+import { useForm } from 'react-hook-form';
+// import { DevTool } from '@hookform/devtools';
+
 function Contact() {
+  const form = useForm({ mode: 'onTouched' });
+  const { register, /*control,*/ handleSubmit, formState } = form;
+  const { errors, isDirty, isValid } = formState;
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
     <section id="contact">
       <h2>Me contacter</h2>
@@ -19,33 +30,87 @@ function Contact() {
             />
           </div>
         </div>
+
         <div className="form-block">
-          <form>
+          <form onSubmit={handleSubmit(onSubmit)} noValidate>
             <div className="name-firstname">
               <div className="input-data ">
                 <label htmlFor="nom">Nom</label>
-                <input type="text" name="nom" id="nom" />
+                <input
+                  type="text"
+                  id="nom"
+                  {...register('nom', {
+                    required: {
+                      value: true,
+                      message: 'Le champ Nom est requis',
+                    },
+                  })}
+                  className={errors.nom?.message ? 'error-input' : null}
+                />
+                <p className="error">{errors.nom?.message}</p>
               </div>
 
               <div className=" input-data">
                 <label htmlFor="prenom">Prénom</label>
-                <input type="text" name="prenom" id="prenom" />
+                <input
+                  type="text"
+                  id="prenom"
+                  {...register('prenom', {
+                    required: {
+                      value: true,
+                      message: 'Le champ Prénom est requis',
+                    },
+                  })}
+                  className={errors.prenom?.message ? 'error-input' : null}
+                />
+                <p className="error">{errors.prenom?.message}</p>
               </div>
             </div>
 
             <div className="input-data">
               <label htmlFor="email">E-mail</label>
-              <input type="text" name="email" id="email" />
+              <input
+                type="text"
+                id="email"
+                {...register('email', {
+                  required: {
+                    value: true,
+                    message: 'Le champ Email est requis',
+                  },
+                  pattern: {
+                    value:
+                      /^[a-zA-Z0-9.&-_~]+@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9_-]+)*$/,
+                    message: "Format d'e-mail invalide",
+                  },
+                })}
+                className={errors.email?.message ? 'error-input' : null}
+              />
+              <p className="error">{errors.email?.message}</p>
             </div>
 
             <div className="input-data">
               <label htmlFor="msg">Message</label>
-              <textarea name="msg" id="msg" cols="30" rows="7"></textarea>
+              <textarea
+                id="msg"
+                cols="30"
+                rows="7"
+                {...register('msg', {
+                  required: {
+                    value: true,
+                    message: 'Le champ Message est requis',
+                  },
+                })}
+                className={errors.msg?.message ? 'error-input' : null}
+              ></textarea>
+              <p className="error">{errors.msg?.message}</p>
             </div>
             <div className="button-submit">
-              <button type="submit">Envoyer</button>
+              <button type="submit" disabled={!isDirty || !isValid}>
+                Envoyer
+              </button>
             </div>
           </form>
+          {/* <DevTool control={control} /> */}
         </div>
       </div>
     </section>
