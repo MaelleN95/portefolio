@@ -2,16 +2,17 @@ import { useParams } from 'react-router-dom';
 
 import { FaCalendarAlt } from 'react-icons/fa';
 
+import { Glow, GlowCapture } from '@codaworks/react-glow';
+
 import projects from '../../assets/projects.json';
 import percentages from '../../assets/icons/illustrations/percentages.svg';
 
 function Introduction() {
   let { projectsId } = useParams();
-  console.log(projectsId);
   const project = projects.find((pro) => pro.id === projectsId);
 
   return (
-    <>
+    <GlowCapture>
       <section id="project-introduction">
         <h1>{project.title}</h1>
         {project.description ? (
@@ -64,22 +65,26 @@ function Introduction() {
         </div>
       </section>
 
-      <section id="project-mission">
-        <h2>Mission</h2>
-        <p>{project.mission}</p>
-      </section>
+      <Glow>
+        <section id="project-mission">
+          <h2>Mission</h2>
+          <p>{project.mission}</p>
+        </section>
+      </Glow>
 
       <div id="project-skill">
-        <section className="skills-developed-part">
-          <h2>Compétences développées</h2>
-          <ul className="skills-developed-list">
-            {project.skills.map((skill, index) => (
-              <li key={index} className="skills-developed-list__element">
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </section>
+        <Glow>
+          <section className="skills-developed-part">
+            <h2>Compétences développées</h2>
+            <ul className="skills-developed-list">
+              {project.skills.map((skill, index) => (
+                <li key={index} className="skills-developed-list__element">
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </section>
+        </Glow>
         <div className="illustration">
           <img
             src={percentages}
@@ -87,7 +92,7 @@ function Introduction() {
           />
         </div>
       </div>
-    </>
+    </GlowCapture>
   );
 }
 

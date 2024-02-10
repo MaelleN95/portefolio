@@ -127,8 +127,9 @@
 
 #project-mission {
   margin-bottom: 40px;
-  background-color: white;
-  border: 3px black solid;
+  background-color: $bg-color-dark;
+  color: white;
+  border: 7px black solid;
   border-radius: 10px;
   & h2 {
     padding: 2rem;
@@ -137,24 +138,12 @@
     margin: 0;
   }
 }
+
 #project-skill {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  & .skills-developed-part {
-    margin-bottom: 40px;
-    background-color: white;
-    border: 3px black solid;
-    border-radius: 10px;
-    width: 45%;
-    & h2 {
-      padding: 2rem;
-    }
-    & .skills-developed-list {
-      padding: initial;
-      margin: initial;
-    }
-  }
+
   & .illustration {
     width: 45%;
     display: flex;
@@ -165,4 +154,31 @@
       height: 270px;
     }
   }
+}
+
+.skills-developed-part {
+  margin-bottom: 40px;
+  background-color: $bg-color-dark;
+  color: white;
+  border: 7px black solid;
+  border-radius: 10px;
+  & h2 {
+    padding: 2rem;
+  }
+  & .skills-developed-list {
+    padding: initial;
+    margin: initial;
+  }
+}
+
+[glow] #project-mission {
+  border: $blue-color 7px solid;
+  background-color: darken($color: $blue-color, $amount: 50);
+  box-shadow: inset 0px 0px 5px 5px rgba($color: $blue-color, $alpha: 85%);
+}
+
+[glow] .skills-developed-part {
+  border: $purple-color 7px solid;
+  background-color: darken($color: $purple-color, $amount: 50);
+  box-shadow: inset 0px 0px 5px 5px rgba($color: $purple-color, $alpha: 85%);
 }
