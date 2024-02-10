@@ -17,54 +17,54 @@
       "Manipuler les éléments du DOM avec JavaScript",
       "Développer du front-end sur un back-end déjà existant"
     ],
-    "link-github": "https://github.com/MaelleN95/OC-Projet5",
-    "deployed-link": "https://maellen95.github.io/OC-Projet6/"
+    "linkGithub": "https://github.com/MaelleN95/OC-Projet5",
+    "deployedLink": "https://maellen95.github.io/OC-Projet6/"
   },
   {
     "id": "project-sophie-bluel",
     "title": "Sophie Bluel, portefolio d’une architecte",
     "description": "",
     "hardSkills": ["HTML", "CSS", "JavaScript"],
-    "cover": "",
+    "cover": "https://m.media-amazon.com/images/I/81Xr3pmWJ9L._AC_SL1500_.jpg",
     "pictures": ["", ""],
     "date": "2023",
     "skills": "",
-    "link-github": "https://github.com/MaelleN95/OC-Projet5",
-    "deployed-link": "https://maellen95.github.io/OC-Projet6/"
+    "linkGithub": "https://github.com/MaelleN95/OC-Projet5",
+    "deployedLink": "https://maellen95.github.io/OC-Projet6/"
   },
   {
     "id": "project-nina-carducci",
     "title": "Nina Carducci, site de photographe",
     "description": "",
     "hardSkills": ["SEO", "Accessibilité", "Débug"],
-    "cover": "",
+    "cover": "https://www.biscuits-mistral.fr/wp-content/uploads/2023/07/Madeleine-longue-002-450x450.jpg",
     "pictures": ["", ""],
     "date": "2023",
     "skills": "",
-    "link-github": "https://github.com/MaelleN95/OC-Projet5",
-    "deployed-link": "https://maellen95.github.io/OC-Projet6/"
+    "linkGithub": "https://github.com/MaelleN95/OC-Projet5",
+    "deployedLink": "https://maellen95.github.io/OC-Projet6/"
   },
   {
     "id": "project-kasa",
     "title": "Kasa, site de location immobilière",
     "description": "",
     "hardSkills": ["React", "Sass"],
-    "cover": "",
+    "cover": "https://www.powertrafic.fr/wp-content/uploads/2023/04/image-ia-exemple.png",
     "pictures": ["", ""],
     "date": "2024",
     "skills": "",
-    "link-github": "https://github.com/MaelleN95/OC-Projet5",
-    "deployed-link": "https://maellen95.github.io/OC-Projet6/"
+    "linkGithub": "https://github.com/MaelleN95/OC-Projet5",
+    "deployedLink": "https://maellen95.github.io/OC-Projet6/"
   },
   {
     "id": "project-mon-vieux-grimoire",
     "title": "Mon vieux grimoire, site de notation de livres",
     "description": "",
     "hardSkills": ["Node.js", "Express", "MongoDB"],
-    "cover": "",
+    "cover": "https://www.biscuits-mistral.fr/wp-content/uploads/2023/07/Madeleine-longue-002-450x450.jpg",
     "pictures": ["", ""],
     "date": "2024",
     "skills": "",
-    "link-github": ""
+    "linkGithub": ""
   }
 ]

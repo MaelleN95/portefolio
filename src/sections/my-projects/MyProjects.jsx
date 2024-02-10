@@ -6,9 +6,26 @@ function MyProjects() {
   return (
     <section id="my-projects">
       <h2>Mes projets</h2>
-      {projects.map((project) => {
-        return <ProjectCard key={projects.id}>{project.title}</ProjectCard>;
-      })}
+      <p>
+        Découvrez une sélection de mes réalisations professionnelles pour avoir
+        un aperçu de mon travail !
+      </p>
+      <div className="projects">
+        {projects.map((project) => {
+          return (
+            <ProjectCard
+              key={project.id}
+              deployedLink={project.deployedLink}
+              githubLink={project.linkGithub}
+              hardskills={project.hardSkills}
+              cover={project.cover}
+              ProjectId={project.id}
+            >
+              {project.title}
+            </ProjectCard>
+          );
+        })}
+      </div>
     </section>
   );
 }

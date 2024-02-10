@@ -1,0 +1,113 @@
+@mixin card-size-big-desktop {
+  width: 540px;
+  height: 340px;
+}
+
+@mixin card-size-big-tablet {
+  width: 500px;
+  height: 300px;
+}
+
+@mixin card-size-tablet {
+  width: 42vw;
+  height: 255px;
+}
+
+@mixin card-size-mobil {
+  width: 100%;
+  height: 255px;
+}
+
+.project-card {
+  color: $bg-color-dark;
+  position: relative;
+  list-style: none;
+  border-radius: 10px;
+  @include card-size-big-desktop;
+  margin-bottom: 50px;
+  overflow: hidden;
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+  & a {
+    color: $bg-color-dark;
+  }
+  &__cover {
+    @include card-size-big-desktop;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s;
+  }
+  &__hover-effect {
+    @include card-size-big-desktop;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    box-shadow: inset 0 0 150px 30px rgba($color: $purple-color, $alpha: 50%),
+      inset 0 0 250px 40px rgba($color: $blue-color, $alpha: 20%),
+      inset 0 0 250px 100px rgba($color: white, $alpha: 100%);
+    transition: all 0.3s;
+    & h3 {
+      padding: 20px;
+      text-align: center;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  & .project-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    & .project-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+      background-color: rgba($color: $blue-color, $alpha: 80%);
+      backdrop-filter: blur(2px);
+      border-radius: 20px;
+      width: 60px;
+      height: 60px;
+      & span {
+        font-size: 0;
+      }
+      & .icon {
+        width: 35px;
+        height: 35px;
+        padding: 10px;
+        text-align: center;
+      }
+    }
+  }
+
+  & .hardskills-list {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__element {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      margin-top: 10px;
+      background-color: rgba($color: $red-color, $alpha: 80%);
+      border-radius: 50px;
+      min-width: 4em;
+      padding: 0.6em 1em;
+      backdrop-filter: blur(5px);
+      cursor: default;
+    }
+  }
+}
