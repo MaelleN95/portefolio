@@ -174,11 +174,11 @@
 [glow] #project-mission {
   border: $blue-color 7px solid;
   background-color: darken($color: $blue-color, $amount: 50);
-  box-shadow: inset 0px 0px 5px 5px rgba($color: $blue-color, $alpha: 85%);
+  box-shadow: inset 0px 0px 5px 5px rgba($color: $blue-color, $alpha: 90%);
 }
 
 [glow] .skills-developed-part {
   border: $purple-color 7px solid;
   background-color: darken($color: $purple-color, $amount: 50);
-  box-shadow: inset 0px 0px 5px 5px rgba($color: $purple-color, $alpha: 85%);
+  box-shadow: inset 0px 0px 5px 5px rgba($color: $purple-color, $alpha: 90%);
 }
