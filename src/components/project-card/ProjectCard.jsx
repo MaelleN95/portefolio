@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 function ProjectCard(props) {
-  const { hardskills, cover, githubLink, deployedLink, ProjectId } = props;
+  const { hardskills, cover, githubLink, deployedLink, projectsId } = props;
 
   return (
     <li className="project-card">
       <Link
-        to={`/projects/${ProjectId}`}
+        to={`/projects/${projectsId}`}
         title={`Lien vers la page du projet ${props.children}`}
       >
         <img

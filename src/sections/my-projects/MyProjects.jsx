@@ -19,7 +19,7 @@ function MyProjects() {
               githubLink={project.linkGithub}
               hardskills={project.hardSkills}
               cover={project.cover}
-              ProjectId={project.id}
+              projectsId={project.id}
             >
               {project.title}
             </ProjectCard>

@@ -4,8 +4,6 @@ import LogoText from '../../components/LogoText/LogoText';
 
 function SocialMedia() {
   const socialMedias = datas.socialMedia;
-
-  console.log(socialMedias);
   return (
     <section id="social-media">
       <h2>Mes réseaux</h2>
