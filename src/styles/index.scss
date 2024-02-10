@@ -3,9 +3,7 @@
 @import './settings';
 
 // import components styles
-@import '../components/arrow/Arrow.scss';
 @import '../components/card/Card.scss';
-@import '../components/dark-mode-button/DarkModeButton.scss';
 @import '../components/footer/Footer.scss';
 @import '../components/header/Header.scss';
 @import '../components/LogoText/LogoText.scss';
@@ -25,8 +23,8 @@
 @import '../sections/soft-skills/SoftSkills.scss';
 @import '../sections/tools/Tools.scss';
 
-@import '../sections/details/Details.scss';
-@import '../sections/introduction/Introduction.scss';
+// import page styles
+@import '../pages/Projects.scss';
 
 :root {
   font-family: 'Roboto', sans-serif, Arial;
