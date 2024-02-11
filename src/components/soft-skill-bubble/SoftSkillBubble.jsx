@@ -1,5 +1,5 @@
 function SoftSkillBubble(props) {
-  const color = props.color === 0 ? 'blue' : 'red';
+  const color = props.color === 0 || props.color === 2 ? 'blue' : 'red';
 
   return <div className={`bubble ${color}`}>{props.children}</div>;
 }

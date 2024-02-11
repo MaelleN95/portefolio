@@ -6,15 +6,13 @@
     "hardSkills": ["HTML", "CSS"],
     "cover": "https://www.powertrafic.fr/wp-content/uploads/2023/04/image-ia-exemple.png",
     "pictures": [
-      "https://m.media-amazon.com/images/I/81Xr3pmWJ9L._AC_SL1500_.jpg",
-      "https://m.media-amazon.com/images/I/81Xr3pmWJ9L._AC_SL1500_.jpg",
-      "https://cdn-img.prettylittlething.com/2/4/a/7/24a79bbe01f3baffc060c855c8d4285db4f329ac_cnh9061_3.jpg?imwidth=600",
-      "https://m.media-amazon.com/images/I/81Xr3pmWJ9L._AC_SL1500_.jpg",
-      "https://cdn-img.prettylittlething.com/2/4/a/7/24a79bbe01f3baffc060c855c8d4285db4f329ac_cnh9061_3.jpg?imwidth=600",
-      "https://m.media-amazon.com/images/I/81Xr3pmWJ9L._AC_SL1500_.jpg",
-      "https://cdn-img.prettylittlething.com/2/4/a/7/24a79bbe01f3baffc060c855c8d4285db4f329ac_cnh9061_3.jpg?imwidth=600",
-      "https://cdn-img.prettylittlething.com/2/4/a/7/24a79bbe01f3baffc060c855c8d4285db4f329ac_cnh9061_3.jpg?imwidth=600",
-      "https://www.biscuits-mistral.fr/wp-content/uploads/2023/07/Madeleine-longue-002-450x450.jpg"
+      "https://www.powertrafic.fr/wp-content/uploads/2023/04/image-ia-exemple.png",
+      "https://media.istockphoto.com/id/1336136316/fr/photo/femme-achats-en-ligne-sur-t%C3%A9l%C3%A9phone-intelligent-v%C3%AAtements-de-mode-%C3%A0-la-maison.jpg?s=1024x1024&w=is&k=20&c=AMiIQkEOBu4uDhpyrqPBgNSHaQ_1Gj3EEipS6ccJqWg=",
+      "https://media.istockphoto.com/id/1337712514/fr/photo/homme-v%C3%A9rifiant-les-annonces-de-maisons-%C3%A0-vendre.jpg?s=1024x1024&w=is&k=20&c=WTUKmV0bq1HVSnMVN3foNLUHPrf-5kHdXu_uSKfnJ64=",
+      "https://media.istockphoto.com/id/846489122/fr/photo/responsive-web-design-site-internet-filaire-croquis-de-mise-en-page-sur-%C3%A9cran-dordinateur.jpg?s=612x612&w=0&k=20&c=WNZd8k4DOUqEjYJgViTLEeosuVLVvKgiRi02AREfJ4E=",
+      "https://media.istockphoto.com/id/1180598664/fr/vectoriel/mains-tenant-un-t%C3%A9l%C3%A9phone-portable-avec-des-applications-sur-l%C3%A9cran-paiement-en-ligne-par.jpg?s=1024x1024&w=is&k=20&c=tob_yckE0I3d0KXiHLCBs7sTg_ed7c-IzIiHKDmVUN4=",
+      "https://media.istockphoto.com/id/1485102908/fr/vectoriel/payez-en-un-clic-demande-de-paiement-en-ligne-portefeuille-%C3%A9lectronique-dans-smartphone.jpg?s=1024x1024&w=is&k=20&c=1GtkVNJAJO-p-XkXFfd0gUMvXGw1JWUMvrb2y1Ahauw=",
+      "https://media.istockphoto.com/id/1279128074/fr/vectoriel/personnes-utilisant-la-zone-de-recherche-pour-la-requ%C3%AAte.jpg?s=1024x1024&w=is&k=20&c=KGXZvOOY8fY9wdTwPe_s-wcoJ7mx5GR1xrGPHZ1hl8Q="
     ],
     "date": "2023",
     "mission": "Vous travaillez comme développeur front-end pour l’agence ArchiWebos qui comprend 50 salariés. Ayant terminé votre dernier projet avec un peu d'avance, vous êtes envoyé en renfort comme développeur front-end d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur. Vous devez donc développer :",
@@ -31,8 +29,7 @@
     "title": "Sophie Bluel, portefolio d’une architecte",
     "description": "",
     "hardSkills": ["HTML", "CSS", "JavaScript"],
-    "cover": "https://m.media-amazon.com/images/I/81Xr3pmWJ9L._AC_SL1500_.jpg",
-
+    "cover": "https://media.istockphoto.com/id/846489122/fr/photo/responsive-web-design-site-internet-filaire-croquis-de-mise-en-page-sur-%C3%A9cran-dordinateur.jpg?s=612x612&w=0&k=20&c=WNZd8k4DOUqEjYJgViTLEeosuVLVvKgiRi02AREfJ4E=",
     "date": "2023",
     "skills": [
       "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
@@ -47,8 +44,16 @@
     "title": "Nina Carducci, site de photographe",
     "description": "",
     "hardSkills": ["SEO", "Accessibilité", "Débug"],
-    "cover": "https://www.biscuits-mistral.fr/wp-content/uploads/2023/07/Madeleine-longue-002-450x450.jpg",
-    "pictures": ["", ""],
+    "cover": "https://media.istockphoto.com/id/1279128074/fr/vectoriel/personnes-utilisant-la-zone-de-recherche-pour-la-requ%C3%AAte.jpg?s=1024x1024&w=is&k=20&c=KGXZvOOY8fY9wdTwPe_s-wcoJ7mx5GR1xrGPHZ1hl8Q=",
+    "pictures": [
+      "https://www.powertrafic.fr/wp-content/uploads/2023/04/image-ia-exemple.png",
+      "https://media.istockphoto.com/id/1336136316/fr/photo/femme-achats-en-ligne-sur-t%C3%A9l%C3%A9phone-intelligent-v%C3%AAtements-de-mode-%C3%A0-la-maison.jpg?s=1024x1024&w=is&k=20&c=AMiIQkEOBu4uDhpyrqPBgNSHaQ_1Gj3EEipS6ccJqWg=",
+      "https://media.istockphoto.com/id/1337712514/fr/photo/homme-v%C3%A9rifiant-les-annonces-de-maisons-%C3%A0-vendre.jpg?s=1024x1024&w=is&k=20&c=WTUKmV0bq1HVSnMVN3foNLUHPrf-5kHdXu_uSKfnJ64=",
+      "https://media.istockphoto.com/id/846489122/fr/photo/responsive-web-design-site-internet-filaire-croquis-de-mise-en-page-sur-%C3%A9cran-dordinateur.jpg?s=612x612&w=0&k=20&c=WNZd8k4DOUqEjYJgViTLEeosuVLVvKgiRi02AREfJ4E=",
+      "https://media.istockphoto.com/id/1180598664/fr/vectoriel/mains-tenant-un-t%C3%A9l%C3%A9phone-portable-avec-des-applications-sur-l%C3%A9cran-paiement-en-ligne-par.jpg?s=1024x1024&w=is&k=20&c=tob_yckE0I3d0KXiHLCBs7sTg_ed7c-IzIiHKDmVUN4=",
+      "https://media.istockphoto.com/id/1485102908/fr/vectoriel/payez-en-un-clic-demande-de-paiement-en-ligne-portefeuille-%C3%A9lectronique-dans-smartphone.jpg?s=1024x1024&w=is&k=20&c=1GtkVNJAJO-p-XkXFfd0gUMvXGw1JWUMvrb2y1Ahauw=",
+      "https://media.istockphoto.com/id/1279128074/fr/vectoriel/personnes-utilisant-la-zone-de-recherche-pour-la-requ%C3%AAte.jpg?s=1024x1024&w=is&k=20&c=KGXZvOOY8fY9wdTwPe_s-wcoJ7mx5GR1xrGPHZ1hl8Q="
+    ],
     "date": "2023",
     "skills": [
       "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
@@ -63,8 +68,16 @@
     "title": "Kasa, site de location immobilière",
     "description": "",
     "hardSkills": ["React", "Sass"],
-    "cover": "https://www.powertrafic.fr/wp-content/uploads/2023/04/image-ia-exemple.png",
-    "pictures": ["", ""],
+    "cover": "https://media.istockphoto.com/id/1485102908/fr/vectoriel/payez-en-un-clic-demande-de-paiement-en-ligne-portefeuille-%C3%A9lectronique-dans-smartphone.jpg?s=1024x1024&w=is&k=20&c=1GtkVNJAJO-p-XkXFfd0gUMvXGw1JWUMvrb2y1Ahauw=",
+    "pictures": [
+      "https://www.powertrafic.fr/wp-content/uploads/2023/04/image-ia-exemple.png",
+      "https://media.istockphoto.com/id/1336136316/fr/photo/femme-achats-en-ligne-sur-t%C3%A9l%C3%A9phone-intelligent-v%C3%AAtements-de-mode-%C3%A0-la-maison.jpg?s=1024x1024&w=is&k=20&c=AMiIQkEOBu4uDhpyrqPBgNSHaQ_1Gj3EEipS6ccJqWg=",
+      "https://media.istockphoto.com/id/1337712514/fr/photo/homme-v%C3%A9rifiant-les-annonces-de-maisons-%C3%A0-vendre.jpg?s=1024x1024&w=is&k=20&c=WTUKmV0bq1HVSnMVN3foNLUHPrf-5kHdXu_uSKfnJ64=",
+      "https://media.istockphoto.com/id/846489122/fr/photo/responsive-web-design-site-internet-filaire-croquis-de-mise-en-page-sur-%C3%A9cran-dordinateur.jpg?s=612x612&w=0&k=20&c=WNZd8k4DOUqEjYJgViTLEeosuVLVvKgiRi02AREfJ4E=",
+      "https://media.istockphoto.com/id/1180598664/fr/vectoriel/mains-tenant-un-t%C3%A9l%C3%A9phone-portable-avec-des-applications-sur-l%C3%A9cran-paiement-en-ligne-par.jpg?s=1024x1024&w=is&k=20&c=tob_yckE0I3d0KXiHLCBs7sTg_ed7c-IzIiHKDmVUN4=",
+      "https://media.istockphoto.com/id/1485102908/fr/vectoriel/payez-en-un-clic-demande-de-paiement-en-ligne-portefeuille-%C3%A9lectronique-dans-smartphone.jpg?s=1024x1024&w=is&k=20&c=1GtkVNJAJO-p-XkXFfd0gUMvXGw1JWUMvrb2y1Ahauw=",
+      "https://media.istockphoto.com/id/1279128074/fr/vectoriel/personnes-utilisant-la-zone-de-recherche-pour-la-requ%C3%AAte.jpg?s=1024x1024&w=is&k=20&c=KGXZvOOY8fY9wdTwPe_s-wcoJ7mx5GR1xrGPHZ1hl8Q="
+    ],
     "date": "2024",
     "skills": [
       "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
@@ -79,8 +92,17 @@
     "title": "Mon vieux grimoire, site de notation de livres",
     "description": "",
     "hardSkills": ["Node.js", "Express", "MongoDB"],
-    "cover": "https://www.biscuits-mistral.fr/wp-content/uploads/2023/07/Madeleine-longue-002-450x450.jpg",
-    "pictures": ["", ""],
+    "cover": "https://media.istockphoto.com/id/1337712514/fr/photo/homme-v%C3%A9rifiant-les-annonces-de-maisons-%C3%A0-vendre.jpg?s=1024x1024&w=is&k=20&c=WTUKmV0bq1HVSnMVN3foNLUHPrf-5kHdXu_uSKfnJ64=",
+    "pictures": [
+      "https://media.istockphoto.com/id/1337712514/fr/photo/homme-v%C3%A9rifiant-les-annonces-de-maisons-%C3%A0-vendre.jpg?s=1024x1024&w=is&k=20&c=WTUKmV0bq1HVSnMVN3foNLUHPrf-5kHdXu_uSKfnJ64=",
+      "https://www.powertrafic.fr/wp-content/uploads/2023/04/image-ia-exemple.png",
+      "https://media.istockphoto.com/id/1336136316/fr/photo/femme-achats-en-ligne-sur-t%C3%A9l%C3%A9phone-intelligent-v%C3%AAtements-de-mode-%C3%A0-la-maison.jpg?s=1024x1024&w=is&k=20&c=AMiIQkEOBu4uDhpyrqPBgNSHaQ_1Gj3EEipS6ccJqWg=",
+      "https://media.istockphoto.com/id/1337712514/fr/photo/homme-v%C3%A9rifiant-les-annonces-de-maisons-%C3%A0-vendre.jpg?s=1024x1024&w=is&k=20&c=WTUKmV0bq1HVSnMVN3foNLUHPrf-5kHdXu_uSKfnJ64=",
+      "https://media.istockphoto.com/id/846489122/fr/photo/responsive-web-design-site-internet-filaire-croquis-de-mise-en-page-sur-%C3%A9cran-dordinateur.jpg?s=612x612&w=0&k=20&c=WNZd8k4DOUqEjYJgViTLEeosuVLVvKgiRi02AREfJ4E=",
+      "https://media.istockphoto.com/id/1180598664/fr/vectoriel/mains-tenant-un-t%C3%A9l%C3%A9phone-portable-avec-des-applications-sur-l%C3%A9cran-paiement-en-ligne-par.jpg?s=1024x1024&w=is&k=20&c=tob_yckE0I3d0KXiHLCBs7sTg_ed7c-IzIiHKDmVUN4=",
+      "https://media.istockphoto.com/id/1485102908/fr/vectoriel/payez-en-un-clic-demande-de-paiement-en-ligne-portefeuille-%C3%A9lectronique-dans-smartphone.jpg?s=1024x1024&w=is&k=20&c=1GtkVNJAJO-p-XkXFfd0gUMvXGw1JWUMvrb2y1Ahauw=",
+      "https://media.istockphoto.com/id/1279128074/fr/vectoriel/personnes-utilisant-la-zone-de-recherche-pour-la-requ%C3%AAte.jpg?s=1024x1024&w=is&k=20&c=KGXZvOOY8fY9wdTwPe_s-wcoJ7mx5GR1xrGPHZ1hl8Q="
+    ],
     "date": "2024",
     "skills": [
       "Récupérer les données utilisateurs dans le JavaScript via des formulaires",

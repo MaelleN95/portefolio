@@ -1,15 +1,15 @@
-$img-size-desktop: 550px;
+$img-size-desktop: 380px;
 
 .ant-modal-body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
   align-items: center;
 
   & img {
     height: $img-size-desktop;
-    margin-bottom: 10px;
     border-radius: 10px;
   }
 }

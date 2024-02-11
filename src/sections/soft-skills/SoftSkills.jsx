@@ -12,8 +12,8 @@ function SoftSkills() {
 
   const selectRandomSkills = () => {
     const shuffledSkill = softSkills.sort(() => Math.random() - 0.5);
-    const selectedSet1 = shuffledSkill.slice(0, 2);
-    const selectedSet2 = shuffledSkill.slice(2, 4);
+    const selectedSet1 = shuffledSkill.slice(0, 3);
+    const selectedSet2 = shuffledSkill.slice(3, 6);
     setSelectedSkill1(selectedSet1);
     setSelectedSkill2(selectedSet2);
   };
@@ -33,10 +33,13 @@ function SoftSkills() {
             </SoftSkillBubble>
           ))}
         </div>
-        <img onClick={selectRandomSkills} src={svg} alt="" />
+        <img
+          src={svg}
+          alt="illustration de 3 femmes sur un ordinateur qui discutent"
+        />
         <div className="bubble-column right">
           {selectedSkill2.map((skill, index) => (
-            <SoftSkillBubble color={index} key={index}>
+            <SoftSkillBubble color={index + 1} key={index}>
               {skill}
             </SoftSkillBubble>
           ))}
