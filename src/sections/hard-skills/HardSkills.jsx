@@ -20,7 +20,7 @@ function HardSkills() {
     <section id="hard-skills">
       <h2>Mes compétences</h2>
       <div className="skills-details">
-        <ul className="skills front-end-skills">
+        <div className="skills front-end-skills">
           {frontEndSkills.length >= 5 ? (
             <SkillsCarousel
               skills={frontEndSkills}
@@ -44,7 +44,7 @@ function HardSkills() {
               </LogoText>
             ))
           )}
-        </ul>
+        </div>
 
         <PieChart
           series={[
@@ -83,7 +83,7 @@ function HardSkills() {
           }}
         />
 
-        <ul className="skills back-end-skills">
+        <div className="skills back-end-skills">
           {backEndSkills.length >= 5 ? (
             <SkillsCarousel
               skills={backEndSkills}
@@ -107,7 +107,7 @@ function HardSkills() {
               </LogoText>
             ))
           )}
-        </ul>
+        </div>
       </div>
     </section>
   );

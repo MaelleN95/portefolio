@@ -1,5 +1,6 @@
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
+import ProjectModal from '../components/project-modal/ProjectModal';
 
 import { useParams } from 'react-router-dom';
 
@@ -38,7 +39,9 @@ function Projects() {
             <div className="project-cover">
               <div className="project-cover__image">
                 <img src={project.cover} alt="" />
-                {project.pictures ? <button>Voir plus de photos</button> : null}
+                {project.pictures ? (
+                  <ProjectModal pictures={project.pictures} />
+                ) : null}
               </div>
               <div className="project-cover__pc-core"></div>
               <div className="project-cover__pc-base"></div>

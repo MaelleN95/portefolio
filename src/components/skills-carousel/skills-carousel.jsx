@@ -16,9 +16,9 @@ export function SkillsCarousel(props) {
 
   return (
     <div className="embla" ref={emblaRef}>
-      <div className="embla__container">
+      <ul className="embla__container">
         {skills.map((skill, index) => (
-          <ul className="embla__slide" key={`${skill.title}-${index}`}>
+          <li className="embla__slide" key={`${skill.title}-${index}`}>
             <LogoText
               direction={logoTextDirection}
               logo={skill.logo}
@@ -30,9 +30,9 @@ export function SkillsCarousel(props) {
             >
               {skill.title}
             </LogoText>
-          </ul>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 }

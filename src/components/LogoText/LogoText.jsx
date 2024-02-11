@@ -4,7 +4,7 @@ function LogoText(props) {
   const rounded = props.rounded ? 'rounded' : '';
 
   return (
-    <li className={`hard-skill ${props.direction} ${noAutoscroll}`}>
+    <div className={`hard-skill ${props.direction} ${noAutoscroll}`}>
       <img
         className={`${rounded} ${light}`}
         src={props.logo}
@@ -17,7 +17,7 @@ function LogoText(props) {
       ) : (
         <p>{props.children}</p>
       )}
-    </li>
+    </div>
   );
 }
 export default LogoText;

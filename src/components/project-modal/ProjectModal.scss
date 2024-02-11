@@ -1,0 +1,24 @@
+$img-size-desktop: 550px;
+
+.ant-modal-body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  & img {
+    height: $img-size-desktop;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+}
+.ant-modal-close-icon:hover {
+  animation: rotation 0.5s;
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(180deg);
+  }
+}

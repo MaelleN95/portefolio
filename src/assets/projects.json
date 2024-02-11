@@ -7,6 +7,12 @@
     "cover": "https://www.powertrafic.fr/wp-content/uploads/2023/04/image-ia-exemple.png",
     "pictures": [
       "https://m.media-amazon.com/images/I/81Xr3pmWJ9L._AC_SL1500_.jpg",
+      "https://m.media-amazon.com/images/I/81Xr3pmWJ9L._AC_SL1500_.jpg",
+      "https://cdn-img.prettylittlething.com/2/4/a/7/24a79bbe01f3baffc060c855c8d4285db4f329ac_cnh9061_3.jpg?imwidth=600",
+      "https://m.media-amazon.com/images/I/81Xr3pmWJ9L._AC_SL1500_.jpg",
+      "https://cdn-img.prettylittlething.com/2/4/a/7/24a79bbe01f3baffc060c855c8d4285db4f329ac_cnh9061_3.jpg?imwidth=600",
+      "https://m.media-amazon.com/images/I/81Xr3pmWJ9L._AC_SL1500_.jpg",
+      "https://cdn-img.prettylittlething.com/2/4/a/7/24a79bbe01f3baffc060c855c8d4285db4f329ac_cnh9061_3.jpg?imwidth=600",
       "https://cdn-img.prettylittlething.com/2/4/a/7/24a79bbe01f3baffc060c855c8d4285db4f329ac_cnh9061_3.jpg?imwidth=600",
       "https://www.biscuits-mistral.fr/wp-content/uploads/2023/07/Madeleine-longue-002-450x450.jpg"
     ],
@@ -26,7 +32,7 @@
     "description": "",
     "hardSkills": ["HTML", "CSS", "JavaScript"],
     "cover": "https://m.media-amazon.com/images/I/81Xr3pmWJ9L._AC_SL1500_.jpg",
-    "pictures": ["", ""],
+
     "date": "2023",
     "skills": [
       "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
