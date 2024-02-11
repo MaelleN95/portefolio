@@ -1,3 +1,12 @@
+$total-arrows: 3;
+$arrow-line-length: 25px;
+$arrow-line-width: 4px;
+
+// arrow animation + choose direction
+@mixin arrow-transitions($rot: 0deg) {
+  transform: translate(-50%, -50%) rotateZ($rot);
+}
+
 header {
   display: flex;
   align-items: center;
@@ -23,5 +32,51 @@ header {
   }
   &:hover {
     font-weight: bold;
+  }
+}
+
+.go-back-button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+    font-weight: bold;
+    font-size: 1.1rem;
+    animation: move-go-back 3s forwards infinite;
+    & svg {
+      transform: scale(1.5);
+    }
+  }
+  & svg {
+    padding: 0.5rem;
+    transition: all 0.2s;
+  }
+}
+
+@keyframes move-go-back {
+  from {
+    transform: translate(0);
+  }
+  40% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(-5px);
+  }
+  68% {
+    transform: translate(0px);
+  }
+  80% {
+    transform: translate(-7px);
+  }
+
+  to {
+    transform: translate(0);
   }
 }
