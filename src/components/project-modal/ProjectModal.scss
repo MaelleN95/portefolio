@@ -1,5 +1,22 @@
-$img-size-desktop: 380px;
-
+$img-size-desktop: 20vw;
+$img-size-small-tablet: 41vw;
+$img-size-mobil: 71vw;
+$img-size-small-mobil: 67vw;
+@mixin img-modal-size {
+  height: $img-size-desktop;
+  @media (max-width: $small-tablet) {
+    height: 100%;
+    width: $img-size-small-tablet;
+  }
+  @media (max-width: $mobil) {
+    height: 100%;
+    width: $img-size-mobil;
+  }
+  @media (max-width: $small-mobil) {
+    height: 100%;
+    width: $img-size-small-mobil;
+  }
+}
 .ant-modal-body {
   display: flex;
   flex-direction: row;
@@ -7,9 +24,10 @@ $img-size-desktop: 380px;
   justify-content: center;
   gap: 20px;
   align-items: center;
+  overflow: hidden;
 
   & img {
-    height: $img-size-desktop;
+    @include img-modal-size;
     border-radius: 10px;
   }
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export default function useWindowSize() {
+export default function useScreenSize() {
   const isClient = typeof window === 'object';
 
   function getSize() {

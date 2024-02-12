@@ -9,6 +9,10 @@
     height: 300px;
     width: 300px;
   }
+  @media (max-width: $small-mobil) {
+    height: 250px;
+    width: 250px;
+  }
 }
 
 #banner {

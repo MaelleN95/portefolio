@@ -90,6 +90,14 @@
       padding-right: 30px;
     }
   }
+  @media (max-width: $small-mobil) {
+    position: relative;
+    align-items: end;
+    padding-bottom: 0;
+    & .logo-text {
+      padding-right: 0;
+    }
+  }
 
   &:hover {
     &::after {
