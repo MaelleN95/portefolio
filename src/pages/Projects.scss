@@ -39,6 +39,13 @@
     width: 80%;
     margin: auto;
     height: 580px;
+    @media (max-width: $small-tablet) {
+      height: 35vw;
+    }
+    @media (max-width: $mobil) {
+      width: 100%;
+      height: 340px;
+    }
     &__image {
       position: relative;
       border-radius: 10px;
@@ -46,10 +53,23 @@
       width: 80%;
       height: 500px;
       overflow: hidden;
+      @media (max-width: $small-tablet) {
+        height: 28.19vw;
+      }
+      @media (max-width: $mobil) {
+        width: 100%;
+        height: 280px;
+      }
       & img {
         object-fit: cover;
         height: 500px;
         width: 100%;
+        @media (max-width: $small-tablet) {
+          height: 28.19vw;
+        }
+        @media (max-width: $mobil) {
+          height: 280px;
+        }
       }
       & .button-modale {
         position: absolute;
@@ -79,6 +99,12 @@
       height: 70px;
       bottom: 0;
       z-index: -1;
+      @media (max-width: $small-tablet) {
+        width: 10%;
+      }
+      @media (max-width: $mobil) {
+        height: 50px;
+      }
     }
     &__pc-base {
       position: absolute;
@@ -88,14 +114,25 @@
       border-radius: 50px;
       bottom: 0;
       z-index: -1;
+      @media (max-width: $small-tablet) {
+        width: 30%;
+      }
+      @media (max-width: $mobil) {
+        width: 35%;
+      }
     }
   }
+
   & .project-links {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 50%;
     margin: 20px auto;
+    @media (max-width: $mobil) {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
     & .project-link {
       background-color: black;
       text-align: center;
@@ -109,6 +146,14 @@
         box-shadow: inset 2px 2px 5px rgba($color: $red-color, $alpha: 80%),
           inset -2px -2px 15px 3px rgba($color: $purple-color, $alpha: 70%);
       }
+      @media (max-width: $small-tablet) {
+        margin-right: 10px;
+      }
+      @media (max-width: $mobil) {
+        min-width: 75px;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
     }
   }
   & .date {
@@ -121,6 +166,10 @@
       width: 40px;
       height: 40px;
       margin: 10px;
+      @media (max-width: $mobil) {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 }
@@ -143,6 +192,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: $mobil) {
+    flex-direction: column;
+    & .glow {
+      width: 100%;
+    }
+  }
 
   & .illustration {
     width: 45%;
@@ -152,6 +207,9 @@
     & img {
       margin: auto;
       height: 270px;
+      @media (max-width: $mobil) {
+        height: 50vw;
+      }
     }
   }
 }

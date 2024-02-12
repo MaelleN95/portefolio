@@ -4,7 +4,7 @@ function LogoText(props) {
   const rounded = props.rounded ? 'rounded' : '';
 
   return (
-    <div className={`hard-skill ${props.direction} ${noAutoscroll}`}>
+    <div className={`logo-text ${props.direction} ${noAutoscroll}`}>
       <img
         className={`${rounded} ${light}`}
         src={props.logo}

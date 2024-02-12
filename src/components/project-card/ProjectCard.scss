@@ -61,6 +61,10 @@
     & h3 {
       padding: 20px;
       text-align: center;
+      @media (max-width: $mobil) {
+        text-align: center;
+        margin: auto;
+      }
     }
     &:hover {
       opacity: 1;
@@ -83,6 +87,9 @@
       border-radius: 20px;
       width: 60px;
       height: 60px;
+      @media (max-width: $mobil) {
+        background-color: rgba($color: $blue-color, $alpha: 75%);
+      }
       &:hover {
         background-color: rgba($color: $blue-color, $alpha: 95%);
       }
@@ -117,6 +124,9 @@
       min-width: 4em;
       padding: 0.6em 1em;
       cursor: default;
+      @media (max-width: $small-tablet) {
+        font-size: 0.9rem;
+      }
     }
   }
 }

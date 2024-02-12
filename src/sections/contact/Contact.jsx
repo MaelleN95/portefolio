@@ -22,7 +22,10 @@ function Contact() {
             N&apos;hésitez surtout pas à me contacter en remplissant le
             formulaire et je vous répondrai dans les plus brefs délais !
           </p>
-          <p>Si vous préférez par mail, c’est par ici.</p>
+          <p>
+            Si vous préférez par mail, c’est par{' '}
+            <a href="mailto:nioche.maelle@gmail.com">ici</a>.
+          </p>
           <div className="img-form">
             <img
               src="/src/assets/icons/illustrations/social_networking.svg"

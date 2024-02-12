@@ -73,34 +73,38 @@ function Projects() {
               <FaCalendarAlt /> {project.date}
             </div>
           </section>
-
-          <Glow>
-            <section id="project-mission">
-              <h2>Mission</h2>
-              <p>{project.mission}</p>
-            </section>
-          </Glow>
-
-          <div id="project-skill">
+          <section className="details">
             <Glow>
-              <section className="skills-developed-part">
-                <h2>Compétences développées</h2>
-                <ul className="skills-developed-list">
-                  {project.skills.map((skill, index) => (
-                    <li key={index} className="skills-developed-list__element">
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
+              <section id="project-mission">
+                <h2>Mission</h2>
+                <p>{project.mission}</p>
               </section>
             </Glow>
-            <div className="illustration">
-              <img
-                src={percentages}
-                alt="personnage avec des barres de progression"
-              />
+
+            <div id="project-skill">
+              <Glow>
+                <section className="skills-developed-part">
+                  <h2>Compétences développées</h2>
+                  <ul className="skills-developed-list">
+                    {project.skills.map((skill, index) => (
+                      <li
+                        key={index}
+                        className="skills-developed-list__element"
+                      >
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              </Glow>
+              <div className="illustration">
+                <img
+                  src={percentages}
+                  alt="personnage avec des barres de progression"
+                />
+              </div>
             </div>
-          </div>
+          </section>
         </GlowCapture>
       </main>
       <Footer />

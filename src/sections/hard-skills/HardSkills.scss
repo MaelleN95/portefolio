@@ -86,7 +86,9 @@
   @media (max-width: $mobil) {
     position: absolute;
     align-items: end;
-    padding-right: 30px;
+    & .logo-text {
+      padding-right: 30px;
+    }
   }
 
   &:hover {

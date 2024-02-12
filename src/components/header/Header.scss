@@ -21,6 +21,9 @@ header {
   & a:hover {
     text-decoration: none;
   }
+  @media (max-width: $mobil) {
+    justify-content: space-between;
+  }
 }
 
 .ant-anchor-link {
@@ -57,6 +60,11 @@ header {
     padding: 0.5rem;
     transition: all 0.2s;
   }
+
+  @media (max-width: $mobil) {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
 }
 
 @keyframes move-go-back {
@@ -78,5 +86,80 @@ header {
 
   to {
     transform: translate(0);
+  }
+}
+
+.hamburger {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin: 1rem 1.5rem;
+  & .line {
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: black;
+    transition: all 0.3s;
+    &:nth-child(1) {
+      top: 5px;
+      left: 0;
+    }
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: 15px;
+    }
+    &:nth-child(4) {
+      top: 25px;
+      left: 0;
+    }
+  }
+}
+.open {
+  & .line {
+    &:nth-child(1) {
+      width: 0;
+      left: 50%;
+    }
+    &:nth-child(2) {
+      transform: rotate(45deg);
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+    &:nth-child(4) {
+      width: 0;
+      left: 50%;
+    }
+  }
+}
+
+.header-modal-mobil {
+  transition: all 0.2s;
+  position: absolute;
+  width: 100%;
+  height: 200vh;
+  background-color: rgba($color: white, $alpha: 80%);
+  box-shadow: inset 0 0 150px 30px rgba($color: $purple-color, $alpha: 50%),
+    inset 0 0 500px 100px rgba($color: $blue-color, $alpha: 50%);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+  &__close {
+    height: 0;
+    opacity: 0;
+  }
+  & ul {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.9rem;
+    & li {
+      padding: 20px 0;
+      & a {
+        color: black;
+      }
+    }
   }
 }

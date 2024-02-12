@@ -8,5 +8,14 @@
   & .social-media-list {
     display: flex;
     justify-content: space-between;
+    @media (max-width: $mobil) {
+      flex-direction: column;
+      align-items: center;
+    }
+    & .logo-text {
+      @media (max-width: $mobil) {
+        margin: 20px 10px;
+      }
+    }
   }
 }
