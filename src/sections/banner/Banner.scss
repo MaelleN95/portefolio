@@ -1,7 +1,25 @@
+@mixin img-tablet-size {
+  height: 490px;
+  width: 490px;
+  @media (max-width: $tablet) {
+    height: 350px;
+    width: 350px;
+  }
+  @media (max-width: $mobil) {
+    height: 300px;
+    width: 300px;
+  }
+}
+
 #banner {
   display: flex;
   align-items: center;
   padding: 4rem 0;
+
+  @media (max-width: $small-tablet) {
+    flex-direction: column;
+    text-align: center;
+  }
 
   &::before {
     content: '';
@@ -9,28 +27,49 @@
     left: 0;
     height: 100%;
     width: 30%;
+    @media (max-width: $tablet) {
+      width: 25%;
+      max-height: 504px;
+    }
+    @media (max-width: $small-tablet) {
+      content: none;
+    }
     background-color: $bg-color-dark;
     z-index: -1;
-    max-height: 646px;
+    height: 646px;
   }
 
+  & h1 {
+    @media (max-width: $small-tablet) {
+      margin-top: 50px;
+    }
+  }
   & strong {
     font-family: 'Alegreya Sans SC';
     font-weight: 400;
     font-size: 4rem;
+    @media (max-width: $small-tablet) {
+      font-size: 2.9rem;
+    }
   }
 
   & .image {
     position: relative;
-    height: 490px;
-    width: 490px;
-    margin-right: 5vw;
+    @include img-tablet-size;
+    margin: 0 5vw 0 2.5vw;
 
     &::before {
       content: '';
       position: absolute;
-      left: 23%;
-      top: 23%;
+      left: 27%;
+      top: 27%;
+      @media (max-width: $tablet) {
+        border: 7px solid $bg-color-dark;
+      }
+      @media (max-width: $small-tablet) {
+        content: none;
+        animation: 0;
+      }
       border-radius: 50%;
       height: 50%;
       width: 50%;
@@ -47,8 +86,14 @@
   background-image: url(../assets/images/my-photo.jpg);
   background-size: cover;
   border-radius: 50%;
-  height: 450px;
+  @include img-tablet-size;
   border: 20px solid $bg-color-dark;
+  @media (max-width: $tablet) {
+    border: 14px solid $bg-color-dark;
+  }
+  @media (max-width: $small-tablet) {
+    animation: 0;
+  }
   animation: move-img 11s ease-in-out infinite;
 }
 

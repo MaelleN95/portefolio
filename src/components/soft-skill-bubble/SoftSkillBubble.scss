@@ -10,9 +10,24 @@
 
   & .blue {
     background: $blue-color;
+    @media (max-width: $mobil) {
+      animation: soft-skills-move 6s infinite alternate ease;
+    }
   }
 
   & .red {
     background: $red-color;
+    @media (max-width: $mobil) {
+      animation: soft-skills-move 6s infinite alternate-reverse;
+    }
+  }
+}
+
+@keyframes soft-skills-move {
+  from {
+    transform: translate(-30%);
+  }
+  to {
+    transform: translate(30%);
   }
 }

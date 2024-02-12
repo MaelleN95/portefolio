@@ -11,15 +11,24 @@
     background-color: #161412;
     z-index: -1;
     max-height: 507.9px;
+    @media (max-width: 1400px) {
+      content: none;
+    }
   }
 
   & img {
     height: 15rem;
     padding-left: 5rem;
+    @media (max-width: 1175px) {
+      padding-left: 0;
+    }
   }
 
   & .presentation {
     display: flex;
+    @media (max-width: 1175px) {
+      flex-direction: column;
+    }
   }
   & strong {
     color: #48beff;

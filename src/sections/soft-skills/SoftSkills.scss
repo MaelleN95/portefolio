@@ -4,15 +4,29 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: $mobil) {
+      flex-direction: column;
+    }
     & .bubble-column {
       min-height: 350px;
       max-height: 500px;
       display: flex;
       flex-direction: column-reverse;
       justify-content: space-around;
+      @media (max-width: $tablet) {
+        min-height: 300px;
+        width: 100%;
+        align-items: center;
+      }
     }
     & .left {
       flex-direction: column;
+    }
+    & img {
+      width: 800px;
+      @media (max-width: $tablet) {
+        width: 50%;
+      }
     }
   }
 }

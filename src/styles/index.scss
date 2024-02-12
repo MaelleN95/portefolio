@@ -31,6 +31,9 @@
   font-family: 'Roboto', sans-serif, Arial;
   font-weight: 400;
   font-size: $desktop-font-size;
+  @media (max-width: $mobil) {
+    font-size: $mobil-font-size;
+  }
 
   color-scheme: light dark;
   color: white;
@@ -62,6 +65,9 @@ h1 {
   line-height: 1.1;
   font-weight: bold;
   margin: 0;
+  @media (max-width: $mobil) {
+    font-size: 3.2rem;
+  }
 }
 
 h2 {
@@ -70,6 +76,9 @@ h2 {
   text-align: center;
   padding: 3rem;
   margin: 0;
+  @media (max-width: $mobil) {
+    font-size: 1.5rem;
+  }
 }
 
 h3 {
@@ -79,6 +88,9 @@ h3 {
   padding: 0;
   margin: 0;
   font-weight: 400;
+  @media (max-width: $mobil) {
+    font-size: 1.3rem;
+  }
 }
 
 ul {

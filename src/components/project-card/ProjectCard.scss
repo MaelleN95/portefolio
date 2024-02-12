@@ -3,19 +3,18 @@
   height: 340px;
 }
 
-@mixin card-size-big-tablet {
-  width: 500px;
-  height: 300px;
-}
-
-@mixin card-size-tablet {
-  width: 42vw;
-  height: 255px;
+@mixin card-size-small-tablet {
+  @media (max-width: $small-tablet) {
+    width: 42vw;
+    height: 260px;
+  }
 }
 
 @mixin card-size-mobil {
-  width: 100%;
-  height: 255px;
+  @media (max-width: $mobil) {
+    width: 100%;
+    height: 255px;
+  }
 }
 
 .project-card {
@@ -24,6 +23,8 @@
   list-style: none;
   border-radius: 10px;
   @include card-size-big-desktop;
+  @include card-size-small-tablet;
+  @include card-size-mobil;
   margin-bottom: 50px;
   overflow: hidden;
 
@@ -35,12 +36,16 @@
   }
   &__cover {
     @include card-size-big-desktop;
+    @include card-size-small-tablet;
+    @include card-size-mobil;
     object-fit: cover;
     border-radius: 10px;
     transition: all 0.3s;
   }
   &__hover-effect {
     @include card-size-big-desktop;
+    @include card-size-small-tablet;
+    @include card-size-mobil;
     border-radius: 10px;
     position: absolute;
     top: 0;

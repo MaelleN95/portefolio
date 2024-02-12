@@ -9,7 +9,10 @@
     width: 100%;
     background-color: $bg-color-dark;
     z-index: -1;
-    max-height: 422.3px;
+    max-height: 375px;
+    @media (max-width: $small-tablet) {
+      content: none;
+    }
   }
   & .tools-list {
     display: flex;
@@ -17,6 +20,13 @@
     justify-content: space-around;
     & div {
       padding-bottom: 0;
+      @media (max-width: $mobil) {
+        padding-bottom: 30px;
+      }
+    }
+    @media (max-width: $mobil) {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

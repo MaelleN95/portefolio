@@ -1,7 +1,7 @@
 .card {
   border-radius: 15px;
   padding: 2.5rem;
-  width: 41%;
+  width: 40%;
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -13,6 +13,9 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: default;
+  @media (max-width: $small-tablet) {
+    width: 100%;
+  }
 
   &:hover::before {
     animation: shine ease-in-out 4s infinite reverse;
@@ -30,6 +33,9 @@
   }
   & img {
     height: 10rem;
+    @media (max-width: $mobil) {
+      height: 9rem;
+    }
   }
   & p {
     margin-bottom: 30px;

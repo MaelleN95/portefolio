@@ -11,6 +11,9 @@
     background-color: $bg-color-dark;
     z-index: -1;
     height: 1075.48px;
+    @media (max-width: $tablet) {
+      content: none;
+    }
   }
   & h3 {
     font-family: 'Alegreya sans sc';
@@ -27,6 +30,9 @@
     padding: 15px 0;
     &:hover {
       text-decoration: none;
+    }
+    @media (max-width: $mobil) {
+      width: 250px;
     }
   }
 }
@@ -47,6 +53,12 @@
   background-color: $bg-color-dark;
   color: white;
   margin-bottom: 50px;
+  @media (max-width: $small-tablet) {
+    left: calc(50% - 154.5px);
+  }
+  @media (max-width: $mobil) {
+    left: calc(50% - 121px);
+  }
 }
 .glowable-button:active {
   border: $purple-color 4px solid;

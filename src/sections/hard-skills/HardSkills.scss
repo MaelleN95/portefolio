@@ -11,12 +11,19 @@
     background-color: $bg-color-dark;
     z-index: -1;
     height: 800.78px;
+    @media (max-width: $tablet) {
+      content: none;
+    }
   }
 
   & .skills-details {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    @media (max-width: $mobil) {
+      flex-direction: column;
+    }
 
     & .skills {
       display: flex;
@@ -24,6 +31,11 @@
       justify-content: center;
       max-width: $width-skill;
       overflow: hidden;
+      @media (max-width: $mobil) {
+        padding-bottom: 50px;
+        max-width: 100%;
+        width: 100%;
+      }
     }
   }
 
@@ -38,6 +50,16 @@
       font-size: 2rem;
     }
   }
+  & svg,
+  .css-1qk3ojo-MuiResponsiveChart-container {
+    @media (max-width: $small-tablet) {
+      height: 30vw;
+    }
+    @media (max-width: $mobil) {
+      height: 0;
+      width: 0;
+    }
+  }
 }
 
 .front-end-skills {
@@ -49,16 +71,24 @@
       bottom: 0px;
       left: 0;
       z-index: 1;
-
       color: $blue-color;
       font-weight: bold;
       font-family: 'alegreya sans SC';
+      @media (max-width: $small-tablet) {
+        content: none;
+      }
     }
   }
 }
 
 .back-end-skills {
   position: relative;
+  @media (max-width: $mobil) {
+    position: absolute;
+    align-items: end;
+    padding-right: 30px;
+  }
+
   &:hover {
     &::after {
       content: 'Mes compétences back-end';
@@ -67,10 +97,12 @@
       left: 0;
       z-index: 1;
       text-align: center;
-
       color: $red-color;
       font-weight: bold;
       font-family: 'alegreya sans SC';
+      @media (max-width: $small-tablet) {
+        content: none;
+      }
     }
   }
 }
