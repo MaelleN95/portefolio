@@ -9,20 +9,28 @@ $arrow-line-width: 4px;
 
 header {
   display: flex;
-  align-items: center;
-  background-color: rgba(239, 232, 230, 0.85);
-  backdrop-filter: blur(6px);
+  justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 5;
-  & img {
-    margin: 1rem 1.5rem;
-  }
-  & a:hover {
-    text-decoration: none;
-  }
-  @media (max-width: $mobil) {
-    justify-content: space-between;
+  background-color: rgba(239, 232, 230, 0.85);
+  backdrop-filter: blur(6px);
+  & nav {
+    display: flex;
+    align-items: center;
+    @media (max-width: $mobil) {
+      width: 100%;
+      justify-content: space-between;
+    }
+    & img {
+      margin: 1rem 1.5rem;
+    }
+    & a:hover {
+      text-decoration: none;
+    }
+    @media (max-width: $mobil) {
+      justify-content: space-between;
+    }
   }
 }
 

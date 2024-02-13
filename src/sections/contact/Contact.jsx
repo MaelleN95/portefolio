@@ -1,14 +1,21 @@
+import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 // import { DevTool } from '@hookform/devtools';
 
 function Contact() {
   const form = useForm({ mode: 'onTouched' });
-  const { register, /*control,*/ handleSubmit, formState } = form;
-  const { errors, isDirty, isValid } = formState;
+  const { register, /*control,*/ handleSubmit, formState, reset } = form;
+  const { errors, isDirty, isValid, isSubmitSuccessful } = formState;
 
   const onSubmit = (data) => {
     console.log(data);
   };
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      reset();
+    }
+  }, [isSubmitSuccessful]);
 
   return (
     <section id="contact">
