@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useScreenSize from '../../lib/customHooks';
 
 import { Anchor, ConfigProvider } from 'antd';
@@ -10,7 +10,7 @@ import ConnexionModal from '../../components/connexion-modal/ConnexionModal';
 import datas from '../../assets/datas.json';
 
 function Header() {
-  let { projectsId } = useParams();
+  const URL = useLocation();
 
   let nav = useNavigate();
 
@@ -38,7 +38,7 @@ function Header() {
   return (
     <header>
       <nav>
-        {projectsId ? (
+        {URL.pathname !== '/' ? (
           <Link to="/" title={`Lien vers la page d'accueil`}>
             <img
               src={datas.logo}
@@ -68,7 +68,7 @@ function Header() {
             },
           }}
         >
-          {projectsId ? (
+          {URL.pathname !== '/' ? (
             <button
               onClick={handleGoBack}
               className="go-back-button"
