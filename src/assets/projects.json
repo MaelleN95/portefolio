@@ -2,7 +2,7 @@
   {
     "id": "project-booki",
     "title": "Booki, site d’agence immobilière",
-    "description": "Une description bidon pour le projet 1",
+    "description": "Intégrer l'interface visuelle et responsive d'un site d'agence de voyage avec HTML et CSS. ",
     "hardSkills": ["HTML", "CSS"],
     "cover": "https://www.powertrafic.fr/wp-content/uploads/2023/04/image-ia-exemple.png",
     "pictures": [
@@ -15,58 +15,61 @@
       "https://media.istockphoto.com/id/1279128074/fr/vectoriel/personnes-utilisant-la-zone-de-recherche-pour-la-requ%C3%AAte.jpg?s=1024x1024&w=is&k=20&c=KGXZvOOY8fY9wdTwPe_s-wcoJ7mx5GR1xrGPHZ1hl8Q="
     ],
     "date": "2023",
-    "mission": "Vous travaillez comme développeur front-end pour l’agence ArchiWebos qui comprend 50 salariés. Ayant terminé votre dernier projet avec un peu d'avance, vous êtes envoyé en renfort comme développeur front-end d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur. Vous devez donc développer :",
+    "mission": "L'objectif était d'intégrer l'interface visuelle du site en utilisant uniquement HTML et CSS. Pour cela, j'avais une maquette desktop, tablet & mobile sur Figma ainsi que des spécifications et contraintes techniques à respecter. Etant mon premier projet professionnel, j'ai également pris en main VS Code en tant qu'IDE (environnement de développement intégré), et également Git et GitHub pour versionner un projet. ",
     "skills": [
-      "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
-      "Manipuler les éléments du DOM avec JavaScript",
-      "Développer du front-end sur un back-end déjà existant"
+      "Implémenter une interface responsive avec HTML et CSS",
+      "Intégrer du contenu conformément à une maquette avec HTML et CSS",
+      "Etudier et découper une maquette",
+      "Versionner son projet avec Git et Github",
+      "Vérifier la qualité de son code à l'aide de validateur tels que le W3C",
+      "Travailler en collaboration avec un UI Designer",
+      "Installer un environnement de développement front-end"
     ],
-    "linkGithub": "https://github.com/MaelleN95/OC-Projet5",
-    "deployedLink": "https://maellen95.github.io/OC-Projet6/"
+    "linkGithub": "https://github.com/MaelleN95/OC-Projet2",
+    "deployedLink": "https://maellen95.github.io/OC-Projet2/"
   },
   {
     "id": "project-sophie-bluel",
     "title": "Sophie Bluel, portefolio d’une architecte",
-    "description": "",
+    "description": "Créer une page web dynamique avec JavaScript et s'adapter à l'approche Agile.",
     "hardSkills": ["HTML", "CSS", "JavaScript"],
     "cover": "https://media.istockphoto.com/id/846489122/fr/photo/responsive-web-design-site-internet-filaire-croquis-de-mise-en-page-sur-%C3%A9cran-dordinateur.jpg?s=612x612&w=0&k=20&c=WNZd8k4DOUqEjYJgViTLEeosuVLVvKgiRi02AREfJ4E=",
+    "mission": "L'objectif était de travailler sur la conception d'un site portfolio d’une architecte d’intérieur en JavaScript avec un code back-end déjà existant et une première version statique du code front-end. J'ai ajouté la récupération des images de la galerie de manière dynamique et l'ajout des filtres par rapport aux catégories. J'ai également ajouté une page de connexion de l'administrateur ainsi qu'une modale permettant d'ajouter et supprimer les médias du site. Dans le cadre de ce projet, qui adopte une approche Agile, j'ai accompli mes tâches en suivant un tableau Kanban. ",
     "date": "2023",
     "skills": [
       "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
       "Manipuler les éléments du DOM avec JavaScript",
-      "Développer du front-end sur un back-end déjà existant"
+      "Développer du front-end sur un back-end déjà existant",
+      "Gérer les événements utilisateurs avec JavaScript",
+      "Accomplir des tâches selon la méthode Agile",
+      "Communiquer avec une API REST"
     ],
-    "linkGithub": "https://github.com/MaelleN95/OC-Projet5",
-    "deployedLink": "https://maellen95.github.io/OC-Projet6/"
+    "linkGithub": "https://github.com/MaelleN95/OC-Projet3"
   },
   {
     "id": "project-nina-carducci",
     "title": "Nina Carducci, site de photographe",
-    "description": "",
+    "description": "Débugger, améliorer le SEO et optimiser un site de photographie à l'aide de Lighthouse et Chrome DevTools.",
     "hardSkills": ["SEO", "Accessibilité", "Débug"],
     "cover": "https://media.istockphoto.com/id/1279128074/fr/vectoriel/personnes-utilisant-la-zone-de-recherche-pour-la-requ%C3%AAte.jpg?s=1024x1024&w=is&k=20&c=KGXZvOOY8fY9wdTwPe_s-wcoJ7mx5GR1xrGPHZ1hl8Q=",
-    "pictures": [
-      "https://www.powertrafic.fr/wp-content/uploads/2023/04/image-ia-exemple.png",
-      "https://media.istockphoto.com/id/1336136316/fr/photo/femme-achats-en-ligne-sur-t%C3%A9l%C3%A9phone-intelligent-v%C3%AAtements-de-mode-%C3%A0-la-maison.jpg?s=1024x1024&w=is&k=20&c=AMiIQkEOBu4uDhpyrqPBgNSHaQ_1Gj3EEipS6ccJqWg=",
-      "https://media.istockphoto.com/id/1337712514/fr/photo/homme-v%C3%A9rifiant-les-annonces-de-maisons-%C3%A0-vendre.jpg?s=1024x1024&w=is&k=20&c=WTUKmV0bq1HVSnMVN3foNLUHPrf-5kHdXu_uSKfnJ64=",
-      "https://media.istockphoto.com/id/846489122/fr/photo/responsive-web-design-site-internet-filaire-croquis-de-mise-en-page-sur-%C3%A9cran-dordinateur.jpg?s=612x612&w=0&k=20&c=WNZd8k4DOUqEjYJgViTLEeosuVLVvKgiRi02AREfJ4E=",
-      "https://media.istockphoto.com/id/1180598664/fr/vectoriel/mains-tenant-un-t%C3%A9l%C3%A9phone-portable-avec-des-applications-sur-l%C3%A9cran-paiement-en-ligne-par.jpg?s=1024x1024&w=is&k=20&c=tob_yckE0I3d0KXiHLCBs7sTg_ed7c-IzIiHKDmVUN4=",
-      "https://media.istockphoto.com/id/1485102908/fr/vectoriel/payez-en-un-clic-demande-de-paiement-en-ligne-portefeuille-%C3%A9lectronique-dans-smartphone.jpg?s=1024x1024&w=is&k=20&c=1GtkVNJAJO-p-XkXFfd0gUMvXGw1JWUMvrb2y1Ahauw=",
-      "https://media.istockphoto.com/id/1279128074/fr/vectoriel/personnes-utilisant-la-zone-de-recherche-pour-la-requ%C3%AAte.jpg?s=1024x1024&w=is&k=20&c=KGXZvOOY8fY9wdTwPe_s-wcoJ7mx5GR1xrGPHZ1hl8Q="
-    ],
     "date": "2023",
+    "mission": "L'objectif était d'analyser un site internet déjà existant, optimiser les images du site pour accélérer le temps de chargement de la page et optimiser le code et sa structure afin d'améliorer l'accessibilité et de référencement (SEO) du site. Pour ce qui concerne le SEO, j'ai mis en place un référencement local avec Schema.org, et utiliser les balises meta des réseaux sociaux (ce qui permet de contrôler l'affichage de l'aperû du site). Le code contenait également certains bugs à corriger.",
     "skills": [
-      "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
-      "Manipuler les éléments du DOM avec JavaScript",
-      "Développer du front-end sur un back-end déjà existant"
+      "Optimiser les performances d’un site web",
+      "Débugger un site web grâce aux Chrome DevTools",
+      "Rédiger un cahier de recette pour tester un site",
+      "Améliorer le référencement d'un site (SEO)",
+      "Améliorer l'accessibilité d'un site",
+      "Capacité à expliquer les modifications de manière claire et compréhensible",
+      "Livrer un rapport d'intervention"
     ],
     "linkGithub": "https://github.com/MaelleN95/OC-Projet5",
-    "deployedLink": "https://maellen95.github.io/OC-Projet6/"
+    "deployedLink": "https://maellen95.github.io/OC-Projet5/"
   },
   {
     "id": "project-kasa",
     "title": "Kasa, site de location immobilière",
-    "description": "",
+    "description": "Développer l’ensemble d'une application de location immobilière avec React.",
     "hardSkills": ["React", "Sass"],
     "cover": "https://media.istockphoto.com/id/1485102908/fr/vectoriel/payez-en-un-clic-demande-de-paiement-en-ligne-portefeuille-%C3%A9lectronique-dans-smartphone.jpg?s=1024x1024&w=is&k=20&c=1GtkVNJAJO-p-XkXFfd0gUMvXGw1JWUMvrb2y1Ahauw=",
     "pictures": [
@@ -79,18 +82,22 @@
       "https://media.istockphoto.com/id/1279128074/fr/vectoriel/personnes-utilisant-la-zone-de-recherche-pour-la-requ%C3%AAte.jpg?s=1024x1024&w=is&k=20&c=KGXZvOOY8fY9wdTwPe_s-wcoJ7mx5GR1xrGPHZ1hl8Q="
     ],
     "date": "2024",
+    "mission": "L'objectif était de développer l'ensemble d'une application, les composants React responsives, les routes React Router, en suivant les maquettes Figma et des contraintes techniques. L'application a été initialisé avec CRA (Create React App) et les informations des locations ont été implémenté à partir d'un fichier JSON en attendant le développement du code back-end. Le style de l'application a été réalisé à l'aide du préprocesseur Sass qui étend la synthaxe de base du CSS avec des fonctionnalités avancées, ce qui rend la gestion et l'écriture des feuilles de style plus modulaires et efficaces.",
     "skills": [
-      "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
-      "Manipuler les éléments du DOM avec JavaScript",
-      "Développer du front-end sur un back-end déjà existant"
+      "Configurer la navigation entre les pages de l'application avec React Router",
+      "Initialiser une application avec Create React App",
+      "Développer des éléments de l'interface d'un site web grâce à des composants React",
+      "Développer l'ensemble d'une application React responsive en suivant une maquette",
+      "Mettre en œuvre des animations CSS",
+      "Développer une interface web avec Sass"
     ],
-    "linkGithub": "https://github.com/MaelleN95/OC-Projet5",
+    "linkGithub": "https://github.com/MaelleN95/OC-Projet6",
     "deployedLink": "https://maellen95.github.io/OC-Projet6/"
   },
   {
     "id": "project-mon-vieux-grimoire",
     "title": "Mon vieux grimoire, site de notation de livres",
-    "description": "",
+    "description": "Développer le back-end d'un site de notation de livres, stocker des données de manière sécurisée et respecter les bonnes pratiques du green code.",
     "hardSkills": ["Node.js", "Express", "MongoDB"],
     "cover": "https://media.istockphoto.com/id/1337712514/fr/photo/homme-v%C3%A9rifiant-les-annonces-de-maisons-%C3%A0-vendre.jpg?s=1024x1024&w=is&k=20&c=WTUKmV0bq1HVSnMVN3foNLUHPrf-5kHdXu_uSKfnJ64=",
     "pictures": [
@@ -104,11 +111,16 @@
       "https://media.istockphoto.com/id/1279128074/fr/vectoriel/personnes-utilisant-la-zone-de-recherche-pour-la-requ%C3%AAte.jpg?s=1024x1024&w=is&k=20&c=KGXZvOOY8fY9wdTwPe_s-wcoJ7mx5GR1xrGPHZ1hl8Q="
     ],
     "date": "2024",
+    "mission": "L'objectif était de s'occuper de la partie back-end du site, en collaboration avec un développeur front-end et une designeuse. J'ai donc mis en place une API grâce à des spécifications techniques. Il a été développé avec Node.js, le framework Express ainsi que MongoDB. Pour facilité la maintenance, j'ai fractionné le code en plusieurs sous-dossiers : les modèles, les controllers, les middlewares, les routes et les fonctions. J'ai mis en oeuvre des opérations CRUD (Create, Read, Update, Delete), et gérer la sécurité des sections de connexions des utilisateurs avec JWT (JsonWebToken). En ce qui concerne l'implémentation du téléchargement des fichiers tout en respectant les bonnes pratiques du Green code, j'ai utilisé les bibliothèques Multer et Sharp afin de redimensionner et changer le format des images.",
     "skills": [
-      "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
-      "Manipuler les éléments du DOM avec JavaScript",
-      "Développer du front-end sur un back-end déjà existant"
+      "Créer un serveur avec Node et Express",
+      "Implémenter un modèle logique de données conformément à la réglementation",
+      "Mettre en œuvre des opérations CRUD de manière sécurisée",
+      "Gérer des données d'une base de données MongoDB avec Node, Express et Mongoose",
+      "Stocker des données de manière sécurisée",
+      "Respecter des normes de Green Code",
+      "Travailler en collaboration avec un développeur front-end"
     ],
-    "linkGithub": "https://github.com/MaelleN95/OC-Projet5"
+    "linkGithub": "https://github.com/MaelleN95/OC-Projet7"
   }
 ]
