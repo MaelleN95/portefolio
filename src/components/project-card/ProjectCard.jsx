@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaExternalLinkAlt,
+  FaPenAlt,
+  FaTrashAlt,
+} from 'react-icons/fa';
 
 function ProjectCard(props) {
-  const { hardskills, cover, githubLink, deployedLink, projectsId } = props;
+  const { hardskills, cover, githubLink, deployedLink, projectsId, adminPage } =
+    props;
 
   return (
     <li className="project-card">
@@ -22,17 +28,19 @@ function ProjectCard(props) {
       </Link>
 
       <div className="project-links">
-        <a
-          href={githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Ouvrir la page du code dans un nouvel onglet"
-          className="project-link"
-        >
-          <span>
-            <FaGithub className="icon" />
-          </span>
-        </a>
+        {githubLink ? (
+          <a
+            href={githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Ouvrir la page du code dans un nouvel onglet"
+            className="project-link"
+          >
+            <span>
+              <FaGithub className="icon" />
+            </span>
+          </a>
+        ) : null}
         {deployedLink ? (
           <a
             href={deployedLink}
@@ -45,6 +53,21 @@ function ProjectCard(props) {
               <FaExternalLinkAlt className="icon" />
             </span>
           </a>
+        ) : null}
+        {adminPage ? (
+          <>
+            <button className="project-link admin-link">
+              <Link
+                to={`/admin/MN95/projects/${projectsId}`}
+                title={`Lien vers la page du projet ${props.children}`}
+              >
+                <FaPenAlt />
+              </Link>
+            </button>
+            <button className="project-link admin-link">
+              <FaTrashAlt />
+            </button>
+          </>
         ) : null}
       </div>
 

@@ -130,3 +130,18 @@
     }
   }
 }
+
+.admin-link {
+  font-size: 1.8rem;
+  border-radius: 15px !important;
+  background-color: rgba($color: $blue-color, $alpha: 70%) !important;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

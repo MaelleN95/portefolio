@@ -59,6 +59,9 @@
   @media (max-width: $mobil) {
     left: calc(50% - 121px);
   }
+  @media (max-width: $small-mobil) {
+    margin: 15px 0;
+  }
 }
 .glowable-button:active {
   border: $purple-color 4px solid;
