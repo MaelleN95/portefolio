@@ -1,13 +1,14 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import { DevTool } from '@hookform/devtools';
 
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import { ErrorBoundary } from '../components/ErrorBoundary';
 import ErrorPage from './ErrorPage';
 
-import { FaTrashAlt } from 'react-icons/fa';
+import { FaPenAlt, FaTrashAlt } from 'react-icons/fa';
 
 import projects from '../assets/projects.json';
 
@@ -16,16 +17,31 @@ function AdminProjectContent() {
   const project = projects.find((pro) => pro.id === projectsId);
 
   const form = useForm({ mode: 'onTouched' });
-  const { register, /*control,*/ handleSubmit, formState, reset } = form;
+  const { register, control, handleSubmit, formState, reset } = form;
   const { errors, isDirty, isValid, isSubmitSuccessful } = formState;
+
+  console.log('isDirty : ', isDirty);
+  console.log('isValid : ', isDirty);
+
+  const [selectedImage, setSelectedImage] = useState(project.cover);
+  const [selectedFile, setSelectedFile] = useState(project.cover);
+
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    setSelectedFile(file);
+    const fileUrl = URL.createObjectURL(file);
+    setSelectedImage(fileUrl);
+  };
 
   const onSubmit = (data) => {
     console.log(data);
+    console.log(selectedImage);
+    console.log(selectedFile);
   };
 
   useEffect(() => {
     if (isSubmitSuccessful) {
-      // reset();
+      reset();
     }
   }, [isSubmitSuccessful]);
 
@@ -76,14 +92,40 @@ function AdminProjectContent() {
           </div>
 
           <div className="input-data ">
+            <div className="label inline center">Image de couverture</div>
+            <div className="incolumn upload-block">
+              <div className="upload-edit">
+                <input
+                  type="file"
+                  id="cover"
+                  accept="image/png, image/jpeg, image/webp"
+                  {...register('cover')}
+                  className={
+                    errors.cover?.message ? 'error-input file' : 'file'
+                  }
+                  onChange={handleImageChange}
+                  value={selectedFile.file}
+                />
+                <label htmlFor="cover">
+                  <FaPenAlt />
+                </label>
+              </div>
+              <div className="upload-preview">
+                {selectedImage && <img src={selectedImage} alt="Preview" />}
+              </div>
+            </div>
+            <p className="error">{errors.hardSkills?.message}</p>
+          </div>
+
+          <div className="input-data ">
             <label htmlFor="hardSkills">Hard skills</label>
             <div className="inline">
               {project.hardSkills.map((skill, i) => (
                 <div key={i} className="one-skill">
                   <input
                     type="text"
-                    id={`hardSkills-${skill}`}
-                    {...register(`hardSkills-${skill}`)}
+                    id={`hardSkills-${i}`}
+                    {...register(`hardSkills-${i}`)}
                     className={errors.hardSkills?.[i] ? 'error-input' : null}
                     defaultValue={skill}
                   />
@@ -175,23 +217,22 @@ function AdminProjectContent() {
           </div>
 
           <div className="input-data ">
-            <label htmlFor="DeployedLink">Lien de déploiement</label>
+            <label htmlFor="deployedLink">Lien de déploiement</label>
             <input
               type="text"
-              id="DeployedLink"
-              {...register('DeployedLink')}
-              className={errors.DeployedLink?.message ? 'error-input' : null}
+              id="deployedLink"
+              {...register('deployedLink')}
+              className={errors.deployedLink?.message ? 'error-input' : null}
               defaultValue={project.deployedLink}
             />
-            <p className="error">{errors.DeployedLink?.message}</p>
+            <p className="error">{errors.deployedLink?.message}</p>
           </div>
 
-          <div className="button-submit">
-            <button type="submit" disabled={!isDirty || !isValid}>
-              Enregistrer
-            </button>
-          </div>
+          <button type="submit" disabled={!isDirty || !isValid}>
+            Enregistrer
+          </button>
         </form>
+        <DevTool control={control} />
       </section>
       <section id="modification-images">
         <h2>images</h2>
