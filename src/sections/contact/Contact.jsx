@@ -2,13 +2,20 @@ import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 // import { DevTool } from '@hookform/devtools';
 
+import { addContactResponse } from '../../lib/common';
+
 function Contact() {
   const form = useForm({ mode: 'onTouched' });
   const { register, /*control,*/ handleSubmit, formState, reset } = form;
   const { errors, isDirty, isValid, isSubmitSuccessful } = formState;
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    const newContactForm = await addContactResponse(data);
+    if (!newContactForm.error) {
+      console.log('Send successully !!');
+    } else {
+      alert(newContactForm.message);
+    }
   };
 
   useEffect(() => {
