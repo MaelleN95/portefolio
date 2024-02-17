@@ -12,6 +12,7 @@
 @import '../components/project-modal/ProjectModal.scss';
 @import '../components/soft-skill-bubble/SoftSkillBubble.scss';
 @import '../components/connexion-modal/ConnexionModal.scss';
+@import '../components/project-form/ProjectForm.scss';
 
 // import sections styles
 @import '../sections/about-me/AboutMe.scss';
@@ -30,7 +31,7 @@
 @import '../pages/ErrorPage.scss';
 @import '../pages//AdminPages.scss';
 
-:root  {
+:root {
   font-family: 'Roboto', sans-serif, Arial;
   font-weight: 400;
   font-size: $desktop-font-size;

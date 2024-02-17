@@ -5,6 +5,7 @@ import Projects from './pages/Projects';
 import ErrorPage from './pages/ErrorPage';
 import AdminHome from './pages/AdminHome';
 import AdminProject from './pages/AdminProject';
+import AdminAddProject from './pages/AdminAddProject';
 
 function Routing() {
   return (
@@ -17,6 +18,10 @@ function Routing() {
         <Route
           path="/admin/MN95/projects/:projectsId"
           element={<AdminProject />}
+        />
+        <Route
+          path="/admin/MN95/projects/createProject"
+          element={<AdminAddProject />}
         />
       </Routes>
     </Router>

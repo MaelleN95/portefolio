@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import projects from '../assets/projects.json';
@@ -24,6 +26,13 @@ function AdminHome() {
                 </ProjectCard>
               );
             })}
+            <Link
+              to={`/admin/MN95/projects/createProject`}
+              title={`Création de projet`}
+              className="project-card add-button"
+            >
+              +
+            </Link>
           </div>
         </section>
       </main>
