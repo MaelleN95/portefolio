@@ -1,10 +1,8 @@
 import { useParams } from 'react-router-dom';
 
-import Header from '../components/header/Header';
-import Footer from '../components/footer/Footer';
 import ProjectFormInfo from '../components/project-form/ProjectFormInfo';
 import ProjectFormImages from '../components/project-form/ProjectFormImages';
-import { ErrorBoundary } from '../components/ErrorBoundary';
+import { ErrorBoundary } from '../utils/ErrorBoundary';
 import ErrorPage from './ErrorPage';
 
 import projects from '../assets/projects.json';
@@ -16,7 +14,6 @@ function AdminProject() {
   return (
     <>
       <ErrorBoundary errorRedirection={<ErrorPage />}>
-        <Header />
         <main className="modification">
           <h1>Modification</h1>
           <section id="modification-informations">
@@ -29,7 +26,6 @@ function AdminProject() {
             <ProjectFormImages project={project} />
           </section>
         </main>
-        <Footer />
       </ErrorBoundary>
     </>
   );

@@ -1,9 +1,11 @@
 import axios from 'axios';
 import { API_ROUTES } from '../utils/constants';
 
-export function storeInLocalStorage(token, userId) {
+export function storeInLocalStorage(token, userId, userType, loginTime) {
   localStorage.setItem('token', token);
   localStorage.setItem('userId', userId);
+  localStorage.setItem('userType', userType);
+  localStorage.setItem('loginTime', loginTime);
 }
 
 export function getFromLocalStorage(item) {
@@ -15,14 +17,47 @@ export async function getAuthenticatedUser() {
   try {
     const token = getFromLocalStorage('token');
     const userId = getFromLocalStorage('userId');
+    const userType = getFromLocalStorage('userType');
+    const loginTime = parseInt(getFromLocalStorage('loginTime'));
     if (!token) {
       return defaultReturnObject;
     }
-    return { authenticated: true, user: { userId, token } };
+    if (userType !== 'admin') {
+      return defaultReturnObject;
+    }
+
+    const timeElapsedMinutes = (new Date() - loginTime) / (1000 * 60);
+    console.log('Temps depuis dernière interaction : ', timeElapsedMinutes);
+    if (timeElapsedMinutes > 5) {
+      localStorage.clear();
+      alert('session expirée');
+      return defaultReturnObject;
+    } else {
+      storeInLocalStorage(
+        getFromLocalStorage('token'),
+        getFromLocalStorage('userId'),
+        getFromLocalStorage('userType'),
+        Date.now()
+      );
+    }
+
+    return {
+      authenticated: true,
+      user: { userId, token, userType, loginTime },
+    };
   } catch (err) {
     console.error("getAuthenticatedUser, une erreur s'est produite :", err);
     return defaultReturnObject;
   }
+}
+
+// Connexion management
+export async function LogIn(data) {
+  const res = await axios.post(API_ROUTES.LOGIN, {
+    email: data.username,
+    password: data.pw,
+  });
+  return res;
 }
 
 // Contact form management
@@ -35,11 +70,7 @@ export async function addContactResponse(data) {
   };
 
   try {
-    return await axios({
-      method: 'post',
-      url: `${API_ROUTES.CONTACT_FORM}`,
-      data: form,
-    });
+    return await axios.post(API_ROUTES.CONTACT_FORM, { data: form });
   } catch (err) {
     console.error(err);
     return { error: true, message: err.message };
@@ -47,9 +78,19 @@ export async function addContactResponse(data) {
 }
 
 // Projects management
-function formatProjects(projectArray) {
-  return projectArray.map((project) => {
-    const newProject = { ...project };
+function formatProjects(data) {
+  return data.map((projectData) => {
+    const newProject = {
+      title: projectData.title,
+      description: projectData.descr,
+      hardSkills: [projectData.hardSkills],
+      // cover: data.file[0],
+      date: parseInt(projectData.date, 10),
+      skills: [projectData.developedSkills],
+      linkGitHub: projectData.gitHubLink,
+      linkDeployedSite: projectData.deployedLink,
+    };
+    console.log(newProject);
     return newProject;
   });
 }
@@ -73,6 +114,36 @@ export async function getProject(id) {
   } catch (err) {
     console.error(err);
     return null;
+  }
+}
+
+export async function addProject(data) {
+  const project = {
+    title: data.name,
+    projectId: data.name,
+    description: data.descr,
+    hardSkills: data.hardSkills,
+    date: parseInt(data.date, 10),
+    mission: data.mission,
+    skills: data.developedSkills,
+    linkGitHub: data.gitHubLink,
+    linkDeployedSite: data.deployedLink,
+  };
+  const bodyFormData = new FormData();
+  bodyFormData.append('project', JSON.stringify(project));
+  if (data.file && data.file[0]) {
+    bodyFormData.append('cover', data.file[0]);
+  }
+
+  try {
+    return await axios.post(API_ROUTES.PROJECTS, bodyFormData, {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem('token')}`,
+      },
+    });
+  } catch (err) {
+    console.error(err);
+    return { error: true, message: err.message };
   }
 }
 

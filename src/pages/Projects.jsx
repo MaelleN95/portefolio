@@ -1,8 +1,6 @@
 import ErrorPage from './ErrorPage';
-import { ErrorBoundary } from '../components/ErrorBoundary';
+import { ErrorBoundary } from '../utils/ErrorBoundary';
 
-import Header from '../components/header/Header';
-import Footer from '../components/footer/Footer';
 import ProjectModal from '../components/project-modal/ProjectModal';
 
 import { useParams } from 'react-router-dom';
@@ -110,13 +108,9 @@ function ProjectContentPage() {
 
 function Projects() {
   return (
-    <>
-      <ErrorBoundary errorRedirection={<ErrorPage />}>
-        <Header />
-        <ProjectContentPage />
-        <Footer />
-      </ErrorBoundary>
-    </>
+    <ErrorBoundary errorRedirection={<ErrorPage />}>
+      <ProjectContentPage />
+    </ErrorBoundary>
   );
 }
 

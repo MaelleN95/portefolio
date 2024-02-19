@@ -10,6 +10,7 @@ $arrow-line-width: 4px;
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 5;
@@ -30,6 +31,22 @@ header {
     }
     @media (max-width: $mobil) {
       justify-content: space-between;
+    }
+  }
+  & .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .pen {
+      padding: 10px;
+      font-size: 1.3rem;
+      color: black;
+      &:hover {
+        color: $purple-color;
+      }
+      &:active {
+        color: lighten($color: $purple-color, $amount: 10);
+      }
     }
   }
 }

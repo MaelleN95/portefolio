@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { useForm, useFieldArray } from 'react-hook-form';
 import { DevTool } from '@hookform/devtools';
 
+import { addProject } from '../../lib/common';
+
 import { FaPenAlt, FaTrashAlt } from 'react-icons/fa';
 
 export function ProjectFormInfo({ project }) {
@@ -46,20 +48,29 @@ export function ProjectFormInfo({ project }) {
     setSelectedImage(fileUrl);
   };
 
-  const onSubmit = (data) => {
-    console.log(data);
-    console.log(selectedImage);
-    console.log(selectedFile);
+  const onSubmit = async (data) => {
+    data.file = selectedFile;
+    console.log(data.file);
+    let newProject = await addProject(data);
+
+    if (!data.file) {
+      alert('Vous devez ajouter une image de couverture');
+    }
+    if (!newProject.error) {
+      alert('projet créé');
+    } else {
+      alert(newProject.message);
+    }
   };
 
   useEffect(() => {
     if (isSubmitSuccessful) {
-      reset();
+      // reset();
     }
   }, [isSubmitSuccessful]);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} noValidate>
+    <form onSubmit={handleSubmit(onSubmit)} noValidate className="admin-form">
       <div className="inline center">
         <div className="input-data ">
           <label htmlFor="name">Nom du projet</label>

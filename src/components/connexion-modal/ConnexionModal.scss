@@ -16,6 +16,27 @@
   }
 }
 
+.button-disconnect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 10px 29px;
+  cursor: pointer;
+  max-height: 50px;
+  & svg {
+    padding: 10px;
+    font-size: 1.3rem;
+  }
+  &:hover {
+    color: $purple-color;
+  }
+  &:active {
+    color: lighten($color: $purple-color, $amount: 10);
+  }
+}
+
 .modal-connexion {
   & .ant-modal-content {
     background-color: $bg-color-light;

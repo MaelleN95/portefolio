@@ -49,7 +49,7 @@ function ProjectFormImages({ project }) {
   }, [isSubmitSuccessful]);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} noValidate>
+    <form onSubmit={handleSubmit(onSubmit)} noValidate className="admin-form">
       <div className="input-data ">
         <div className="label inline center">Images supplémentaires</div>
         <div className="inline pic-block">

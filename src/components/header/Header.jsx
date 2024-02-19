@@ -4,12 +4,14 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useScreenSize from '../../lib/customHooks';
 
 import { Anchor, ConfigProvider } from 'antd';
-import { FaRegArrowAltCircleLeft } from 'react-icons/fa';
+import { FaRegArrowAltCircleLeft, FaPenAlt } from 'react-icons/fa';
 
 import ConnexionModal from '../../components/connexion-modal/ConnexionModal';
+import { useUser } from '../../lib/customHooks';
 import datas from '../../assets/datas.json';
 
-function Header() {
+function Header({ user, setUser }) {
+  const { connectedUser } = useUser();
   const URL = useLocation();
 
   let nav = useNavigate();
@@ -17,6 +19,10 @@ function Header() {
   const handleGoBack = () => {
     nav(-1);
   };
+
+  useEffect(() => {
+    console.log(connectedUser);
+  }, []);
 
   const screenWidth = useScreenSize().width;
 
@@ -116,7 +122,7 @@ function Header() {
                         </a>
                       </li>
                       <li>
-                        <ConnexionModal />
+                        <ConnexionModal user={user} setUser={setUser} />
                       </li>
                     </ul>
                   </div>
@@ -152,7 +158,17 @@ function Header() {
         </ConfigProvider>
       </nav>
 
-      {mobilHeader ? null : <ConnexionModal />}
+      <div className="options">
+        {user ? (
+          <Link
+            to="/admin/MN95/projects"
+            title={`Lien vers la page de modification des projets`}
+          >
+            <FaPenAlt className="pen" />
+          </Link>
+        ) : null}
+        {mobilHeader ? null : <ConnexionModal user={user} setUser={setUser} />}
+      </div>
     </header>
   );
 }
