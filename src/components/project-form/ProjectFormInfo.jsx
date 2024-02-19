@@ -50,7 +50,6 @@ export function ProjectFormInfo({ project }) {
 
   const onSubmit = async (data) => {
     data.file = selectedFile;
-    console.log(data.file);
     let newProject = await addProject(data);
 
     if (!data.file) {
@@ -251,7 +250,7 @@ export function ProjectFormInfo({ project }) {
           id="gitHubLink"
           {...register('gitHubLink')}
           className={errors.gitHubLink?.message ? 'error-input' : null}
-          defaultValue={project?.linkGithub || ''}
+          defaultValue={project?.linkGitHub || ''}
         />
         <p className="error">{errors.gitHubLink?.message}</p>
       </div>
@@ -263,7 +262,7 @@ export function ProjectFormInfo({ project }) {
           id="deployedLink"
           {...register('deployedLink')}
           className={errors.deployedLink?.message ? 'error-input' : null}
-          defaultValue={project?.deployedLink || ''}
+          defaultValue={project?.linkDeployedSite || ''}
         />
         <p className="error">{errors.deployedLink?.message}</p>
       </div>

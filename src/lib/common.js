@@ -80,26 +80,16 @@ export async function addContactResponse(data) {
 // Projects management
 function formatProjects(data) {
   return data.map((projectData) => {
-    const newProject = {
-      title: projectData.title,
-      description: projectData.descr,
-      hardSkills: [projectData.hardSkills],
-      // cover: data.file[0],
-      date: parseInt(projectData.date, 10),
-      skills: [projectData.developedSkills],
-      linkGitHub: projectData.gitHubLink,
-      linkDeployedSite: projectData.deployedLink,
-    };
-    console.log(newProject);
+    const newProject = { ...projectData };
     return newProject;
   });
 }
 
 export async function getProjects() {
   try {
-    const { response } = await axios.get(API_ROUTES.PROJECTS);
-    const projects = formatProjects(response.data);
-    return projects;
+    const res = await axios.get(API_ROUTES.PROJECTS);
+    const project = formatProjects(res.data);
+    return project;
   } catch (err) {
     console.error(err);
     return [];
@@ -108,8 +98,8 @@ export async function getProjects() {
 
 export async function getProject(id) {
   try {
-    const response = await axios.get(`${API_ROUTES.PROJECTS}/${id}`);
-    const project = response.data;
+    const res = await axios.get(`${API_ROUTES.PROJECTS}/${id}`);
+    const project = res.data;
     return project;
   } catch (err) {
     console.error(err);
@@ -131,9 +121,7 @@ export async function addProject(data) {
   };
   const bodyFormData = new FormData();
   bodyFormData.append('project', JSON.stringify(project));
-  if (data.file && data.file[0]) {
-    bodyFormData.append('cover', data.file[0]);
-  }
+  bodyFormData.append('image', data.file);
 
   try {
     return await axios.post(API_ROUTES.PROJECTS, bodyFormData, {

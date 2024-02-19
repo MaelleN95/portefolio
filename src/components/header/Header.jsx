@@ -7,11 +7,9 @@ import { Anchor, ConfigProvider } from 'antd';
 import { FaRegArrowAltCircleLeft, FaPenAlt } from 'react-icons/fa';
 
 import ConnexionModal from '../../components/connexion-modal/ConnexionModal';
-import { useUser } from '../../lib/customHooks';
 import datas from '../../assets/datas.json';
 
 function Header({ user, setUser }) {
-  const { connectedUser } = useUser();
   const URL = useLocation();
 
   let nav = useNavigate();
@@ -19,10 +17,6 @@ function Header({ user, setUser }) {
   const handleGoBack = () => {
     nav(-1);
   };
-
-  useEffect(() => {
-    console.log(connectedUser);
-  }, []);
 
   const screenWidth = useScreenSize().width;
 

@@ -6,14 +6,31 @@ import {
   FaTrashAlt,
 } from 'react-icons/fa';
 
+import { deleteProject } from '../../lib/common';
+
 function ProjectCard(props) {
-  const { hardskills, cover, githubLink, deployedLink, projectsId, adminPage } =
+  const { hardskills, cover, githubLink, deployedLink, projectId, adminPage } =
     props;
+
+  const onDelete = async (e) => {
+    if (e.key && e.key !== 'Enter') {
+      return;
+    }
+    const check = confirm(
+      'Etes vous sûr de vouloir supprimer ce projet ?\nCette action est irréversible.'
+    );
+    if (check) {
+      const del = await deleteProject(projectId);
+      if (del) {
+        console.log('suppression réussie');
+      }
+    }
+  };
 
   return (
     <li className="project-card">
       <Link
-        to={`/projects/${projectsId}`}
+        to={`/projects/${projectId}`}
         title={`Lien vers la page du projet ${props.children}`}
       >
         <img
@@ -58,13 +75,13 @@ function ProjectCard(props) {
           <>
             <button className="project-link admin-link">
               <Link
-                to={`/admin/MN95/projects/${projectsId}`}
+                to={`/admin/MN95/projects/${projectId}`}
                 title={`Lien vers la page du projet ${props.children}`}
               >
                 <FaPenAlt />
               </Link>
             </button>
-            <button className="project-link admin-link">
+            <button className="project-link admin-link" onClick={onDelete}>
               <FaTrashAlt />
             </button>
           </>
