@@ -59,6 +59,7 @@
     backdrop-filter: blur(4px);
     transition: all 0.3s;
     & h3 {
+      width: 100%;
       padding: 20px;
       text-align: center;
       @media (max-width: $mobil) {

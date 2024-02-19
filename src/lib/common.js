@@ -135,6 +135,39 @@ export async function addProject(data) {
   }
 }
 
+export async function updateProject(data, id) {
+  const project = {
+    title: data.name,
+    description: data.descr,
+    hardSkills: data.hardSkills,
+    date: parseInt(data.date, 10),
+    mission: data.mission,
+    skills: data.developedSkills,
+    linkGitHub: data.gitHubLink,
+    linkDeployedSite: data.deployedLink,
+  };
+  let bodyFormData = new FormData();
+  bodyFormData.append('project', JSON.stringify(project));
+  if (data.file) {
+    bodyFormData.append('image', data.file);
+  }
+
+  try {
+    return await axios.put(
+      `${API_ROUTES.PROJECTS}/${id}/informations`,
+      bodyFormData,
+      {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem('token')}`,
+        },
+      }
+    );
+  } catch (err) {
+    console.log(err);
+    return { error: true, message: err.message };
+  }
+}
+
 export async function deleteProject(id) {
   try {
     await axios.delete(`${API_ROUTES.PROJECTS}/${id}`, {

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useForm, useFieldArray } from 'react-hook-form';
 import { DevTool } from '@hookform/devtools';
 
-import { addProject } from '../../lib/common';
+import { addProject, updateProject } from '../../lib/common';
 
 import { FaPenAlt, FaTrashAlt } from 'react-icons/fa';
 
@@ -49,16 +49,30 @@ export function ProjectFormInfo({ project }) {
   };
 
   const onSubmit = async (data) => {
-    data.file = selectedFile;
-    let newProject = await addProject(data);
-
-    if (!data.file) {
-      alert('Vous devez ajouter une image de couverture');
-    }
-    if (!newProject.error) {
-      alert('projet créé');
+    if (project) {
+      if (selectedFile === project.cover) {
+        console.log('img non modifié');
+      } else {
+        data.file = selectedFile;
+      }
+      let updatedProject = await updateProject(data, project.projectId);
+      if (!updatedProject.error) {
+        console.log('Modification enregistrée !');
+      } else {
+        alert(updatedProject.message);
+      }
     } else {
-      alert(newProject.message);
+      data.file = selectedFile;
+      let newProject = await addProject(data);
+
+      if (!data.file) {
+        alert('Vous devez ajouter une image de couverture');
+      }
+      if (!newProject.error) {
+        console.log('projet créé');
+      } else {
+        alert(newProject.message);
+      }
     }
   };
 
