@@ -27,7 +27,6 @@ export async function getAuthenticatedUser() {
     }
 
     const timeElapsedMinutes = (new Date() - loginTime) / (1000 * 60);
-    console.log('Temps depuis dernière interaction : ', timeElapsedMinutes);
     if (timeElapsedMinutes > 5) {
       localStorage.clear();
       alert('session expirée');
@@ -70,7 +69,7 @@ export async function addContactResponse(data) {
   };
 
   try {
-    return await axios.post(API_ROUTES.CONTACT_FORM, { data: form });
+    return await axios.post(API_ROUTES.CONTACT_FORM, form);
   } catch (err) {
     console.error(err);
     return { error: true, message: err.message };

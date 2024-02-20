@@ -1,12 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useForm, useFieldArray } from 'react-hook-form';
 import { DevTool } from '@hookform/devtools';
 
 import { addProject, updateProject } from '../../lib/common';
 
 import { FaPenAlt, FaTrashAlt } from 'react-icons/fa';
+import Notification from '../notification/Notification';
 
 export function ProjectFormInfo({ project }) {
+  const [showNotification, setShowNotification] = useState(false);
+  const [notification, setNotification] = useState({ type: '', message: '' });
   const form = useForm({
     mode: 'onTouched',
     defaultValues: {
@@ -14,8 +17,8 @@ export function ProjectFormInfo({ project }) {
       developedSkills: project?.skills || [],
     },
   });
-  const { register, control, handleSubmit, formState, reset } = form;
-  const { errors, isDirty, isValid, isSubmitSuccessful } = formState;
+  const { register, control, handleSubmit, formState } = form;
+  const { errors, isDirty, isValid } = formState;
 
   const {
     fields: fieldsHS,
@@ -49,44 +52,66 @@ export function ProjectFormInfo({ project }) {
   };
 
   const onSubmit = async (data) => {
+    let notif = { type: '', message: '' };
     if (project) {
-      if (selectedFile === project.cover) {
-        console.log('img non modifié');
-      } else {
+      if (selectedFile !== project.cover) {
         data.file = selectedFile;
       }
+
       let updatedProject = await updateProject(data, project.projectId);
       if (!updatedProject.error) {
-        console.log('Modification enregistrée !');
+        notif = {
+          type: 'success',
+          message: 'Projet modifié avec succès !',
+        };
       } else {
-        alert(updatedProject.message);
+        notif = {
+          type: 'error',
+          message: 'Une erreur est survenue.',
+        };
+        console.log(updateProject.message);
       }
     } else {
       data.file = selectedFile;
       let newProject = await addProject(data);
 
       if (!data.file) {
-        alert('Vous devez ajouter une image de couverture');
+        notif = {
+          type: 'error',
+          message: 'Vous devez ajouter une image de couverture',
+        };
       }
       if (!newProject.error) {
-        console.log('projet créé');
+        notif = {
+          type: 'success',
+          message: 'Projet créé avec succès !',
+        };
       } else {
+        notif = {
+          type: 'error',
+          message: 'Une erreur est survenue.',
+        };
         alert(newProject.message);
       }
     }
+    setNotification(notif);
+    setShowNotification(true);
+    setTimeout(() => {
+      setShowNotification(false);
+    }, 5000);
   };
-
-  useEffect(() => {
-    if (isSubmitSuccessful) {
-      // reset();
-    }
-  }, [isSubmitSuccessful]);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="admin-form">
+      {showNotification && (
+        <Notification type={notification.type}>
+          {notification.message}
+        </Notification>
+      )}
       <div className="inline center">
         <div className="input-data ">
           <label htmlFor="name">Nom du projet</label>
+
           <input
             type="text"
             id="name"

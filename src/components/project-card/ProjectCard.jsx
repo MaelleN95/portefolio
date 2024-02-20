@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+// import { useState } from 'react';
+
 import {
   FaGithub,
   FaExternalLinkAlt,
@@ -9,8 +11,15 @@ import {
 import { deleteProject } from '../../lib/common';
 
 function ProjectCard(props) {
-  const { hardskills, cover, githubLink, deployedLink, projectId, adminPage } =
-    props;
+  const {
+    hardskills,
+    cover,
+    githubLink,
+    deployedLink,
+    projectId,
+    adminPage,
+    deleteSuccess,
+  } = props;
 
   const onDelete = async (e) => {
     if (e.key && e.key !== 'Enter') {
@@ -22,7 +31,9 @@ function ProjectCard(props) {
     if (check) {
       const del = await deleteProject(projectId);
       if (del) {
-        console.log('suppression réussie');
+        deleteSuccess(true);
+      } else {
+        deleteSuccess(false);
       }
     }
   };

@@ -1,31 +1,49 @@
-import { useEffect } from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 // import { DevTool } from '@hookform/devtools';
 
 import { addContactResponse } from '../../lib/common';
 
+import Notification from '../../components/notification/Notification';
+
 function Contact() {
+  const [showNotification, setShowNotification] = useState(false);
+  const [notification, setNotification] = useState({ type: '', message: '' });
+
   const form = useForm({ mode: 'onTouched' });
   const { register, /*control,*/ handleSubmit, formState, reset } = form;
-  const { errors, isDirty, isValid, isSubmitSuccessful } = formState;
+  const { errors, isDirty, isValid } = formState;
 
   const onSubmit = async (data) => {
+    let notif = { type: '', message: '' };
     const newContactForm = await addContactResponse(data);
     if (!newContactForm.error) {
-      console.log('Send successully !!');
-    } else {
-      alert(newContactForm.message);
-    }
-  };
-
-  useEffect(() => {
-    if (isSubmitSuccessful) {
+      notif = {
+        type: 'success',
+        message: 'Formulaire envoyé avec succès !',
+      };
       reset();
+    } else {
+      notif = {
+        type: 'error',
+        message: "Une erreur est survenue lors de l'envoi !",
+      };
+      console.log(newContactForm.message);
     }
-  }, [isSubmitSuccessful]);
+    setNotification(notif);
+    setShowNotification(true);
+    setTimeout(() => {
+      setShowNotification(false);
+    }, 5000);
+  };
 
   return (
     <section id="contact">
+      {showNotification && (
+        <Notification type={notification.type}>
+          {notification.message}
+        </Notification>
+      )}
       <h2>Me contacter</h2>
       <div className="contact-block">
         <div>
