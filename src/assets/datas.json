@@ -1,65 +1,65 @@
 {
-  "logo": "http://localhost:5173/src/assets/icons/logo/logo-MN.png",
-  "cover": "http://localhost:5173/src/assets/icons/images/my-photo.webp",
+  "logo": "https://maelle-nioche.vercel.app//src/assets/icons/logo/logo-MN.png",
+  "cover": "https://maelle-nioche.vercel.app//src/assets/icons/images/my-photo.webp",
   "job": "Développeuse web",
   "frontEndSkills": [
     {
-      "logo": "http://localhost:5173/src/assets/icons/skills/html-icon.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/skills/html-icon.svg",
       "title": "HTML",
       "link": "https://developer.mozilla.org/fr/docs/Web/HTML"
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/skills/css-icon.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/skills/css-icon.svg",
       "title": "CSS",
       "link": "https://developer.mozilla.org/fr/docs/Web/CSS"
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/skills/javascript-icon.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/skills/javascript-icon.svg",
       "title": "JavaScript",
       "link": "https://developer.mozilla.org/fr/docs/Web/JavaScript"
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/skills/react-icon.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/skills/react-icon.svg",
       "title": "React",
       "link": "https://fr.legacy.reactjs.org/"
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/skills/sass-icon.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/skills/sass-icon.svg",
       "title": "Sass",
       "link": "https://sass-lang.com/"
     }
   ],
   "backEndSkills": [
     {
-      "logo": "http://localhost:5173/src/assets/icons/skills/nodejs-icon.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/skills/nodejs-icon.svg",
       "title": "Node.js",
       "link": "https://nodejs.org/en"
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/skills/express-icon.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/skills/express-icon.svg",
       "title": "Express",
       "link": "https://expressjs.com/",
       "light": true
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/skills/mongodb-icon.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/skills/mongodb-icon.svg",
       "title": "MongoDB",
       "link": "https://www.mongodb.com/fr-fr"
     }
   ],
   "tools": [
     {
-      "logo": "http://localhost:5173/src/assets/icons/tools/visual-studio-code-icon.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/tools/visual-studio-code-icon.svg",
       "title": "Visual Studio Code",
       "link": "https://code.visualstudio.com/"
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/tools/git-icon.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/tools/git-icon.svg",
       "title": "Git",
       "link": "https://git-scm.com/"
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/tools/github-icon.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/tools/github-icon.svg",
       "title": "Git Hub",
       "link": "https://github.com/",
       "light": true,
@@ -68,22 +68,22 @@
   ],
   "goodPractices": [
     {
-      "logo": "http://localhost:5173/src/assets/icons/illustrations/accessibility.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/illustrations/accessibility.svg",
       "title": "L'accessibilité",
       "content": "Assurer l'accessibilité d'un site web permet à tous les utilisateurs d’accéder au contenu de manière équitable et efficace !"
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/illustrations/responsive.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/illustrations/responsive.svg",
       "title": "Le responsive design",
       "content": "Avec la diversification des appareils utilisés pour accéder au web, le responsive design garantit une expérience utilisateur optimale sur tous les appareils."
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/illustrations/work_chat.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/illustrations/work_chat.svg",
       "title": "Le SEO (Optimisation pour les moteurs de recherches)",
       "content": "L'optimisation SEO améliore la visibilité d'un site sur les moteurs de recherche, attirant ainsi un trafic davantage ciblé."
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/illustrations/nature.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/illustrations/nature.svg",
       "title": "Le Green code",
       "content": "Adopter des pratiques de développement durable réduit l'empreinte écologique du site en optimisant l'utilisation des ressources et en minimisant la consommation d'énergie."
     }
@@ -97,7 +97,7 @@
       "Curiosité",
       "Rigueur"
     ],
-    "logo": "http://localhost:5173/src/assets/icons/illustrations/engineering_team.svg"
+    "logo": "https://maelle-nioche.vercel.app//src/assets/icons/illustrations/engineering_team.svg"
   },
   "formation": [
     {
@@ -105,7 +105,7 @@
       "description": "",
       "level": "option Psychologie",
       "date": "2022 - actuel",
-      "logo": "http://localhost:5173/src/assets/icons/font-awesome/hourglass-half-solid.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/font-awesome/hourglass-half-solid.svg",
       "altLogo": "sablier"
     },
     {
@@ -113,7 +113,7 @@
       "description": "",
       "level": "Bac +2",
       "date": "2024",
-      "logo": "http://localhost:5173/src/assets/icons/font-awesome/medal-solid.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/font-awesome/medal-solid.svg",
       "altLogo": "médaille"
     },
     {
@@ -121,23 +121,23 @@
       "description": "",
       "level": "Avec mention",
       "date": "2020",
-      "logo": "http://localhost:5173/src/assets/icons/font-awesome/graduation-cap-solid.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/font-awesome/graduation-cap-solid.svg",
       "altLogo": "chapeau de fin d'études"
     }
   ],
   "socialMedia": [
     {
-      "logo": "http://localhost:5173/src/assets/icons/social-media/linkedin-icon.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/social-media/linkedin-icon.svg",
       "title": "LinkedIn",
       "link": "www.linkedin.com/in/maëlle-nioche"
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/tools/github-icon.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/tools/github-icon.svg",
       "title": "Git Hub",
       "link": "https://github.com/MaelleN95/"
     },
     {
-      "logo": "http://localhost:5173/src/assets/icons/social-media/instagram.svg",
+      "logo": "https://maelle-nioche.vercel.app//src/assets/icons/social-media/instagram.svg",
       "title": "Instagram",
       "link": "https://www.instagram.com/maellen9.5/"
     }
