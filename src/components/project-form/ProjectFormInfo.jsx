@@ -38,9 +38,6 @@ export function ProjectFormInfo({ project }) {
     name: 'developedSkills',
   });
 
-  // console.log('isDirty : ', isDirty);
-  // console.log('isValid : ', isValid);
-
   const [selectedImage, setSelectedImage] = useState(project?.cover);
   const [selectedFile, setSelectedFile] = useState(project?.cover);
 
@@ -69,7 +66,6 @@ export function ProjectFormInfo({ project }) {
           type: 'error',
           message: 'Une erreur est survenue.',
         };
-        console.log(updateProject.message);
       }
     } else {
       data.file = selectedFile;
@@ -91,7 +87,6 @@ export function ProjectFormInfo({ project }) {
           type: 'error',
           message: 'Une erreur est survenue.',
         };
-        alert(newProject.message);
       }
     }
     setNotification(notif);

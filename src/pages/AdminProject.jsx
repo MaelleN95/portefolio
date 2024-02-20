@@ -2,7 +2,6 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import ProjectFormInfo from '../components/project-form/ProjectFormInfo';
-import ProjectFormImages from '../components/project-form/ProjectFormImages';
 import { ErrorBoundary } from '../utils/ErrorBoundary';
 import ErrorPage from './ErrorPage';
 
@@ -39,11 +38,6 @@ function AdminProject() {
             ) : (
               <ProjectFormInfo project={project} />
             )}
-          </section>
-
-          <section id="modification-images">
-            <h2>images</h2>
-            <ProjectFormImages project={project} />
           </section>
         </main>
       </ErrorBoundary>

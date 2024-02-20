@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 import useScreenSize from '../../lib/customHooks';
 import { LogIn, storeInLocalStorage } from '../../lib/common';
+import Notification from '../notification/Notification';
 
 import { FaUserLock } from 'react-icons/fa6';
 import { FaKey } from 'react-icons/fa';
@@ -12,6 +13,9 @@ import { GiPadlockOpen } from 'react-icons/gi';
 import Modal from 'antd/es/modal/Modal';
 
 function ConnexionModal({ user, setUser }) {
+  const [showNotification, setShowNotification] = useState(false);
+  const [notification, setNotification] = useState({ type: '', message: '' });
+
   const nav = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
   const [errorStatus, setErrorStatus] = useState(false);
@@ -30,13 +34,20 @@ function ConnexionModal({ user, setUser }) {
   };
 
   const onSubmit = async (data) => {
+    let notif = { type: '', message: '' };
     try {
       setIsLoading(true);
       let response = await LogIn(data);
       if (!response?.data?.token) {
-        alert('Une erreur est survenue');
-        console.log('erreur : ', response);
+        notif = {
+          type: 'error',
+          message: 'Une erreur est survenue !',
+        };
       } else {
+        notif = {
+          type: 'success',
+          message: 'Connectée !',
+        };
         storeInLocalStorage(
           response.data.token,
           response.data.userId,
@@ -50,16 +61,30 @@ function ConnexionModal({ user, setUser }) {
       }
     } catch (err) {
       setErrorStatus(true);
-      console.log(err);
+      notif = {
+        type: 'error',
+        message: 'Une erreur est survenue !',
+      };
     } finally {
       setIsLoading(false);
     }
+    setNotification(notif);
+    setShowNotification(true);
+    setTimeout(() => {
+      setShowNotification(false);
+    }, 5000);
   };
 
   const disconnect = () => {
+    let notif = { type: 'success', message: 'Déconnectée !' };
     localStorage.clear();
     setUser(null);
     nav('/');
+    setNotification(notif);
+    setShowNotification(true);
+    setTimeout(() => {
+      setShowNotification(false);
+    }, 5000);
   };
 
   const screenWidth = useScreenSize().width;
@@ -75,8 +100,17 @@ function ConnexionModal({ user, setUser }) {
   }, [screenWidth]);
   return (
     <>
+      {showNotification && (
+        <Notification type={notification.type}>
+          {notification.message}
+        </Notification>
+      )}
       {!user ? (
-        <button onClick={showModal} className="button-modale-connexion">
+        <button
+          onClick={showModal}
+          className="button-modale-connexion"
+          title="Accès connexion admninistrateur"
+        >
           <FaKey />
         </button>
       ) : (
@@ -113,13 +147,21 @@ function ConnexionModal({ user, setUser }) {
                   value: true,
                   message: 'Le champ Identifiant est requis',
                 },
+                minLength: {
+                  value: 5,
+                },
+                maxLength: {
+                  value: 30,
+                },
                 pattern: {
-                  value:
-                    /^[a-zA-Z0-9.&-_~]+@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9_-]+)*$/,
+                  value: /^[a-zA-Z0-9.&-_]+@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9_-]+)*$/,
                   message: 'Format invalide',
                 },
               })}
               className={errors.username?.message ? 'error-input' : null}
+              autoComplete="username"
+              autoCapitalize="none"
+              spellCheck="false"
             />
             <p className="error">{errors.username?.message}</p>
           </div>
@@ -127,7 +169,7 @@ function ConnexionModal({ user, setUser }) {
           <div className="input-data">
             <label htmlFor="pw">Mot de passe</label>
             <input
-              type="text"
+              type="password"
               id="pw"
               {...register('pw', {
                 required: {
@@ -136,6 +178,11 @@ function ConnexionModal({ user, setUser }) {
                 },
               })}
               className={errors.pw?.message ? 'error-input' : null}
+              autoComplete="username"
+              autoCapitalize="none"
+              spellCheck="false"
+              min="5"
+              max="40"
             />
             <p className="error">{errors.pw?.message}</p>
           </div>

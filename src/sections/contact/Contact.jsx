@@ -28,7 +28,6 @@ function Contact() {
         type: 'error',
         message: "Une erreur est survenue lors de l'envoi !",
       };
-      console.log(newContactForm.message);
     }
     setNotification(notif);
     setShowNotification(true);
@@ -81,6 +80,9 @@ function Contact() {
                     },
                   })}
                   className={errors.nom?.message ? 'error-input' : null}
+                  autoComplete="off"
+                  autoCapitalize="none"
+                  spellCheck="true"
                 />
                 <p className="error">{errors.nom?.message}</p>
               </div>
@@ -97,6 +99,9 @@ function Contact() {
                     },
                   })}
                   className={errors.prenom?.message ? 'error-input' : null}
+                  autoComplete="off"
+                  autoCapitalize="none"
+                  spellCheck="true"
                 />
                 <p className="error">{errors.prenom?.message}</p>
               </div>
@@ -105,7 +110,7 @@ function Contact() {
             <div className="input-data">
               <label htmlFor="email">E-mail</label>
               <input
-                type="text"
+                type="email"
                 id="email"
                 {...register('email', {
                   required: {
@@ -119,6 +124,9 @@ function Contact() {
                   },
                 })}
                 className={errors.email?.message ? 'error-input' : null}
+                autoComplete="off"
+                autoCapitalize="none"
+                spellCheck="true"
               />
               <p className="error">{errors.email?.message}</p>
             </div>
@@ -136,6 +144,9 @@ function Contact() {
                   },
                 })}
                 className={errors.msg?.message ? 'error-input' : null}
+                autoComplete="off"
+                autoCapitalize="sentences"
+                spellCheck="true"
               ></textarea>
               <p className="error">{errors.msg?.message}</p>
             </div>

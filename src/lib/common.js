@@ -45,7 +45,6 @@ export async function getAuthenticatedUser() {
       user: { userId, token, userType, loginTime },
     };
   } catch (err) {
-    console.error("getAuthenticatedUser, une erreur s'est produite :", err);
     return defaultReturnObject;
   }
 }
@@ -71,7 +70,6 @@ export async function addContactResponse(data) {
   try {
     return await axios.post(API_ROUTES.CONTACT_FORM, form);
   } catch (err) {
-    console.error(err);
     return { error: true, message: err.message };
   }
 }
@@ -90,7 +88,6 @@ export async function getProjects() {
     const project = formatProjects(res.data);
     return project;
   } catch (err) {
-    console.error(err);
     return [];
   }
 }
@@ -101,7 +98,6 @@ export async function getProject(id) {
     const project = res.data;
     return project;
   } catch (err) {
-    console.error(err);
     return null;
   }
 }
@@ -129,7 +125,6 @@ export async function addProject(data) {
       },
     });
   } catch (err) {
-    console.error(err);
     return { error: true, message: err.message };
   }
 }
@@ -162,7 +157,6 @@ export async function updateProject(data, id) {
       }
     );
   } catch (err) {
-    console.log(err);
     return { error: true, message: err.message };
   }
 }
@@ -176,7 +170,6 @@ export async function deleteProject(id) {
     });
     return true;
   } catch (err) {
-    console.error(err);
     return false;
   }
 }
