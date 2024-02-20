@@ -1,17 +1,48 @@
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 // import { DevTool } from '@hookform/devtools';
 
+import { addContactResponse } from '../../lib/common';
+
+import Notification from '../../components/notification/Notification';
+
 function Contact() {
+  const [showNotification, setShowNotification] = useState(false);
+  const [notification, setNotification] = useState({ type: '', message: '' });
+
   const form = useForm({ mode: 'onTouched' });
-  const { register, /*control,*/ handleSubmit, formState } = form;
+  const { register, /*control,*/ handleSubmit, formState, reset } = form;
   const { errors, isDirty, isValid } = formState;
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    let notif = { type: '', message: '' };
+    const newContactForm = await addContactResponse(data);
+    if (!newContactForm.error) {
+      notif = {
+        type: 'success',
+        message: 'Formulaire envoyé avec succès !',
+      };
+      reset();
+    } else {
+      notif = {
+        type: 'error',
+        message: "Une erreur est survenue lors de l'envoi !",
+      };
+    }
+    setNotification(notif);
+    setShowNotification(true);
+    setTimeout(() => {
+      setShowNotification(false);
+    }, 5000);
   };
 
   return (
     <section id="contact">
+      {showNotification && (
+        <Notification type={notification.type}>
+          {notification.message}
+        </Notification>
+      )}
       <h2>Me contacter</h2>
       <div className="contact-block">
         <div>
@@ -49,6 +80,9 @@ function Contact() {
                     },
                   })}
                   className={errors.nom?.message ? 'error-input' : null}
+                  autoComplete="off"
+                  autoCapitalize="none"
+                  spellCheck="true"
                 />
                 <p className="error">{errors.nom?.message}</p>
               </div>
@@ -65,6 +99,9 @@ function Contact() {
                     },
                   })}
                   className={errors.prenom?.message ? 'error-input' : null}
+                  autoComplete="off"
+                  autoCapitalize="none"
+                  spellCheck="true"
                 />
                 <p className="error">{errors.prenom?.message}</p>
               </div>
@@ -73,7 +110,7 @@ function Contact() {
             <div className="input-data">
               <label htmlFor="email">E-mail</label>
               <input
-                type="text"
+                type="email"
                 id="email"
                 {...register('email', {
                   required: {
@@ -87,6 +124,9 @@ function Contact() {
                   },
                 })}
                 className={errors.email?.message ? 'error-input' : null}
+                autoComplete="off"
+                autoCapitalize="none"
+                spellCheck="true"
               />
               <p className="error">{errors.email?.message}</p>
             </div>
@@ -104,6 +144,9 @@ function Contact() {
                   },
                 })}
                 className={errors.msg?.message ? 'error-input' : null}
+                autoComplete="off"
+                autoCapitalize="sentences"
+                spellCheck="true"
               ></textarea>
               <p className="error">{errors.msg?.message}</p>
             </div>

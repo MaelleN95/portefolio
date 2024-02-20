@@ -11,6 +11,9 @@
 @import '../components/project-card/ProjectCard.scss';
 @import '../components/project-modal/ProjectModal.scss';
 @import '../components/soft-skill-bubble/SoftSkillBubble.scss';
+@import '../components/connexion-modal/ConnexionModal.scss';
+@import '../components/project-form/ProjectForm.scss';
+@import '../components/notification/Notification.scss';
 
 // import sections styles
 @import '../sections/about-me/AboutMe.scss';
@@ -26,6 +29,8 @@
 
 // import page styles
 @import '../pages/Projects.scss';
+@import '../pages/ErrorPage.scss';
+@import '../pages//AdminPages.scss';
 
 :root {
   font-family: 'Roboto', sans-serif, Arial;

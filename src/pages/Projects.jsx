@@ -1,24 +1,42 @@
-import Header from '../components/header/Header';
-import Footer from '../components/footer/Footer';
+import ErrorPage from './ErrorPage';
+import { ErrorBoundary } from '../utils/ErrorBoundary';
+
 import ProjectModal from '../components/project-modal/ProjectModal';
 
 import { useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 import { FaCalendarAlt } from 'react-icons/fa';
 
 import { Glow, GlowCapture } from '@codaworks/react-glow';
 
-import projects from '../assets/projects.json';
+import { getProject } from '../lib/common';
 import percentages from '../assets/icons/illustrations/percentages.svg';
 
-function Projects() {
-  let { projectsId } = useParams();
-  const project = projects.find((pro) => pro.id === projectsId);
+function ProjectContentPage() {
+  const [loading, setLoading] = useState(true);
+  const [project, setProject] = useState(null);
+
+  const params = useParams();
+
+  useEffect(() => {
+    async function getItem() {
+      const data = await getProject(params.projectsId);
+      if (data) {
+        setProject(data);
+        setLoading(false);
+      } else {
+        setLoading(false);
+      }
+    }
+    getItem();
+  }, [params.projectsId]);
 
   return (
-    <>
-      <Header />
-      <main>
+    <main>
+      {loading ? (
+        <p>Chargement...</p>
+      ) : (
         <GlowCapture>
           <section id="project-introduction">
             <h1>{project.title}</h1>
@@ -39,7 +57,7 @@ function Projects() {
             <div className="project-cover">
               <div className="project-cover__image">
                 <img src={project.cover} alt="" />
-                {project.pictures ? (
+                {project.pictures[0] != null ? (
                   <ProjectModal pictures={project.pictures} />
                 ) : null}
               </div>
@@ -49,7 +67,7 @@ function Projects() {
 
             <div className="project-links">
               <a
-                href={project.linkGithub}
+                href={project.linkGitHub}
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Ouvrir la page du code dans un nouvel onglet"
@@ -57,9 +75,9 @@ function Projects() {
               >
                 Consulter le code
               </a>
-              {project.deployedLink ? (
+              {project.linkDeployedSite ? (
                 <a
-                  href={project.deployedLink}
+                  href={project.linkDeployedSite}
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Ouvrir la page du site dans un nouvel onglet"
@@ -106,9 +124,16 @@ function Projects() {
             </div>
           </section>
         </GlowCapture>
-      </main>
-      <Footer />
-    </>
+      )}
+    </main>
+  );
+}
+
+function Projects() {
+  return (
+    <ErrorBoundary errorRedirection={<ErrorPage />}>
+      <ProjectContentPage />
+    </ErrorBoundary>
   );
 }
 

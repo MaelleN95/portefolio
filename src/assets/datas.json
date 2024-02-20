@@ -1,6 +1,6 @@
 {
   "logo": "http://localhost:5173/src/assets/icons/logo/logo-MN.png",
-  "cover": "http://localhost:5173/src/assets/icons/images/my-photo.jpg",
+  "cover": "http://localhost:5173/src/assets/icons/images/my-photo.webp",
   "job": "Développeuse web",
   "frontEndSkills": [
     {
@@ -129,7 +129,7 @@
     {
       "logo": "http://localhost:5173/src/assets/icons/social-media/linkedin-icon.svg",
       "title": "LinkedIn",
-      "link": "https://www.linkedin.com/"
+      "link": "www.linkedin.com/in/maëlle-nioche"
     },
     {
       "logo": "http://localhost:5173/src/assets/icons/tools/github-icon.svg",
@@ -139,12 +139,7 @@
     {
       "logo": "http://localhost:5173/src/assets/icons/social-media/instagram.svg",
       "title": "Instagram",
-      "link": "https://www.instagram.com/"
-    },
-    {
-      "logo": "http://localhost:5173/src/assets/icons/social-media/discord.svg",
-      "title": "Discord",
-      "link": "https://discord.com/"
+      "link": "https://www.instagram.com/maellen9.5/"
     }
   ]
 }

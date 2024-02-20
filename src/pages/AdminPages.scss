@@ -1,0 +1,23 @@
+.modification,
+#projects-list {
+  h1 {
+    text-align: center;
+  }
+  & .add-button {
+    font-size: 1.5rem;
+    transition: all 0.3s;
+    border: inset $bg-color-dark 5px;
+    background-color: rgba($color: $blue-color, $alpha: 0.5);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      font-size: 6rem;
+      text-decoration: none;
+    }
+    &:active {
+      border: outset $bg-color-dark 5px;
+    }
+  }
+}
