@@ -41,8 +41,8 @@
   }
 
   color-scheme: light dark;
-  color: white;
-  background-color: $bg-color-dark;
+  color: $bg-color-dark;
+  background-color: $bg-color-light;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -119,9 +119,9 @@ button {
   font-size: 1rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: $bg-color-dark;
-    background-color: $bg-color-light;
-  }
-}
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     color: $bg-color-light;
+//     background-color: $bg-color-dark;
+//   }
+// }

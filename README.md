@@ -1,8 +1,25 @@
-# React + Vite
+# Portefolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce repository contient le code source du front-end de mon site web personnel, où je présente mes réalisations et mon parcours professionnel.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Cloner le repo :
+`git clone https://github.com/MaelleN95/portefolio.git`
+
+Accéder au répertoire :
+`cd portefolio`
+
+Installer les dépendances :
+`npm i`
+
+Lancer l'application en mode développement :
+`npm run dev`
+
+## Technologies utilisées
+
+Mon portefolio a été développé en utilisant les technologies suivantes :
+
+- **Frontend** : React et Sass pour l'interface utilisateur.
+- **Backend** : Express.js et Mongoose pour l'API.
+- **Base de données** : MongoDB pour stocker les informations sur mes projets.
