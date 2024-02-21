@@ -53,10 +53,7 @@ function Formation() {
         </VerticalTimeline>
 
         <Glow>
-          <a
-            href="/src/assets/CV_Maelle_Nioche.pdf"
-            className="glowable-button"
-          >
+          <a href="/assets/CV_Maelle_Nioche.pdf" className="glowable-button">
             Téléchargez mon CV ! <FaFileExport className="download-icon" />
           </a>
         </Glow>
