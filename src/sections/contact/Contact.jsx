@@ -59,8 +59,8 @@ function Contact() {
           </p>
           <div className="img-form">
             <img
-              src="/src/assets/icons/illustrations/social_networking.svg"
-              alt=""
+              src="/social_networking.svg"
+              alt="Illustration de 2 personnes qui discutent via SMS"
             />
           </div>
         </div>
