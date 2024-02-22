@@ -67,6 +67,7 @@
   &:hover {
     &::after {
       content: 'Mes compétences front-end';
+      background-color: $bg-color-dark;
       position: absolute;
       bottom: 0px;
       left: 0;
@@ -102,6 +103,7 @@
   &:hover {
     &::after {
       content: 'Mes compétences back-end';
+      background-color: $bg-color-dark;
       position: absolute;
       bottom: 0px;
       left: 0;
@@ -114,5 +116,12 @@
         content: none;
       }
     }
+  }
+}
+
+.css-1any4nn {
+  @media (max-width: $mobil) {
+    height: 0 !important;
+    max-height: 0 !important;
   }
 }

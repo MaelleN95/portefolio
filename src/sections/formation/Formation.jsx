@@ -12,6 +12,7 @@ import {
 import { Glow, GlowCapture } from '@codaworks/react-glow';
 
 import datas from '../../assets/datas.json';
+import CV from '../../assets/CV_Maelle_Nioche.pdf';
 
 function Formation() {
   const iconsTab = {
@@ -53,10 +54,7 @@ function Formation() {
         </VerticalTimeline>
 
         <Glow>
-          <a
-            href="./src/assets/CV_Maelle_Nioche.pdf"
-            className="glowable-button"
-          >
+          <a href={CV} target="_blank" className="glowable-button">
             Téléchargez mon CV ! <FaFileExport className="download-icon" />
           </a>
         </Glow>

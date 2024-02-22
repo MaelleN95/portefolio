@@ -119,6 +119,13 @@ button {
   font-size: 1rem;
 }
 
+input,
+textarea {
+  background-color: white;
+  font-family: 'Roboto';
+  color: black;
+}
+
 // @media (prefers-color-scheme: dark) {
 //   :root {
 //     color: $bg-color-light;
