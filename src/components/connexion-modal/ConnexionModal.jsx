@@ -93,7 +93,7 @@ function ConnexionModal({ user, setUser }) {
 
   useEffect(() => {
     if (screenWidth <= 1175) {
-      setWidthModalConnexion('70%');
+      setWidthModalConnexion('90%');
     } else {
       setWidthModalConnexion('40%');
     }

@@ -1,17 +1,30 @@
+import { useEffect, useState } from 'react';
+
 import { PieChart, pieArcLabelClasses } from '@mui/x-charts';
 
 import SkillsCarousel from '../../components/skills-carousel/skills-carousel';
 import LogoText from '../../components/LogoText/LogoText';
+import useScreenSize from '../../lib/customHooks';
 
 import datas from '../../assets/datas.json';
 
 function HardSkills() {
-  const OPTIONS = {
+  const screenWidth = useScreenSize().width;
+  const [OPTIONS, setOPTIONS] = useState({
     direction: 'backward',
     axis: 'y',
     dragFree: true,
     loop: true,
-  };
+    watchDrag: true,
+  });
+
+  useEffect(() => {
+    if (screenWidth <= 720) {
+      setOPTIONS({ ...OPTIONS, watchDrag: false });
+    } else {
+      setOPTIONS({ ...OPTIONS, watchDrag: true });
+    }
+  }, [screenWidth]);
 
   const backEndSkills = datas.backEndSkills;
   const frontEndSkills = datas.frontEndSkills;
