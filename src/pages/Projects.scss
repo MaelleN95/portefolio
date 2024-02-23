@@ -49,6 +49,10 @@
       width: 100%;
       height: 340px;
     }
+    @media (max-width: $small-mobil) {
+      width: 100%;
+      height: 240px;
+    }
     &__image {
       position: relative;
       border-radius: 10px;
@@ -63,8 +67,13 @@
         width: 100%;
         height: 280px;
       }
+      @media (max-width: $small-mobil) {
+        width: 100%;
+        height: 180px;
+      }
       & img {
         object-fit: cover;
+        object-position: top;
         height: 500px;
         width: 100%;
         @media (max-width: $small-tablet) {
@@ -72,6 +81,9 @@
         }
         @media (max-width: $mobil) {
           height: 280px;
+        }
+        @media (max-width: $small-mobil) {
+          height: 180px;
         }
       }
       & .button-modale {
@@ -183,11 +195,13 @@
   color: white;
   border: 7px black solid;
   border-radius: 10px;
+
   & h2 {
     padding: 2rem;
   }
   & p {
     margin: 0;
+    line-height: 1.7rem;
   }
 }
 
@@ -195,6 +209,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  & li {
+    list-style: disc;
+    margin: 1rem;
+  }
   @media (max-width: $mobil) {
     flex-direction: column;
     & .glow {
@@ -209,6 +227,7 @@
     align-items: center;
     & img {
       margin: auto;
+      padding: 0.5rem;
       height: 270px;
       @media (max-width: $mobil) {
         height: 50vw;
@@ -242,4 +261,17 @@
   border: $purple-color 7px solid;
   background-color: darken($color: $purple-color, $amount: 50);
   box-shadow: inset 0px 0px 5px 5px rgba($color: $purple-color, $alpha: 90%);
+}
+
+@media (max-width: $mobil) {
+  #project-mission {
+    border: $blue-color 7px solid;
+    background-color: darken($color: $blue-color, $amount: 58);
+    box-shadow: inset 0px 0px 5px 5px rgba($color: $blue-color, $alpha: 90%);
+  }
+  .skills-developed-part {
+    border: $purple-color 7px solid;
+    background-color: darken($color: $purple-color, $amount: 60);
+    box-shadow: inset 0px 0px 5px 5px rgba($color: $purple-color, $alpha: 90%);
+  }
 }
