@@ -59,7 +59,7 @@ function Header({ user, setUser }) {
         <ConfigProvider
           theme={{
             token: {
-              colorPrimary: '#6C63FF',
+              colorPrimary: '#ff5b61',
               colorText: 'black',
               fontFamily: 'Roboto, sans-serif, Arial',
               fontSize: '1rem',

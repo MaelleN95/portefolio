@@ -9,14 +9,14 @@
   }
 
   & .blue {
-    background: $blue-color;
+    background: darken($color: $blue-color, $amount: 5);
     @media (max-width: $mobil) {
       animation: soft-skills-move 6s infinite alternate ease;
     }
   }
 
   & .red {
-    background: $red-color;
+    background: darken($color: $red-color, $amount: 5);
     @media (max-width: $mobil) {
       animation: soft-skills-move 6s infinite alternate-reverse;
     }

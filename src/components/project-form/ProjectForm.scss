@@ -15,7 +15,7 @@
     border: 0;
     box-shadow: 2px 2px 5px rgba($color: $bg-color-dark, $alpha: 0.5);
     &:focus {
-      background-color: lighten($color: $purple-color, $amount: 27);
+      background-color: lighten($color: $blue-color, $amount: 27);
       border: 0;
     }
   }
@@ -23,7 +23,7 @@
   .label {
     font-size: 1.2rem;
     padding: 5px;
-    color: $purple-color;
+    color: $blue-color;
   }
 
   & .inline {
@@ -139,7 +139,7 @@
       cursor: pointer;
       &:hover,
       &:focus {
-        color: $purple-color;
+        color: $blue-color;
       }
     }
     & .remove-button {
@@ -159,8 +159,8 @@
     padding: 15px 55px;
     border-radius: 50px;
     border: 0;
-    background-color: $purple-color;
-    color: white;
+    background-color: $blue-color;
+    color: $bg-color-dark;
     text-align: center;
     font-weight: bold;
     box-shadow: inset -2px -2px 7px 1px black, inset 2px 2px 7px 1px white;
@@ -168,6 +168,7 @@
     cursor: pointer;
     &:disabled {
       background-color: black;
+      color: $bg-color-light;
       cursor: not-allowed;
     }
     &:active {

@@ -64,13 +64,13 @@
   }
 }
 .glowable-button:active {
-  border: $purple-color 4px solid;
-  color: $purple-color;
+  border: $red-color 4px solid;
+  color: $red-color;
 }
 [glow] .glowable-button {
-  border: rgb(0, 255, 21) 4px solid;
-  background-color: darken($color: rgb(0, 255, 21), $amount: 40);
+  border: $blue-color 4px solid;
+  background-color: darken($color: $blue-color, $amount: 47);
 }
 [glow] .download-icon {
-  color: rgb(0, 255, 21);
+  color: $blue-color;
 }

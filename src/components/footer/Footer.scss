@@ -1,12 +1,12 @@
 footer {
   background-color: $red-color;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   display: flex;
   justify-content: center;
   & span {
     font-family: 'Roboto', sans-serif, Arial;
     font-weight: 400;
-    font-size: $desktop-font-size;
+    font-size: $mobil-font-size;
     text-align: center;
   }
 }

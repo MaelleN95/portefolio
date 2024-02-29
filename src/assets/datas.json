@@ -27,6 +27,11 @@
       "logo": "/sass-icon.svg",
       "title": "Sass",
       "link": "https://sass-lang.com/"
+    },
+    {
+      "logo": "/figma.svg",
+      "title": "Figma",
+      "link": "https://www.figma.com/"
     }
   ],
   "backEndSkills": [
@@ -37,14 +42,26 @@
     },
     {
       "logo": "/express-icon.svg",
-      "title": "Express",
+      "title": "Express.js",
       "link": "https://expressjs.com/",
+      "light": true
+    },
+    {
+      "logo": "/mongoose.webp",
+      "title": "Mongoose",
+      "link": "https://mongoosejs.com/",
       "light": true
     },
     {
       "logo": "/mongodb-icon.svg",
       "title": "MongoDB",
       "link": "https://www.mongodb.com/fr-fr"
+    },
+    {
+      "logo": "/aws.svg",
+      "title": "AWS S3",
+      "link": "https://aws.amazon.com/fr/s3/",
+      "light": true
     }
   ],
   "tools": [
@@ -64,6 +81,16 @@
       "link": "https://github.com/",
       "light": true,
       "rounded": true
+    },
+    {
+      "logo": "/trello.svg",
+      "title": "Trello",
+      "link": "https://trello.com/"
+    },
+    {
+      "logo": "/postman.svg",
+      "title": "Postman",
+      "link": "https://www.postman.com/"
     }
   ],
   "goodPractices": [

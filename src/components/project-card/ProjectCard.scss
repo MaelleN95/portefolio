@@ -53,10 +53,8 @@
     display: flex;
     align-items: center;
     opacity: 0;
-    box-shadow: inset 0 0 150px 30px rgba($color: $purple-color, $alpha: 50%),
-      inset 0 0 250px 40px rgba($color: $blue-color, $alpha: 20%),
-      inset 0 0 250px 100px rgba($color: white, $alpha: 100%);
-    backdrop-filter: blur(4px);
+    box-shadow: inset 0 0 250px 100px rgba($color: white, $alpha: 60%);
+    backdrop-filter: blur(10px);
     transition: all 0.3s;
     & h3 {
       width: 100%;
@@ -79,17 +77,18 @@
     display: flex;
     flex-direction: row;
     & .project-link {
+      color: black;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-left: 10px;
-      background-color: rgba($color: $blue-color, $alpha: 40%);
+      background-color: rgba($color: $blue-color, $alpha: 50%);
       backdrop-filter: blur(5px);
       border-radius: 20px;
       width: 60px;
       height: 60px;
       @media (max-width: $mobil) {
-        background-color: rgba($color: $blue-color, $alpha: 75%);
+        background-color: rgba($color: $blue-color, $alpha: 80%);
       }
       &:hover {
         background-color: rgba($color: $blue-color, $alpha: 95%);
@@ -98,10 +97,11 @@
         font-size: 0;
       }
       & .icon {
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
         padding: 10px;
         text-align: center;
+        color: $bg-color-dark;
       }
     }
   }
@@ -112,7 +112,7 @@
     left: 20px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     &__element {
       display: flex;
       justify-content: center;

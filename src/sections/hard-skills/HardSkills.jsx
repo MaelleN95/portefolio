@@ -79,7 +79,7 @@ function HardSkills() {
               outerRadius: 225,
               paddingAngle: 5,
               cornerRadius: 10,
-              startAngle: -200,
+              startAngle: -190,
               endAngle: 200,
               highlightScope: { faded: 'global', highlighted: 'item' },
               faded: { innerRadius: 40, additionalRadius: -20, color: 'grey' },

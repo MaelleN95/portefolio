@@ -48,6 +48,9 @@ function ProjectCard(props) {
           className="project-card__cover"
           src={cover}
           alt={`${props.children} cover`}
+          height="255px"
+          width="100%"
+          loading="lazy"
         />
 
         <div className="project-card__hover-effect">

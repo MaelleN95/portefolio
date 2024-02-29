@@ -6,10 +6,10 @@
   font-size: 1.2rem;
   cursor: pointer;
   &:hover {
-    color: $purple-color;
+    color: $red-color;
   }
   &:active {
-    color: lighten($color: $purple-color, $amount: 10);
+    color: lighten($color: $red-color, $amount: 10);
   }
   @media (max-width: $mobil) {
     font-size: 2.5rem;
@@ -33,10 +33,10 @@
     font-size: 1.3rem;
   }
   &:hover {
-    color: $purple-color;
+    color: $red-color;
   }
   &:active {
-    color: lighten($color: $purple-color, $amount: 10);
+    color: lighten($color: $red-color, $amount: 10);
   }
 }
 
@@ -95,7 +95,7 @@
     border: 0;
     box-shadow: 3px 3px 7px rgba($color: $bg-color-dark, $alpha: 0.5);
     &:focus {
-      background-color: lighten($color: $purple-color, $amount: 25);
+      background-color: lighten($color: $blue-color, $amount: 25);
       border: 0;
     }
   }
@@ -112,20 +112,23 @@
       padding: 10px 50px;
       border-radius: 50px;
       border: 0;
-      background-color: $purple-color;
-      color: white;
+      background-color: $blue-color;
+      color: $bg-color-dark;
       margin: 10px;
       text-align: center;
       font-weight: bold;
-      box-shadow: inset -2px -2px 7px 1px black, inset 2px 2px 7px 1px white;
+      box-shadow: inset -2px -2px 7px 1px black,
+        inset 2px 2px 7px 1px $bg-color-light;
       transition: box-shadow 0.15s;
       cursor: pointer;
       &:disabled {
         background-color: black;
         cursor: not-allowed;
+        color: $bg-color-light;
       }
       &:active {
-        box-shadow: inset -2px -2px 7px 1px white, inset 2px 2px 7px 1px black;
+        box-shadow: inset -2px -2px 7px 1px $bg-color-light,
+          inset 2px 2px 7px 1px black;
       }
     }
   }

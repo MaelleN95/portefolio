@@ -42,10 +42,10 @@ header {
       font-size: 1.3rem;
       color: black;
       &:hover {
-        color: $purple-color;
+        color: $red-color;
       }
       &:active {
-        color: lighten($color: $purple-color, $amount: 10);
+        color: lighten($color: $red-color, $amount: 10);
       }
     }
   }
@@ -165,9 +165,8 @@ header {
   position: absolute;
   width: 100%;
   height: 200vh;
-  background-color: rgba($color: white, $alpha: 80%);
-  box-shadow: inset 0 0 150px 30px rgba($color: $purple-color, $alpha: 50%),
-    inset 0 0 500px 100px rgba($color: $blue-color, $alpha: 50%);
+  background-color: rgba($color: $bg-color-light, $alpha: 95%);
+  box-shadow: inset 0 0 500px 100px rgba($color: $blue-color, $alpha: 40%);
   backdrop-filter: blur(5px);
   z-index: -1;
   &__close {

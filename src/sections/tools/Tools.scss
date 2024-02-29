@@ -25,7 +25,7 @@
       }
     }
     @media (max-width: $mobil) {
-      flex-direction: column;
+      flex-wrap: wrap;
       align-items: center;
     }
   }
