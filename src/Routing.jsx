@@ -30,7 +30,6 @@ function Routing() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects/:projectsId" element={<Projects />} />
-        <Route path="/*" element={<ErrorPage />} />
         <Route
           path="/admin/MN95/projects"
           element={
@@ -55,6 +54,7 @@ function Routing() {
             </ProtectedRoute>
           }
         />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </Router>
