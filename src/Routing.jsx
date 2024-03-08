@@ -28,8 +28,12 @@ function Routing() {
       <ScrollToTop />
       <Header user={user} setUser={setUser} />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects/:projectsId" element={<Projects />} />
+        <Route path="/" element={<Home />} errorElement={<ErrorPage />} />
+        <Route
+          path="/projects/:projectsId"
+          element={<Projects />}
+          errorElement={<ErrorPage />}
+        />
         <Route
           path="/admin/MN95/projects"
           element={
