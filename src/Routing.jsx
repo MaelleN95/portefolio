@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useRouteError,
+} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import { useUser } from './lib/customHooks';
@@ -16,6 +21,13 @@ import AdminAddProject from './pages/AdminAddProject';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
+function ErrorBoundary() {
+  let error = useRouteError();
+  console.error(error);
+  // Uncaught ReferenceError: path is not defined
+  return <ErrorPage />;
+}
+
 function Routing() {
   const [user, setUser] = useState(null);
   const { connectedUser } = useUser();
@@ -28,11 +40,11 @@ function Routing() {
       <ScrollToTop />
       <Header user={user} setUser={setUser} />
       <Routes>
-        <Route path="/" element={<Home />} errorElement={<ErrorPage />} />
+        <Route path="/" element={<Home />} errorElement={<ErrorBoundary />} />
         <Route
           path="/projects/:projectsId"
           element={<Projects />}
-          errorElement={<ErrorPage />}
+          errorElement={<ErrorBoundary />}
         />
         <Route
           path="/admin/MN95/projects"
@@ -58,7 +70,7 @@ function Routing() {
             </ProtectedRoute>
           }
         />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="*" element={<ErrorBoundary />} />
       </Routes>
       <Footer />
     </Router>
