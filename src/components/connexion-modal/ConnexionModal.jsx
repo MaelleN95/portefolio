@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import useScreenSize from '../../lib/customHooks';
 import { LogIn, storeInLocalStorage } from '../../lib/common';
 import Notification from '../notification/Notification';
+import Loader from '../loader/Loader';
 
 import { FaUserLock } from 'react-icons/fa6';
 import { FaKey } from 'react-icons/fa';
@@ -191,7 +192,7 @@ function ConnexionModal({ user, setUser }) {
           ) : null}
           <div className="button-submit">
             <button type="submit" disabled={!isDirty || !isValid || isLoading}>
-              {isLoading ? 'Chargement...' : 'Se connecter'}
+              {isLoading ? <Loader color="white" size={40} /> : 'Se connecter'}
             </button>
           </div>
         </form>

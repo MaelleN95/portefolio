@@ -1,0 +1,43 @@
+.loader {
+  width: 100%;
+  overflow: visible;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  & .logo {
+    stroke-dasharray: 17500px;
+    stroke-dashoffset: 17500px;
+    stroke-width: 100px;
+    animation: SVGload 12s infinite alternate ease-in;
+  }
+  & .black {
+    stroke: $bg-color-dark;
+    fill: rgba(0, 0, 0, 0.1);
+  }
+  & .white {
+    stroke: $bg-color-light;
+    fill: rgba(255, 255, 255, 0.1);
+  }
+}
+@keyframes SVGload {
+  17% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 17500px;
+  }
+  55% {
+    stroke-dashoffset: 0;
+  }
+  65% {
+    stroke-dashoffset: 17500px;
+  }
+  87% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 17500px;
+  }
+}

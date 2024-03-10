@@ -5,10 +5,12 @@ import { useForm } from 'react-hook-form';
 import { addContactResponse } from '../../lib/common';
 
 import Notification from '../../components/notification/Notification';
+import Loader from '../../components/loader/Loader';
 
 function Contact() {
   const [showNotification, setShowNotification] = useState(false);
   const [notification, setNotification] = useState({ type: '', message: '' });
+  const [isLoading, setIsLoading] = useState(false);
 
   const form = useForm({ mode: 'onTouched' });
   const { register, /*control,*/ handleSubmit, formState, reset } = form;
@@ -16,6 +18,7 @@ function Contact() {
 
   const onSubmit = async (data) => {
     let notif = { type: '', message: '' };
+    setIsLoading(true);
     const newContactForm = await addContactResponse(data);
     if (!newContactForm.error) {
       notif = {
@@ -29,6 +32,7 @@ function Contact() {
         message: "Une erreur est survenue lors de l'envoi !",
       };
     }
+    setIsLoading(false);
     setNotification(notif);
     setShowNotification(true);
     setTimeout(() => {
@@ -152,7 +156,7 @@ function Contact() {
             </div>
             <div className="button-submit">
               <button type="submit" disabled={!isDirty || !isValid}>
-                Envoyer
+                {isLoading ? <Loader color="black" size={40} /> : 'Envoyer'}
               </button>
             </div>
           </form>

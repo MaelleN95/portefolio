@@ -2,6 +2,7 @@ import ErrorPage from './ErrorPage';
 import { ErrorBoundary } from '../utils/ErrorBoundary';
 
 import ProjectModal from '../components/project-modal/ProjectModal';
+import Loader from '../components/loader/Loader';
 
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -35,7 +36,7 @@ function ProjectContentPage() {
   return (
     <main>
       {loading ? (
-        <p>Chargement...</p>
+        <Loader size="20%" color="black" />
       ) : (
         <GlowCapture>
           <section id="project-introduction">

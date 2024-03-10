@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { getProjects } from '../../lib/common';
 
 import ProjectCard from '../../components/project-card/ProjectCard';
+import Loader from '../../components/loader/Loader';
 
 function MyProjects() {
   const [projects, setProjects] = useState(null);
@@ -27,7 +28,7 @@ function MyProjects() {
       </p>
       <div className="projects">
         {loading ? (
-          <p>Chargement...</p>
+          <Loader size="20%" color="black" />
         ) : (
           projects.map((project, i) => {
             return (
