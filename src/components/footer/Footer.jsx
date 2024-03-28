@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <span>© 2024 - Made with passion by Maëlle Nioche</span>
+      <span>Made with passion by Maëlle Nioche © 2024</span>
     </footer>
   );
 }

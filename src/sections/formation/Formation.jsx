@@ -16,8 +16,8 @@ import CV from '../../assets/CV_Maelle_Nioche.pdf';
 
 function Formation() {
   const iconsTab = {
-    0: <FaHourglassHalf />,
-    1: <FaCode />,
+    0: <FaCode />,
+    1: <FaHourglassHalf />,
     2: <FaGraduationCap />,
   };
   return (

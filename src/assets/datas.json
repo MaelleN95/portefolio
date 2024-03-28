@@ -128,23 +128,23 @@
   },
   "formation": [
     {
-      "title": "Licence Mathématiques et informatique appliquées aux Sciences Humaines et Sociales",
-      "description": "",
-      "level": "option Psychologie",
-      "date": "2022 - actuel",
-      "altLogo": "sablier"
-    },
-    {
-      "title": "Développeur Web",
-      "description": "",
+      "title": "Développeur intégrateur Web",
+      "description": "Gestion d'un projet web de A à Z, de l'analyse d'un projet au suivi de ses performances. ",
       "level": "Bac +2",
       "date": "2024",
       "altLogo": "médaille"
     },
     {
+      "title": "Licence Mathématiques et informatique appliquées aux Sciences Humaines et Sociales",
+      "description": "Développement d'algorithmes pour résoudre des problèmes informatiques et analyse de résultats quantitatifs et qualitatifs d'une expérience.",
+      "level": "option Psychologie",
+      "date": "2022 - 2024",
+      "altLogo": "sablier"
+    },
+    {
       "title": "Baccalauréat série Scientifique",
       "description": "",
-      "level": "Avec mention",
+      "level": "",
       "date": "2020",
       "altLogo": "chapeau de fin d'études"
     }
