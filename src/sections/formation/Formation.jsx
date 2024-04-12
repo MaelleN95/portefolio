@@ -24,7 +24,7 @@ function Formation() {
     <section id="my-formation">
       <h2>Mon parcours</h2>
       <GlowCapture>
-        <VerticalTimeline lineColor="#efe8e6">
+        <VerticalTimeline lineColor="#efe8e6" animate={false}>
           {datas.formation.map((exp, index) => {
             let numberStatus = '#48beff';
             index % 2 ? (numberStatus = '#ff5b61') : null;

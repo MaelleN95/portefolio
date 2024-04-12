@@ -32,9 +32,12 @@
     transform: rotate(25deg) translateX(-175px);
   }
   & img {
-    height: 10rem;
+    height: 9rem;
+    @media (min-width: $tablet) {
+      height: 10rem;
+    }
     @media (max-width: $mobil) {
-      height: 9rem;
+      height: 7rem;
     }
   }
   & p {

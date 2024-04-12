@@ -160,6 +160,10 @@ header {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .header-modal-mobil {
   transition: all 0.2s;
   position: absolute;
