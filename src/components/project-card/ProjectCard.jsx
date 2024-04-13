@@ -58,6 +58,8 @@ function ProjectCard(props) {
         </div>
       </Link>
 
+      <h3 className="title-mobil">{props.children}</h3>
+
       <div className="project-links">
         {githubLink ? (
           <a

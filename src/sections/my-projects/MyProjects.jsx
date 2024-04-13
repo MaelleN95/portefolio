@@ -23,10 +23,10 @@ function MyProjects() {
     <section id="my-projects">
       <h2>Mes projets</h2>
       <p>
-        Découvrez une sélection de mes réalisations professionnelles pour avoir
-        un aperçu de mon travail !
+        Découvrez une sélection de mes réalisations professionnelles et
+        personnelles pour avoir un aperçu de mon travail !
       </p>
-      <div className="projects">
+      <ul className="projects">
         {loading ? (
           <Loader size="20%" color="black" />
         ) : (
@@ -45,7 +45,7 @@ function MyProjects() {
             );
           })
         )}
-      </div>
+      </ul>
     </section>
   );
 }
