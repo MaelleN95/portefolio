@@ -1,9 +1,11 @@
 function Footer() {
-  return (
-    <footer>
-      <span>Made with passion by Maëlle Nioche © 2024</span>
-    </footer>
-  );
+    return (
+        <footer>
+            <span>
+                Made with passion by Maëlle Nioche © {new Date().getFullYear()}
+            </span>
+        </footer>
+    );
 }
 
 export default Footer;
