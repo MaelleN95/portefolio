@@ -1,14 +1,14 @@
 #my-projects,
 #projects-list {
-  & p {
-    text-align: center;
-    margin-bottom: 2rem;
-    margin-top: 0;
-  }
-  & .projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+    & p {
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 0;
+    }
+    & .projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }

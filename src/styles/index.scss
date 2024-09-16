@@ -34,97 +34,94 @@
 @import '../pages//AdminPages.scss';
 
 :root {
-  font-family: 'Roboto', sans-serif, Arial;
-  font-weight: 400;
-  font-size: $desktop-font-size;
-  @media (max-width: $mobil) {
-    font-size: $mobil-font-size;
-  }
+    font-family: 'Roboto', sans-serif, Arial;
+    font-weight: 400;
+    font-size: $desktop-font-size;
+    @media (max-width: $mobil) {
+        font-size: $mobil-font-size;
+    }
 
-  color-scheme: light dark;
-  color: $bg-color-dark;
-  background-color: $bg-color-light;
+    color-scheme: light dark;
+    color: $bg-color-dark;
+    background-color: $bg-color-light;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
+    margin: 0;
+    min-width: 320px;
 }
 
 main {
-  max-width: 1400px;
-  margin: auto;
+    max-width: 1400px;
+    margin: auto;
 }
 
 section {
-  padding: 0 30px 3rem 30px;
+    padding: 0 30px 3rem 30px;
 }
 
 h1 {
-  font-family: 'Alegreya Sans SC', sans-serif, Arial;
-  font-size: 6em;
-  line-height: 1.1;
-  font-weight: bold;
-  margin: 0;
-  @media (max-width: $mobil) {
-    font-size: 3.2rem;
-  }
+    font-family: 'Alegreya Sans SC', sans-serif, Arial;
+    font-size: 6em;
+    line-height: 1.1;
+    font-weight: bold;
+    margin: 0;
+    @media (max-width: $mobil) {
+        font-size: 3.2rem;
+    }
 }
 
 h2 {
-  font-family: 'Alegreya Sans SC', sans-serif, Arial;
-  font-size: 2rem;
-  text-align: center;
-  padding: 3rem;
-  margin: 0;
-  @media (max-width: $mobil) {
-    font-size: 1.5rem;
-  }
+    font-family: 'Alegreya Sans SC', sans-serif, Arial;
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem;
+    margin: 0;
+    @media (max-width: $mobil) {
+        font-size: 1.5rem;
+    }
 }
 
 h3 {
-  font-family: 'Roboto', sans-serif, Arial;
-  font-size: 1.8rem;
-  text-align: start;
-  padding: 0;
-  margin: 0;
-  font-weight: 400;
-  @media (max-width: $mobil) {
-    font-size: 1.3rem;
-  }
+    font-family: 'Roboto', sans-serif, Arial;
+    font-size: 1.8rem;
+    text-align: start;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    @media (max-width: $mobil) {
+        font-size: 1.3rem;
+    }
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 a {
-  color: $bg-color-light;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-    & img {
-      filter: brightness(130%);
+    color: $bg-color-light;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
     }
-  }
 }
 
 button {
-  font-family: 'Roboto', sans-serif, Arial;
-  font-size: 1rem;
+    font-family: 'Roboto', sans-serif, Arial;
+    font-size: 1rem;
 }
 
 input,
 textarea {
-  background-color: white;
-  font-family: 'Roboto';
-  color: black;
+    background-color: white;
+    font-family: 'Roboto';
+    color: black;
 }
 
 // @media (prefers-color-scheme: dark) {
