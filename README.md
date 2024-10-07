@@ -22,11 +22,11 @@ Ce projet est un site vitrine personnel développé pour présenter mon portfoli
 1. Clonez le repository :
    ```bash
    git clone https://github.com/MaelleN95/portfolio.git
-2. Installer les dépendances :
+2. Installez les dépendances :
    ```bash
    cd portfolio
    npm i
-3. Lancer l'application en mode développement :
+3. Lancez l'application en mode développement :
    ```bash
    npm run dev
 
